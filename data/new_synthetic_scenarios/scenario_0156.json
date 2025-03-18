@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Visual impairment",
+            "Physical disabilities"
+        ]
+    },
+    "situation": "K was in gym class and struggled to find her way to equipment as it was not organized accessibly for her condition.",
+    "action": "The aide called out directions from across the gym, expecting K to follow verbal instructions, which confused her further.",
+    "effect": "K was unable to participate in the activity, and became visibly frustrated and upset. The approach did not accommodate her visual impairment effectively.",
+    "grade": 2,
+    "topic": "Physical Environment Issues",
+    "len": 130.0
+}

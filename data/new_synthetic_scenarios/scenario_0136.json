@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Dyslexia",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "J was given a timed reading test and started to panic when the time was nearly up.",
+    "action": "The teacher aide told J to just relax and keep reading without adjusting the time limit or offering any tools to help.",
+    "effect": "J didn't manage to complete the test and was more stressed about future reading tasks.",
+    "grade": 2,
+    "topic": "Academic Stress Situations",
+    "len": 95.33333333333333
+}

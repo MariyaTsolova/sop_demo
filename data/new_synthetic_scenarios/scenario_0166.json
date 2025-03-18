@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "woman",
+        "diagnosis": [
+            "Sensory processing disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "L frequently sat too close to peers in the lunchroom, leading to complaints of discomfort.",
+    "action": "The teacher aide addressed the situation by using a social script to discuss respecting personal space at the table. Engaged L in a game of 'Red Light, Green Light' focusing on distance control and boundaries.",
+    "effect": "L gained a clearer understanding of personal space through playful learning, which contributed to a more comfortable lunchtime atmosphere.",
+    "grade": 5,
+    "topic": "Personal Space and Boundaries",
+    "len": 145.66666666666666
+}

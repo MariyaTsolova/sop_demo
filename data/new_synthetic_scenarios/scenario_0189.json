@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "ADHD"
+        ]
+    },
+    "situation": "S was puzzled and panicked when it was time to clean her desk and couldn't decide where to begin.",
+    "action": "Assisted S by suggesting a simple step-by-step approach: sorting items by category, placing them in labeled containers.",
+    "effect": "S successfully followed the steps, organizing her desk with help and experiencing a sense of accomplishment.",
+    "grade": 3,
+    "topic": "Executive Functioning Challenges",
+    "len": 108.0
+}

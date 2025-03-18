@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "At lunchtime in the noisy cafeteria, K withdrew to a corner, overwhelmed by the noise and bustle.",
+    "action": "A new staff member approached K, insisting she join her peers and dismissing her request to move to a quieter space for a break.",
+    "effect": "K became more anxious and withdrew further, feeling her needs were invalidated and unsupported, significantly affecting her peer interactions.",
+    "grade": 1,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 122.33333333333333
+}

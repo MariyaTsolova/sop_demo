@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "6",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Hearing impairment"
+        ]
+    },
+    "situation": "R was confused while trying to clean up toys and ended up wandering aimlessly.",
+    "action": "The TA signaled with gestures but didn\u2019t provide any structured cleanup plan or close assistance.",
+    "effect": "R continued to wander without focus, and other students began to imitate his behavior, causing chaos.",
+    "grade": 3,
+    "topic": "Executive Functioning Challenges",
+    "len": 92.0
+}

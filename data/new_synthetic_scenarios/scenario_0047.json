@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Attachment disorder"
+        ]
+    },
+    "situation": "N felt reluctant to engage with classmates during paired storytelling activities due to speech challenges.",
+    "action": "The teacher aide encouraged N by pairing her with a classmate who was patient and supportive. They also integrated visual storytelling methods to assist N in expressing her thoughts.",
+    "effect": "N became more comfortable participating in storytelling activities. The supportive pairing and alternative communication strategy alleviated her anxiety, leading to meaningful social interaction and a greater sense of inclusion.",
+    "grade": 4,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 172.0
+}

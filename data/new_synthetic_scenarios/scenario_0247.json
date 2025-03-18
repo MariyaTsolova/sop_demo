@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Attachment disorder"
+        ]
+    },
+    "situation": "After witnessing an argument between two teachers, R refused to go to the playground, stating he felt unsafe. He clung to his desk, nervous and unresponsive.",
+    "action": "The teacher aide told R that it was time to play and attempted to physically guide him by pulling his chair away from the desk. R resisted and became increasingly agitated.",
+    "effect": "The physical approach only heightened R's anxiety, making him more defiant and uncomfortable. It took 30 more minutes before R could be coaxed into a calmer state by another staff member.",
+    "grade": 1,
+    "topic": "External Trauma Impact",
+    "len": 172.0
+}

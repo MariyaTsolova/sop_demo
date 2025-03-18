@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "L was overwhelmed by the alarm sound from a drill and started running aimlessly outside the designated evacuation area.",
+    "action": "A teacher aide gently guided L to a safe area using grapevine technique and provided her noise-cancelling headphones to help reduce auditory overstimulation.",
+    "effect": "L managed to calm down and felt safe in the quieter area, allowing her to rejoin her peers smoothly after the drill ended.",
+    "grade": 5,
+    "topic": "Emergency Situations",
+    "len": 132.66666666666666
+}

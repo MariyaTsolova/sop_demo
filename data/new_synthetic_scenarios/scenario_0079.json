@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Dyscalculia",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "K exhibited nervousness and hesitation moving from classroom activities to field trips.",
+    "action": "The teacher aide failed to give K additional time or reassurance, hastening him along at the planned schedule without adjustments.",
+    "effect": "K's anxiety remained unaddressed, leading him to withdraw from field trip activities and miss educational opportunities.",
+    "grade": 1,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 112.33333333333333
+}

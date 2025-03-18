@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Dyslexia",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "G struggled with providing coherent verbal answers during oral assessments and often became distressed.",
+    "action": "The teacher aide worked with G on developing a set of structured response templates that he could pre-prepare and use. Visual prompts were also utilized to help him retrieve and structure information more effectively.",
+    "effect": "G's ability to provide responses improved significantly, reducing his distress and improving his performance during assessments.",
+    "grade": 4,
+    "topic": "Communication Breakdowns",
+    "len": 149.33333333333334
+}

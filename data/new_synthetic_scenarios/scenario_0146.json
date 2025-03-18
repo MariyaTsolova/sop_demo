@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Hearing impairment",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "T was unable to hear the teacher clearly due to background noise and classroom acoustics.",
+    "action": "The aide set up a personal sound field system that amplified the teacher\u2019s voice directly to T\u2019s hearing aid.",
+    "effect": "T followed the classroom instruction more successfully, leading to improved participation and understanding.",
+    "grade": 5,
+    "topic": "Physical Environment Issues",
+    "len": 102.0
+}

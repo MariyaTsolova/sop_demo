@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Dyslexia"
+        ]
+    },
+    "situation": "R struggles with moving between reading and writing sessions, often losing her place and becoming restless.",
+    "action": "The aide coordinated a structured routine, using a mini whiteboard to map out steps between activities. Specific, personal goals were set before transitions, offering recognition for each milestone completed.",
+    "effect": "The structured routine helped R visualize her daily schedule, reducing her restlessness. Achieving tailored goals provided motivation, improving her focus and smoothening her transitions.",
+    "grade": 4,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 167.33333333333334
+}

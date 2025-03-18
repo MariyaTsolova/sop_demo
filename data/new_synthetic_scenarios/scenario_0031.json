@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "K became distressed when the music class was unexpectedly canceled and replaced with math. She started to cry and refused to open her math book.",
+    "action": "The teacher told K to 'stop crying and get over it', suggesting she should just deal with the change. The teacher then moved on to focus on teaching the other students.",
+    "effect": "K's anxiety worsened throughout the day, leading her to miss the rest of her classes. She remained in a heightened emotional state due to the lack of support in processing the sudden schedule change.",
+    "grade": 1,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 170.33333333333334
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Epilepsy"
+        ]
+    },
+    "situation": "P would become disoriented and anxious when transitioning from the music room back to the normal classroom setting.",
+    "action": "The teacher aide did not provide a transitional object or use calming strategies, which could have eased P's anxiety.",
+    "effect": "P's anxiety increased, resulting in emotional outbursts which disrupted the class and prolonged the transition period.",
+    "grade": 3,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 116.66666666666667
+}

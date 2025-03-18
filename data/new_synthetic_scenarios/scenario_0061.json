@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Speech and language disorders",
+            "ADHD"
+        ]
+    },
+    "situation": "M struggled to transition from playtime to the literacy circle. She would become hyperactive and ignore verbal instructions from the teacher.",
+    "action": "The teacher displayed a visual timer and a colorful cue card illustrating the next activity. This was used in conjunction with gentle reminders leading up to the transition. M was also allowed to bring a small fidget toy to the literacy circle to help focus her energy.",
+    "effect": "Using the visual aids and gradual reminders, M became more adjusted. Bringing a fidget toy helped ease her anxiety and ground her into the new activity. With these strategies, M learned to adjust her behavior, improving her transition to the literacy circle significantly.",
+    "grade": 4,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 227.33333333333334
+}

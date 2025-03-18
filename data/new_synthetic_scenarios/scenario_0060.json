@@ -1,0 +1,17 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "S becomes distressed when transitioning from the classroom to the gym for physical education class. He often covers his ears and refuses to leave the room.",
+    "action": "A soothing voice was used to talk to S. The teacher aide showed him a picture schedule, highlighting the gym activity as fun and something he can leave at any point if it becomes overwhelming. S was also offered noise-canceling headphones and a choice of a tangible motivator upon returning to the classroom.",
+    "effect": "S initially resisted, but calmed down with the continuous encouragement and visual cue. The headphones helped minimize sensory overload, and S slowly gained confidence to make the transition with his aide. These measures improved S's transition experience, creating a more positive association with the gym.",
+    "grade": 5,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 256.6666666666667
+}

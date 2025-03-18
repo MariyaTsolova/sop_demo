@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "J was overwhelmed in the noisy playground during recess and began to scream and cover his ears.",
+    "action": "The aide escorted J to a designated quiet corner inside the classroom with soothing visual stimuli, where he could decompress with calming music and toys.",
+    "effect": "J quickly calmed down and was able to return to the playground after a break, feeling more at ease and ready to engage in play with peers.",
+    "grade": 5,
+    "topic": "Physical Environment Issues",
+    "len": 129.0
+}

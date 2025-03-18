@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "Visual impairment",
+            "Dyspraxia"
+        ]
+    },
+    "situation": "Due to a software update, J's screen reader lost accessibility features, leaving her unable to participate in the scheduled writing assignment.",
+    "action": "The teacher aide quickly collaborated with the IT department to restore J's settings and provided oral instructions and scribing support until the issue was resolved.",
+    "effect": "J was able to complete her assignment without significant delay, illustrating the effectiveness of teamwork and immediate action during technical failures.",
+    "grade": 5,
+    "topic": "Technology Failures",
+    "len": 154.66666666666666
+}

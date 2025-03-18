@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "S was upset and crying in the classroom after hearing loud noises from construction work outside. The noises triggered her anxiety and she seemed overwhelmed.",
+    "action": "The teacher aide calmly approached S and guided her to the quiet area of the classroom, offering noise-canceling headphones to help her feel more comfortable. The aide then offered S a breathing exercise to help calm her nerves.",
+    "effect": "S gradually calmed down with the headphones and breathing exercise, feeling more secure and able to return to her schoolwork after a period of relaxation. The approach was sensitive and effectively minimized S's distress.",
+    "grade": 5,
+    "topic": "External Trauma Impact",
+    "len": 202.33333333333334
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyslexia",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "During an English class with a substitute teacher, M struggled with reading aloud, which led to visible frustration and refusal to continue.",
+    "action": "The substitute introduced a paired reading exercise, matching M with a peer she was comfortable working with, and encouraged group reading.",
+    "effect": "M felt supported and her anxiety reduced, allowing her to participate more actively in the lesson and gain confidence in reading.",
+    "grade": 4,
+    "topic": "Substitute Staff Situations",
+    "len": 136.0
+}

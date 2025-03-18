@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "During a school assembly with loud music and bright lights, M began to cover his ears and showed signs of distress, becoming increasingly agitated.",
+    "action": "The TA guided M to a quiet corner of the hall and provided him with noise-canceling headphones while speaking softly to reassure him. After a few minutes, M was able to focus on the presentation while wearing the headphones and returned to his class with a calm demeanor.",
+    "effect": "M's anxiety was quickly addressed with the headphones and reassurance, allowing him to participate in the assembly without further distress.",
+    "grade": 5,
+    "topic": "Special School Events",
+    "len": 186.0
+}

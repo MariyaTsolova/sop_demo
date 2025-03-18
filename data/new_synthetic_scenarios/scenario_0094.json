@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Moderate to severe learning difficulties",
+            "ADHD"
+        ]
+    },
+    "situation": "T misinterpreted the teacher's instruction during group work and began working on the wrong task.",
+    "action": "The teacher aide corrected T loudly in front of his peers without ensuring he understood the task. No individualized support or attention was given.",
+    "effect": "T felt embarrassed and confused, affecting his motivation and leading to decreased engagement in the task.",
+    "grade": 2,
+    "topic": "Communication Breakdowns",
+    "len": 117.0
+}

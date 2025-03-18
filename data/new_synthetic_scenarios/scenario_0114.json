@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Dyslexia",
+            "ADHD"
+        ]
+    },
+    "situation": "R became extremely frustrated and disruptive after failing to complete a reading exercise during English class.",
+    "action": "The teacher asked R to leave the room and take a 'time out' in the corridor without discussing his frustration or providing support.",
+    "effect": "R felt increasingly isolated and upset, which led to further avoidance of reading tasks in future sessions. Class focus was temporarily lost.",
+    "grade": 2,
+    "topic": "Emotional Regulation Challenges",
+    "len": 128.0
+}

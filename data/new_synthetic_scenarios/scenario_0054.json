@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "Hearing impairment",
+            "Dyscalculia"
+        ]
+    },
+    "situation": "T struggled to hear and follow the instructions during a paired classroom activity, leading to confusion and frustration for both him and his partner.",
+    "action": "The classroom aide suggested T move closer to the teacher but didn't provide assistive hearing technology or facilitate better communication between the students.",
+    "effect": "T continued to misunderstand, resulting in a negative experience for both participants in the activity.",
+    "grade": 1,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 138.33333333333334
+}

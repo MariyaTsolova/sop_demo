@@ -1,0 +1,17 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Epilepsy",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "D felt overwhelmed when transitioning from computer class to lunchtime and would often freeze, worrying about the crowds.",
+    "action": "The teacher aide introduced a 'calm down' corner in the classroom with soft lighting and textures before moving. D practiced relaxation techniques here before transition and was allowed to carry a comfort item during the shift to lunch.",
+    "effect": "By preparing in the calm down area, D was able to reduce her anxiety around transitions. Carrying her comfort item provided a sense of security, resulting in more successful transitions from computer class to lunch.",
+    "grade": 5,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 190.66666666666666
+}

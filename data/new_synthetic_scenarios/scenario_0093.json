@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "L didn't understand the changes in lunchtime routine and began crying silently.",
+    "action": "The teacher aide, without noticing L's anxiety, continued with the set plan. L received no visual timetable or communication aid.",
+    "effect": "L remained anxious throughout lunchtime and became withdrawn from her peers, missing out on social interaction.",
+    "grade": 1,
+    "topic": "Communication Breakdowns",
+    "len": 106.33333333333333
+}

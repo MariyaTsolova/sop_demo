@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "6",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "H became upset during story time as she couldn\u2019t articulate her questions about the story, which led to behavioral disruptions.",
+    "action": "The teacher aide introduced a picture exchange communication system (PECS) to help H express her questions and thoughts about the story. They also used quiet cue cards to encourage active listening.",
+    "effect": "H became more engaged with story time, asked questions more effectively, and demonstrated improved listening behaviors.",
+    "grade": 5,
+    "topic": "Communication Breakdowns",
+    "len": 148.0
+}

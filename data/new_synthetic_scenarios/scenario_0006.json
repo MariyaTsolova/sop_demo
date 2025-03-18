@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "Auditory processing disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "During a school assembly with music and applause, L became overwhelmed by the loud sounds and began to cry and hyperventilate.",
+    "action": "The teacher aide gently guided L out of the assembly, using a first-then card to explain they'll first step outside and then practice slow breathing. L was given a fidget spinner to focus on while they waited in a quieter room.",
+    "effect": "L's breathing returned to normal, and she managed to use the fidget spinner as a coping tool. She was ready to rejoin her class without further issues.",
+    "grade": 4,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 168.0
+}

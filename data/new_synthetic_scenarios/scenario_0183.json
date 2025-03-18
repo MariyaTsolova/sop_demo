@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Dyspraxia",
+            "ADHD"
+        ]
+    },
+    "situation": "P was unable to start his science project, staring at his blank paper in frustration and tapping his pencil loudly.",
+    "action": "Helped P break down the project into smaller, manageable tasks and set short, timed goals for each part. Provided one-on-one supervision to keep him on track.",
+    "effect": "P felt more empowered and was able to start and make significant progress on his project, displaying reduced frustration and increased productivity.",
+    "grade": 5,
+    "topic": "Executive Functioning Challenges",
+    "len": 140.33333333333334
+}

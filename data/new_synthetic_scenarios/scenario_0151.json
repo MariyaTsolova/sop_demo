@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Hearing impairment"
+        ]
+    },
+    "situation": "C was assigned to work in a corner of the library that had a lot of background noise from a maintenance crew working outside.",
+    "action": "The teacher aide told C to focus and try to ignore the noise. When C complained that it was too loud, the aide suggested using earplugs she found in a drawer, which were uncomfortable and not suitable for C's hearing aids.",
+    "effect": "C was unable to concentrate on her work and felt frustrated, leading to her making no progress on the task. The suggestion was unsuitable for her needs, and her productivity suffered.",
+    "grade": 1,
+    "topic": "Physical Environment Issues",
+    "len": 176.66666666666666
+}

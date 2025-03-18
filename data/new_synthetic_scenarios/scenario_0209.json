@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyspraxia",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "In the art room, J was holding a pair of scissors improperly and accidentally cut herself, which resulted in unexpected bleeding.",
+    "action": "The teacher aide instructed J to sit and wait for assistance, while they quickly stepped outside to seek help, leaving J unattended with the injury.",
+    "effect": "J became scared and more upset during the wait, increasing her discomfort and anxiety. The lack of immediate attention showed inadequate first response skills for minor injuries.",
+    "grade": 2,
+    "topic": "Emergency Situations",
+    "len": 151.66666666666666
+}

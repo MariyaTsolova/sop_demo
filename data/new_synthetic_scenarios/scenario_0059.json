@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Hearing impairment",
+            "Social Interaction Disorder"
+        ]
+    },
+    "situation": "During story time, N sat apart and seemed disengaged from the group due to difficulty hearing her peers' comments.",
+    "action": "The teacher advised N to focus more but didn\u2019t arrange for any auditory assistance or inclusive seating arrangement.",
+    "effect": "N remained disconnected from the activity, resulting in missed opportunities to engage with peers during group reading.",
+    "grade": 1,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 116.33333333333333
+}

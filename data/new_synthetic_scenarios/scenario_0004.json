@@ -1,0 +1,17 @@
+{
+    "student_profile": {
+        "age": "6",
+        "gender": "man",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "P was becoming agitated during a noisy group activity. He started to scream and aggressively swat at nearby objects.",
+    "action": "The teacher raised her voice to tell P to calm down, which added to the noise and increased his distress. No effort was made to move P from the source of the noise or provide sensory tools.",
+    "effect": "P's behavior escalated further until he had to be removed from the classroom. The reaction did not alleviate his sensory overload and instead exacerbated the situation.",
+    "grade": 1,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 157.66666666666666
+}

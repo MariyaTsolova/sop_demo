@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "M couldn't express his need for a break during the math lesson and began to loudly disrupt the class.",
+    "action": "The teacher aide asked M to settle down without providing clear instructions or alternatives. No visual aids or additional support were offered. M continued to disrupt, leading to further class disturbance.",
+    "effect": "The lack of clear communication from the teacher aide resulted in increased anxiety and frustration for M. The class was interrupted for several minutes, affecting other students\u2019 concentration.",
+    "grade": 2,
+    "topic": "Communication Breakdowns",
+    "len": 167.0
+}

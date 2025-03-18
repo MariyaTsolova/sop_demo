@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Dyspraxia",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "B panicked when art class was moved to a different room, causing him to get anxious and refuse to draw.",
+    "action": "B was told to 'just go with the flow' and was left to sit alone at a different table. The teacher did not offer further assistance or explanation.",
+    "effect": "B felt isolated and did not complete his work, missing out on the art activity entirely. His feelings of confusion persisted, impacting his mood for the rest of the day.",
+    "grade": 2,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 139.33333333333334
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "13",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Epilepsy"
+        ]
+    },
+    "situation": "F experienced heightened anxiety when the sports day practice was abruptly canceled.",
+    "action": "The teacher aide provided a quiet space and encouraged F to use relaxation techniques, assuring him of rescheduling.",
+    "effect": "F was able to relax with the assurance and managed to return to class activities without further distress.",
+    "grade": 4,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 102.0
+}

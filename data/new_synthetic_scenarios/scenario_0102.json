@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Emotional regulation difficulties",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "During a maths activity, B became frustrated and started crying loudly, unable to voice her needs.",
+    "action": "The aide sat with B, using visual aids to communicate. They together simplified the math problem, turning it into a game with rewards that addressed her frustration in a playful manner.",
+    "effect": "B calmed down quickly using visual aids and the math game prompted her to engage better with the task, improving both her mood and participation.",
+    "grade": 5,
+    "topic": "Emotional Regulation Challenges",
+    "len": 142.66666666666666
+}

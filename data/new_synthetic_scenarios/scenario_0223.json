@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Dyscalculia",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "K was visibly anxious and couldn\u2019t solve math problems during a test with a substitute teacher, ultimately crumpling his test paper.",
+    "action": "The substitute calmly approached K, gave him the choice to work through the problems orally with support, and reassured him about the test process.",
+    "effect": "K was able to express his understanding verbally, which reduced his stress and allowed him to concentrate on the remaining parts of the test.",
+    "grade": 5,
+    "topic": "Substitute Staff Situations",
+    "len": 140.0
+}

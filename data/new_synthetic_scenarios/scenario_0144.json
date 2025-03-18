@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Sensory processing disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "V felt stressed by the echoes in the gymnasium during physical education class, leading to her withdrawing from activities.",
+    "action": "The aide introduced a program where V could wear soft earplugs to dampen the noise and be allowed to do quieter, modified exercises.",
+    "effect": "V participated more fully in PE sessions and expressed enjoyment for activities she previously avoided.",
+    "grade": 4,
+    "topic": "Physical Environment Issues",
+    "len": 119.33333333333333
+}

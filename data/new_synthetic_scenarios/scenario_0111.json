@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Autism Spectrum Disorder"
+        ]
+    },
+    "situation": "G refused to enter the classroom as she felt overwhelmed by the noise at the start of the day.",
+    "action": "The teacher insisted that G join the classmates immediately without addressing her anxiety or the specific sensory issues involved. G was left alone at the door.",
+    "effect": "G remained outside the classroom, becoming more anxious. This delayed the start of her school day and increased her reluctance to participate.",
+    "grade": 1,
+    "topic": "Emotional Regulation Challenges",
+    "len": 132.33333333333334
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "C was anxious about math exam preparation and started to engage in self-stimulatory behavior by rocking back and forth during class.",
+    "action": "The teacher aide calmly approached C and provided her with a stress ball to squeeze, which she had used successfully in the past. She then offered to work with C during break time to review math concepts using visual aids and hands-on activities. C accepted and spent some time with the TA who helped her focus and feel more prepared.",
+    "effect": "C was able to calm down and focus more effectively during the math lesson. The dedicated session reduced her anxiety and improved her confidence in math, helping her engage more fully in class activities.",
+    "grade": 4,
+    "topic": "Academic Stress Situations",
+    "len": 223.33333333333334
+}

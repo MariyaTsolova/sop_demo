@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "6",
+        "gender": "woman",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "K refused to participate in circle time, hiding under a table when asked to speak about her weekend.",
+    "action": "The teacher demanded K join in without attempting to address her anxiety, leaving her under the table.",
+    "effect": "K's anxiety increased, and she remained under the table for the duration of the activity. Interruptions to circle time occurred as a result.",
+    "grade": 1,
+    "topic": "Emotional Regulation Challenges",
+    "len": 114.0
+}

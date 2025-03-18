@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Hearing impairment"
+        ]
+    },
+    "situation": "G threw her books on the floor when she found out PE was canceled due to rain, scattering papers everywhere.",
+    "action": "The teacher's aide reprimanded G for her behavior and made her pick up her own books without helping or explaining the situation.",
+    "effect": "G felt frustrated and misunderstood, which led to her being disengaged for the rest of the school day. Her enthusiasm for PE waned, impacting future participation.",
+    "grade": 2,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 133.33333333333334
+}

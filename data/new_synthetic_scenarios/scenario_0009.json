@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Sensory processing disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "E covered her eyes and cried when too many brightly colored pages were spread around during an art presentation.",
+    "action": "The aide dimmed the lights and allowed E to view the pages through colored lenses, reducing the bright colors while explaining each page calmly.",
+    "effect": "By using colored lenses, E could participate in the activity without feeling overwhelmed, even engaging in discussions about the artwork.",
+    "grade": 5,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 131.0
+}

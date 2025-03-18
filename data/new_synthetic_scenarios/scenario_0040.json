@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "M was feeling overwhelmed and anxious during recess due to the loud and chaotic playground environment.",
+    "action": "The teacher aide approached M and suggested moving to a quieter spot. They introduced noise-cancelling headphones, which helped reduce sensory overload. Then, they engaged M in a calming breathing exercise along with some social games designed for one-on-one interaction.",
+    "effect": "M became less anxious and was able to enjoy recess in a calm environment. He was later able to join a small group of peers for a quiet game, indicating improved social interaction. This provided M with a sense of comfort and belonging among classmates.",
+    "grade": 5,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 208.66666666666666
+}

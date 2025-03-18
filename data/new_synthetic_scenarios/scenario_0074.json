@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "Q became noticeably anxious and agitated each time the class transitioned to a less structured art class environment.",
+    "action": "Without recognizing this distress, the teacher aide continued with standard instructions without providing additional reassurance or a structured plan.",
+    "effect": "Q experienced heightened anxiety, resulting in low participation and avoidance behaviors in future art classes.",
+    "grade": 3,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 126.33333333333333
+}

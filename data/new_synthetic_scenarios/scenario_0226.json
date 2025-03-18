@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Dyslexia"
+        ]
+    },
+    "situation": "A substitute staff was unaware of F's reading accommodations and asked her to read aloud in front of the class. Struggling with dyslexia, F became visibly anxious and refused to read.",
+    "action": "The substitute insisted, suggesting that F try using colored overlays even though none were available. Frustrated, the substitute moved on without providing assistance or understanding.",
+    "effect": "F's anxiety increased, particularly in participating in class, affecting her confidence in future reading tasks. The substitute's reaction alienated F, causing her to disengage.",
+    "grade": 2,
+    "topic": "Substitute Staff Situations",
+    "len": 181.66666666666666
+}

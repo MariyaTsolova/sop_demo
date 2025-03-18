@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Sensory processing disorder",
+            "ADHD"
+        ]
+    },
+    "situation": "L had difficulty managing her behaviour when the school's fire drill happened earlier than planned.",
+    "action": "The teacher aide distracted L with a breathing exercise and explained the purpose of the drill using visual supports.",
+    "effect": "L calmed down and successfully participated in the drill, understanding its importance for safety.",
+    "grade": 5,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 104.66666666666667
+}

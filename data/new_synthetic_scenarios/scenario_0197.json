@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Dyspraxia",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "H was overwhelmed tidying his art supplies and stopped, appearing frozen in thought.",
+    "action": "The aide instructed H to simply 'try harder' without providing a sequence or breaking down the task.",
+    "effect": "H remained stuck, and his art supplies were left uncared for, complicating the next activity.",
+    "grade": 2,
+    "topic": "Executive Functioning Challenges",
+    "len": 92.33333333333333
+}

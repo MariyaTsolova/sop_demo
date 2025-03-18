@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Dyspraxia"
+        ]
+    },
+    "situation": "B frequently touches other students' belongings, which leads to disagreements and tension.",
+    "action": "The teacher aide instructed B to stop without explaining why it is important to respect others' belongings which seemed like random scolding to B.",
+    "effect": "B continued to touch items the next day, as he didn't fully understand the boundary issues.",
+    "grade": 1,
+    "topic": "Personal Space and Boundaries",
+    "len": 109.0
+}

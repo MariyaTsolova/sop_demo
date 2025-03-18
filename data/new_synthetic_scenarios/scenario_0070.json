@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "M was transitioning from the playground to the classroom but abruptly stopped at the classroom door and refused to enter.",
+    "action": "The teacher aide initially ignored M's refusal to move, hoping he would eventually follow the class. M remained outside, increasing his distress and ultimately missing out on class activities.",
+    "effect": "M was left anxious and isolated as he missed important instructions and activities of the day.",
+    "grade": 1,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 135.66666666666666
+}

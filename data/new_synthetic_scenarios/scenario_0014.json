@@ -1,0 +1,15 @@
+{
+    "student_profile": {
+        "age": "5",
+        "gender": "man",
+        "diagnosis": [
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "At the end of the day during a busy dismissal, L started crying and trying to block out the noise and crowd.",
+    "action": "The aide asked L to stand in line with the other children and wait for their guardians, ignoring his plea to sit alone with his noise-canceling headphones.",
+    "effect": "L\u2019s crying intensified, attracting more attention and increasing his discomfort in the crowded environment.",
+    "grade": 2,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 123.33333333333333
+}

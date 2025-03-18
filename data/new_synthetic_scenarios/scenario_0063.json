@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Hearing impairment",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "K hesitated to move from music class to the lunchroom, displaying signs of distress and confusion about the noise levels.",
+    "action": "The teacher used simple sign language and visual images to communicate the transition plan. K was provided with sensory earmuffs to help adjust her to the lunchroom environment. Additional support was offered through hand signals and a specific buddy system to guide her.",
+    "effect": "The clear visual and nonverbal instructions helped reassure K of the transition process. The earmuffs reduced sensory overload, allowing her to enter the lunch area more confidently. These adaptations facilitated easier transitions and enhanced her lunchtime experience.",
+    "grade": 4,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 220.66666666666666
+}

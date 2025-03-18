@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyspraxia",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "During the school's sports day, A struggled with coordination and felt left out during team events, withdrawing to the side while others participated.",
+    "action": "The teacher aide adapted a portion of the activities to suit A's needs, emphasizing individual participation with simpler tasks, and matched her with a buddy to foster inclusion.",
+    "effect": "A felt more involved, enjoyed cheering for others, and was able to celebrate her achievements through adapted activities, improving her self-esteem.",
+    "grade": 5,
+    "topic": "Special School Events",
+    "len": 158.66666666666666
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders",
+            "ADHD"
+        ]
+    },
+    "situation": "M felt overwhelmed during a crowded, brightly lit school fair and started crying and pacing rapidly.",
+    "action": "The available teacher aide told M to calm down and relax, without suggesting any specific coping strategies or providing a quieter space.",
+    "effect": "M was unable to manage her anxiety and continued to cry and pace around, feeling increasingly uncomfortable and unsupported.",
+    "grade": 1,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 120.33333333333333
+}

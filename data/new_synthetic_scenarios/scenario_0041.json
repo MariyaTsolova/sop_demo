@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Hearing impairment",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "A felt isolated during group activities because she couldn\u2019t follow conversations quickly.",
+    "action": "The teacher aide ensured A was part of smaller groups and encouraged her peers to use slower and clearer communication, including gestures. They also provided a notepad for A to write down or draw thoughts.",
+    "effect": "A felt more included in group discussions as peers recognized her needs and made adjustments. The use of visual aids facilitated better communication, enabling A to contribute meaningfully. This boosted her confidence and engagement with peers.",
+    "grade": 4,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 180.0
+}

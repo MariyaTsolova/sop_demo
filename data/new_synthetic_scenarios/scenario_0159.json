@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "L had difficulty concentrating in class due to the adjacent construction noise.",
+    "action": "The teacher aide offered to close the window, but the noise persisted. She then told L to ignore it and try his best to focus on his work.",
+    "effect": "L's concentration remained compromised, and he was unable to complete his assignments successfully. The steps taken were insufficient in mitigating the external noise.",
+    "grade": 2,
+    "topic": "Physical Environment Issues",
+    "len": 128.0
+}

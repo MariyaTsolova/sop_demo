@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "H hesitated to participate in group discussions due to her difficulty finding the right words and fear of embarrassment.",
+    "action": "Encouraged H by providing her with key phrases and vocabulary cards related to the discussion topic, rehearsing with her beforehand.",
+    "effect": "H felt more confident and began contributing to the discussion, gaining positive feedback from peers and the teacher.",
+    "grade": 5,
+    "topic": "Executive Functioning Challenges",
+    "len": 123.0
+}

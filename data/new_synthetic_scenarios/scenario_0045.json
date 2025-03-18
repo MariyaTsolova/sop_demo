@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "Sensory processing disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "Q felt out of place during art classes due to sensitivity to certain textures and sounds.",
+    "action": "The teacher aide introduced alternative art materials that were texture-friendly for Q, such as fabric pens and smooth canvases. They also provided noise-cancelling headphones during more noisy activities.",
+    "effect": "Q could participate in art activities without anxiety from sensory discomfort. This increased her willingness to collaborate with peers on creative projects, enhancing her social experience in art class and building better relationships.",
+    "grade": 4,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 177.0
+}

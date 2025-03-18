@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Dyscalculia",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "F was struggling with his math homework, feeling overwhelmed by learning difficulties, and refused to attempt any further work.",
+    "action": "The teacher aide sat with F to review the homework in smaller sections and applied visual learning tools tailored to his needs. She used tangible objects and games to make learning more interactive and less intimidating for F, increasing his engagement.",
+    "effect": "F learned to break down his homework into manageable parts, fostering a sense of achievement with each completed section. His interest in math grew, and he eventually began to approach homework with less resistance.",
+    "grade": 4,
+    "topic": "Academic Stress Situations",
+    "len": 198.33333333333334
+}

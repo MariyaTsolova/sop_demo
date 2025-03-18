@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Physical disabilities: mobility issues"
+        ]
+    },
+    "situation": "B found it difficult to maintain distance from others during transitions between classes.",
+    "action": "The teacher aide used a visual cue system on the floor to guide students, including B, in maintaining proper distances during walking in lines. Reinforced with positive feedback and a small role-play session on transitions.",
+    "effect": "B adjusted well to the structured guidance and transitioned more smoothly, showing respect to fellow students' need for space.",
+    "grade": 3,
+    "topic": "Personal Space and Boundaries",
+    "len": 146.0
+}

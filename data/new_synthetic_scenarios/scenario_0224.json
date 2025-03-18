@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Dyspraxia",
+            "ADHD"
+        ]
+    },
+    "situation": "D became frustrated during a physical education class led by a substitute due to difficulty following instructions and coordination issues.",
+    "action": "The substitute split the class into smaller groups and provided step-by-step instructions with demonstrations, giving D time and space to learn the skills needed.",
+    "effect": "D showed significant improvement in his ability to participate, felt more confident, and enjoyed the rest of the lesson.",
+    "grade": 3,
+    "topic": "Substitute Staff Situations",
+    "len": 140.33333333333334
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "R was asked to participate in a group discussion but refused to speak, appearing visibly anxious.",
+    "action": "The teacher aide attempted to coax R into speaking by saying it's easy and everyone else is doing it.",
+    "effect": "R felt pressured and remained silent, becoming more withdrawn and uncomfortable in group settings.",
+    "grade": 1,
+    "topic": "Academic Stress Situations",
+    "len": 98.66666666666667
+}

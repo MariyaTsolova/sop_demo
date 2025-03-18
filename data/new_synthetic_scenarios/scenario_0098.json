@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Dyspraxia"
+        ]
+    },
+    "situation": "K had difficulty communicating her need to use the restroom during class and began to fidget.",
+    "action": "The teacher aide reprimanded K for her restlessness instead of recognizing her signals. No gestures or signs were encouraged for communication.",
+    "effect": "K felt embarrassed and uncomfortable, which could lead to anxiety about asking for help in the future.",
+    "grade": 2,
+    "topic": "Communication Breakdowns",
+    "len": 112.66666666666667
+}

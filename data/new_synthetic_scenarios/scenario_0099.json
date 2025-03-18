@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "Attachment disorder",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "J was unable to communicate his discomfort with a group seating arrangement and began isolating himself.",
+    "action": "The teacher aide did not address J's isolation, overlooking the need for a seating adjustment. No attempts were made to facilitate communication regarding his discomfort.",
+    "effect": "J felt excluded and lonely, impacting his social development and ability to collaborate with peers.",
+    "grade": 1,
+    "topic": "Communication Breakdowns",
+    "len": 124.33333333333333
+}

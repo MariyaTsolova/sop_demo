@@ -1,0 +1,17 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder",
+            "ADHD"
+        ]
+    },
+    "situation": "J was repeatedly pushing other students while standing in line for recess, appearing unaware of others' discomfort.",
+    "action": "The teacher aide gently explained the concept of personal space using a visual chart and demonstrated how to stand in line with proper spacing. Offered J a visual reminder card to keep in his pocket and modeled the behavior with him. Reinforced positive behavior with verbal praise when J stood appropriately.",
+    "effect": "J responded well to the visual explanation and verbal reinforcement, and eventually lined up correctly. The proactive strategy helped J become more mindful of personal boundaries, promoting a smoother transition.",
+    "grade": 4,
+    "topic": "Personal Space and Boundaries",
+    "len": 212.0
+}

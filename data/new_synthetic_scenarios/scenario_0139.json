@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Hearing impairment",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "D appeared overwhelmed during a classroom presentation as she was unable to follow along.",
+    "action": "The teacher aide ignored D's requests for clarification, instead telling her to watch her classmates and catch up.",
+    "effect": "D felt confused and excluded, heightening her anxiety about participating in class.",
+    "grade": 2,
+    "topic": "Academic Stress Situations",
+    "len": 95.33333333333333
+}

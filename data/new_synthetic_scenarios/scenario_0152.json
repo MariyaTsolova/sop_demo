@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Dyspraxia"
+        ]
+    },
+    "situation": "During art class, P had difficulty moving around in the cluttered work space set up for a painting project.",
+    "action": "The teacher aide directed P to maneuver through the tight space but did not help to rearrange obstacles or ensure her movements were safe.",
+    "effect": "P became discouraged and chose to sit out, avoiding the activity. She missed out on participating in class due to difficulties that could have been prevented.",
+    "grade": 2,
+    "topic": "Physical Environment Issues",
+    "len": 134.33333333333334
+}

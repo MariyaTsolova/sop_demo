@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Visual impairment",
+            "Chronic health conditions: diabetes"
+        ]
+    },
+    "situation": "N relies on a digital magnifier app for reading, which stopped working during a reading exercise. N began to panic and started crying, unable to see the text clearly.",
+    "action": "The teacher aide, unsure of how to resolve the technical issue, suggested N take a break while they figured it out. Meanwhile, N did not receive any reassuring words or alternative solutions to continue participating.",
+    "effect": "N felt isolated from the activity and remained upset for the duration of the exercise. He was unable to complete his reading and felt left behind by the rest of the class.",
+    "grade": 3,
+    "topic": "Technology Failures",
+    "len": 184.66666666666666
+}

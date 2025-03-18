@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Dyscalculia"
+        ]
+    },
+    "situation": "R was having difficulty following instructions for an arts and crafts activity during a school open house because his attention drifted frequently.",
+    "action": "The teacher aide repeatedly told R to pay attention without employing any focus-enhancing techniques or breaks.",
+    "effect": "R became more distracted and frustrated, resulting in incomplete participation in the activity, which hindered his creativity and engagement.",
+    "grade": 2,
+    "topic": "Special School Events",
+    "len": 133.0
+}

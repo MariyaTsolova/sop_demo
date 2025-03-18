@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Dyscalculia"
+        ]
+    },
+    "situation": "P regularly had difficulty transitioning from free play to math, causing him to become fidgety and argumentative.",
+    "action": "Using a countdown timer, transitions were made predictable for P. The class utilized an interactive 'transition jar' containing math games P enjoys, accessible when transitioning smoothly.",
+    "effect": "The countdown timer helped P manage his expectations around transition times. Access to a transition jar motivated him, resulting in fewer disruptions and more orderly transitions.",
+    "grade": 4,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 160.33333333333334
+}

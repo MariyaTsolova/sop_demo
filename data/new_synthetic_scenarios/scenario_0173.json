@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyslexia",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "While lining up after recess, S frequently stands too close and sometimes bumps into the student ahead of her.",
+    "action": "The teacher aide told S to 'just watch' what others were doing, but did not give clear guidance or strategies to help.",
+    "effect": "S remained confused, failing to gauge personal space and inadvertently annoyed other students.",
+    "grade": 1,
+    "topic": "Personal Space and Boundaries",
+    "len": 107.33333333333333
+}

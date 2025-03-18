@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "14",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Chronic health conditions"
+        ]
+    },
+    "situation": "K experienced sudden anxiety during a surprise fire drill and started crying.",
+    "action": "The aide quickly reassured K by walking her outside to a safe and calm spot away from the noise, using a grounding exercise to ease her anxiety.",
+    "effect": "K's anxiety subsided significantly as she felt comforted by the aide's gestures and soon returned to the group more relaxed.",
+    "grade": 5,
+    "topic": "Emotional Regulation Challenges",
+    "len": 115.0
+}

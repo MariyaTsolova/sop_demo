@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "In a spelling bee competition, L appeared shaky and hesitant to participate, repeatedly asking to step down.",
+    "action": "The teacher aide insisted that L had to participate despite her pleas, without providing emotional support or reassurance.",
+    "effect": "L reluctantly participated but was visibly distressed, affecting her performance and increasing her anxiety.",
+    "grade": 1,
+    "topic": "Academic Stress Situations",
+    "len": 112.66666666666667
+}

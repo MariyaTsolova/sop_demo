@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "R became upset during a noisy group activity, withdrawing to a corner and covering his ears.",
+    "action": "Offered noise-cancelling headphones to R and invited him to join a smaller, quieter group activity at his own pace.",
+    "effect": "R gradually rejoined the group, engaging more comfortably in the quieter setting, and had a positive social experience.",
+    "grade": 4,
+    "topic": "Executive Functioning Challenges",
+    "len": 108.66666666666667
+}

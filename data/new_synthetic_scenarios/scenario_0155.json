@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "J was distressed by the fluorescent lights flickering in the classroom, leading to a notable increase in his anxiety.",
+    "action": "The newly assigned aide turned off some lights, which made the room too dark and other students uncomfortable, without addressing J's discomfort directly.",
+    "effect": "J continued to show signs of distress and the entire class was affected by the lack of lighting. The problem wasn't resolved effectively, impacting everyone.",
+    "grade": 1,
+    "topic": "Physical Environment Issues",
+    "len": 142.66666666666666
+}

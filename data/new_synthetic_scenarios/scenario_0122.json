@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Dyscalculia"
+        ]
+    },
+    "situation": "L was overwhelmed by the number of math problems to solve and began to fidget and leave her seat frequently.",
+    "action": "The TA noticed L's struggle and allowed her to work on fewer problems at a time with scheduled short breaks for movement. She provided positive reinforcement for each correctly solved problem. This approach helped L to focus and maintain her attention on the task.",
+    "effect": "L's fidgeting reduced significantly, and she was able to solve math problems at her own pace. The short breaks improved her concentration and she became more positive about her ability to handle math assignments.",
+    "grade": 5,
+    "topic": "Academic Stress Situations",
+    "len": 194.66666666666666
+}

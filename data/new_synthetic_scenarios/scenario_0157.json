@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "6",
+        "gender": "man",
+        "diagnosis": [
+            "Sensory processing disorder",
+            "Epilepsy"
+        ]
+    },
+    "situation": "T was overwhelmed by the buzzing noise of an old heating unit in the classroom, which heightened his sensory sensitivity.",
+    "action": "The teacher aide told him to focus on his work instead of addressing the sensory issue or suggesting alternative solutions.",
+    "effect": "T was distracted and unable to complete his assignment, leading to a sense of failure. The aide's suggestion didn't reduce the sensory discomfort.",
+    "grade": 3,
+    "topic": "Physical Environment Issues",
+    "len": 130.0
+}

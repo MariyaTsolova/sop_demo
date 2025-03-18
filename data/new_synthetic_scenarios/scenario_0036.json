@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Attachment disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "L was distraught when his usual teacher was absent and a substitute took over. He continually asked for his regular teacher, disrupting the class.",
+    "action": "The substitute told L that there was nothing to be done and started the lesson without further addressing L's distress.",
+    "effect": "L felt neglected and remained emotionally unsettled for the rest of the day, which affected his ability to engage in learning activities.",
+    "grade": 2,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 134.0
+}

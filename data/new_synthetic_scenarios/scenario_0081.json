@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "L had difficulty communicating with peers during a science project, leading to misunderstandings and exclusion.",
+    "action": "The teacher aide facilitated a small group discussion where each student was given turns to speak. L was provided with key phrases cards to help structure her conversation. The aide also requested students to clarify by repeating back what L was trying to convey.",
+    "effect": "L felt more included and was able to contribute effectively to the project. Her peers were more understanding and patient, creating a more collaborative atmosphere.",
+    "grade": 5,
+    "topic": "Communication Breakdowns",
+    "len": 179.33333333333334
+}

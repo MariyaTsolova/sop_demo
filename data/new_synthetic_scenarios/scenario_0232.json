@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "During a math exercise on tablets, E's tablet battery died suddenly, leading to her feeling anxious and unable to complete the assignment, which heightened her frustration.",
+    "action": "The teacher aide quickly provided E with a paper version of the exercise and encouraged her to write down the answers by hand, offering reassurance and praise for her adaptability.",
+    "effect": "E calmed down and managed to focus on the task, showcasing improved resilience and learning that alternative solutions can still lead to achievement.",
+    "grade": 4,
+    "topic": "Technology Failures",
+    "len": 167.0
+}

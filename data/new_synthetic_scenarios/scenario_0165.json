@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Dyslexia",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "R often whispered into classmates' ears during quiet reading sessions, disrupting their concentration.",
+    "action": "The teacher aide gently reminded R about personal space by using a personal space ring as a visual aid. Emphasized listening skills and directed him towards a reading buddy where he could read aloud instead.",
+    "effect": "R learned to appreciate personal space boundaries and found a positive outlet for his need to communicate during quiet time, enhancing the reading experience for all.",
+    "grade": 4,
+    "topic": "Personal Space and Boundaries",
+    "len": 158.33333333333334
+}

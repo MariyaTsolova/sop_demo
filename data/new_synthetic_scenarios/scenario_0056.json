@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "13",
+        "gender": "man",
+        "diagnosis": [
+            "Attachment disorder",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "K was reluctant to engage in lunchtime clubs and preferred to stay in the classroom, missing opportunities to build relationships.",
+    "action": "Instead of exploring K\u2019s interests, the teacher aide suggested he join a random club.",
+    "effect": "K felt pressured rather than encouraged, and his aversion to social situations remained unchanged.",
+    "grade": 2,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 104.33333333333333
+}

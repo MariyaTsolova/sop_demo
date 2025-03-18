@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "J became agitated when the school bus arrived late, resulting in a delay to the start of his school day. J started pacing and shouting loudly, disturbing other students.",
+    "action": "The TA shouted back at J, insisting that he stop making noise. When this did not calm J, the TA gave him headphones, but did not attempt to explain the situation.",
+    "effect": "J continued to be upset and did not engage in class activities for the rest of the morning. Headphones briefly muffled the noise but did not address J's agitation or help him transition back to the routine.",
+    "grade": 2,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 179.0
+}

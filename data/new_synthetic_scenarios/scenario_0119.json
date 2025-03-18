@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Dyslexia"
+        ]
+    },
+    "situation": "S began to cry quietly during a spelling test, overwhelmed by the pressure to perform.",
+    "action": "The teacher moved on with the class, asking S to 'do her best' without providing additional assistance or a break.",
+    "effect": "S's anxiety escalated, leading to poor performance and reluctance in future tests. The emotional support needed was not given.",
+    "grade": 2,
+    "topic": "Emotional Regulation Challenges",
+    "len": 108.66666666666667
+}

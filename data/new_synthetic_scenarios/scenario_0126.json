@@ -1,0 +1,17 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyslexia",
+            "Anxiety disorders",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "S began to shut down when asked to read aloud in class, fearing embarrassment from her peers due to her dyslexia-related difficulties.",
+    "action": "The TA intervened by offering S an alternative way to participate, such as reading a smaller section quietly to her. She praised S for her effort, and they tried some multisensory reading techniques together during break time. This led S to become more comfortable with reading aloud in controlled settings.",
+    "effect": "S felt supported and less anxious about reading tasks, gradually becoming more confident. This approach allowed her to improve her reading skills and reduced her fear of peer judgment.",
+    "grade": 5,
+    "topic": "Academic Stress Situations",
+    "len": 208.33333333333334
+}

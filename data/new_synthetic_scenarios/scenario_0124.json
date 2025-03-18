@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "R became non-verbal and started crying during a group writing task, overwhelmed by the instructions that were unclear to her.",
+    "action": "The teacher aide broke down the task into smaller, manageable steps and used visual supports to illustrate each part of the writing process for R. She stayed with R to provide continual support and encouraged her to express any confusion using alternative communication methods.",
+    "effect": "R was able to complete parts of the task with guidance and reassurance, feeling less overwhelmed. Her meltdown was prevented, and she began to use visual aids more independently, communicating her progress through a picture exchange system.",
+    "grade": 5,
+    "topic": "Academic Stress Situations",
+    "len": 214.33333333333334
+}

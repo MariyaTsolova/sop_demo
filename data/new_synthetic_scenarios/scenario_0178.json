@@ -1,0 +1,15 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD"
+        ]
+    },
+    "situation": "L likes to sit extremely close to others during circle time, leading to complaints.",
+    "action": "The teacher aide repeatedly asked L to move without offering an explanation about personal space, which L did not understand.",
+    "effect": "L was confused and uncomfortable but not sure what behavior needed changing.",
+    "grade": 2,
+    "topic": "Personal Space and Boundaries",
+    "len": 94.66666666666667
+}

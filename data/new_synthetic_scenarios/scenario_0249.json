@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Dyspraxia",
+            "Epilepsy"
+        ]
+    },
+    "situation": "L had difficulty settling down in class after witnessing his friend having an epileptic seizure earlier in the day. He kept fidgeting and seemed emotionally disturbed.",
+    "action": "The teacher aide asked L to simply sit still and continue with his work, assuming he would get over it soon. They offered no additional support or follow-up.",
+    "effect": "L's inability to process the incident left him distracted for the entire day. The lack of support provided no outlet for his anxiety, impacting his ability to focus and learn during class activities.",
+    "grade": 3,
+    "topic": "External Trauma Impact",
+    "len": 174.33333333333334
+}

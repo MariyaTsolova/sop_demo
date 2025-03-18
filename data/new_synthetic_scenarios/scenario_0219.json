@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Epilepsy"
+        ]
+    },
+    "situation": "During the end-of-term play, V experienced sensory overload from the flashing lights and buzzing sounds, leading to increased stress.",
+    "action": "The teacher aide was unclear about how to calm V down, suggesting she close her eyes and take deep breaths without removing her from the overwhelming environment.",
+    "effect": "V's stress levels increased, and she had difficulty recovering quickly. This led to her missing out on the remainder of the play and feeling disconnected from her peers.",
+    "grade": 3,
+    "topic": "Special School Events",
+    "len": 154.66666666666666
+}

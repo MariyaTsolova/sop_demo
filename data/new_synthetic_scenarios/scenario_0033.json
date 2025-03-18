@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyscalculia",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "T became upset when the math teacher announced a surprise quiz due to an unexpected free hour in the schedule. T left the classroom saying she needed air.",
+    "action": "The TA decided to ignore T's departure and continued the quiz without addressing her concerns, allowing her to leave the class.",
+    "effect": "T felt abandoned by the teacher and struggled to catch up with lessons later. Her anxiety about tests increased, making future quizzes more stressful.",
+    "grade": 1,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 143.66666666666666
+}

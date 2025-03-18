@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Dyslexia",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "M started getting visibly upset during a reading exercise, unable to keep up with the text and falling behind the class.",
+    "action": "The TA sat next to M and gently guided him through the reading passage, using a coloured overlay to help reduce visual stress. She praised M for the efforts and encouraged him by highlighting the parts he managed well. M felt reassured and was able to continue the exercise with less anxiety.",
+    "effect": "M felt supported and managed to engage with the reading task more confidently. The TA's approach helped lessen his anxiety, allowing for increased participation. M completed the exercise with minimal frustration and gained a better understanding of the material.",
+    "grade": 5,
+    "topic": "Academic Stress Situations",
+    "len": 224.66666666666666
+}

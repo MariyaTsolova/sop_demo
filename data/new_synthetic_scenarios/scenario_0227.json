@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "The substitute teacher asked N to participate in a group discussion. N, overwhelmed by the social interaction, withdrew and did not respond.",
+    "action": "Instead of approaching softly, the substitute ignored N's discomfort and expressed disappointment in front of her peers for not contributing.",
+    "effect": "N felt embarrassed, her anxiety spiked, and she withdrew more, affecting her willingness to engage in future group activities. No steps were taken to aid her participation.",
+    "grade": 1,
+    "topic": "Substitute Staff Situations",
+    "len": 151.0
+}

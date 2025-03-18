@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Dyscalculia",
+            "ADHD"
+        ]
+    },
+    "situation": "D struggled to understand and use mathematical vocabulary during math lessons, causing communication breakdowns and frustration.",
+    "action": "The teacher aide implemented a vocabulary wall with visuals explaining key math terms and created interactive vocabulary games. To reinforce learning, the aide encouraged D to use these resources when communicating math concepts.",
+    "effect": "D's understanding and use of mathematical vocabulary improved, resulting in better math performance and less frustration.",
+    "grade": 4,
+    "topic": "Communication Breakdowns",
+    "len": 159.33333333333334
+}

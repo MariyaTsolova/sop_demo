@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Dyscalculia",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "W felt overwhelmed during math activities involving group tasks due to difficulty processing numbers and sensory input.",
+    "action": "The teacher aide adapted math activities with a focus on tactile learning tools and provided individual learning spaces. They also broke down problems into manageable parts and tempered sensory inputs.",
+    "effect": "W was able to focus and contribute to group math tasks, feeling less overwhelmed. The adjustments helped improve his confidence and participation, fostering a more inclusive math learning environment.",
+    "grade": 5,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 173.33333333333334
+}

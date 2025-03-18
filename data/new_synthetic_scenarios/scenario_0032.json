@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Moderate to severe learning difficulties",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "M was confused when lunch was served later than usual due to a fire drill. He began to wander around the classroom, looking for snacks in other students' backpacks.",
+    "action": "The teaching assistant sternly told M to sit down and deducted points from his classroom behavior chart as a consequence.",
+    "effect": "M felt singled out and became more withdrawn during class. He was left feeling anxious and uncertain about future changes in schedule.",
+    "grade": 2,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 139.66666666666666
+}

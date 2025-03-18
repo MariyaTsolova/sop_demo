@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyslexia",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "P had trouble deciding which colored paper to use for a project and sat idle.",
+    "action": "The TA gave no additional instructions and eventually took the paper selection task away, deciding herself.",
+    "effect": "P felt disempowered and disappointed, and was less engaged in the project thereafter.",
+    "grade": 3,
+    "topic": "Executive Functioning Challenges",
+    "len": 89.66666666666667
+}

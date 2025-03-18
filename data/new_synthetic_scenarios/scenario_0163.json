@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "K frequently interrupted peers who were trying to focus by invading their personal space.",
+    "action": "The teacher aide facilitated a group discussion on social skills and personal boundaries, incorporating role-playing activities. K was encouraged to participate and was given examples of personal space using hula hoops during playtime.",
+    "effect": "K developed better awareness and understanding of personal space through interactive learning, leading to improved peer interactions and group work contributions.",
+    "grade": 5,
+    "topic": "Personal Space and Boundaries",
+    "len": 162.0
+}

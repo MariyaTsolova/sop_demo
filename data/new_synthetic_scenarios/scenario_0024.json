@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "6",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "N became hyperactive in class when snack time was delayed unexpectedly due to a visitor.",
+    "action": "The teacher aide provided N with a quiet sensory activity to focus on while waiting, and communicated the delay calmly.",
+    "effect": "N was able to keep occupied and settle down until snack time commenced, maintaining classroom order.",
+    "grade": 3,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 102.33333333333333
+}

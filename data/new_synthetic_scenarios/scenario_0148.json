@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "I found the crowded hallways between classes overwhelming, often resulting in panic attacks.",
+    "action": "The aide arranged a schedule where I could leave earlier or later to avoid the rush, and provided a stress ball to use while moving through the hallway.",
+    "effect": "I moved through the halls with more confidence and less panic, improving her comfort in attending classes.",
+    "grade": 4,
+    "topic": "Physical Environment Issues",
+    "len": 116.66666666666667
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "During an interactive math lesson using a smartboard, the board malfunctions and stops responding to touch. M grew increasingly anxious and started pacing around the classroom, vocalizing loudly.",
+    "action": "The teacher aide tried restarting the board several times while ignoring M's distress. M was then asked to sit quietly until the board was operational again without any attempt to redirect or reassure.",
+    "effect": "M remained anxious and agitated throughout the lesson, unable to focus on alternative activities. This led to disruption not only for him but also for the rest of the class.",
+    "grade": 1,
+    "topic": "Technology Failures",
+    "len": 189.66666666666666
+}

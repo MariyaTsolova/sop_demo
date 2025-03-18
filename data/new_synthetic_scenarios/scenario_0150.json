@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "M was in the classroom when the fire alarm unexpectedly went off, creating a very loud noise that scared him.",
+    "action": "The teacher aide attempted to cover M's ears with her hands, but M slapped her hands away and yelled louder. She then tried to calm him down by speaking to him over the noise, which was ineffective as he couldn't hear her clearly.",
+    "effect": "M became increasingly agitated and started to cry, making it difficult to evacuate the room safely. The aide's actions didn't help M to calm down or respond to what needed to happen next.",
+    "grade": 2,
+    "topic": "Physical Environment Issues",
+    "len": 175.33333333333334
+}

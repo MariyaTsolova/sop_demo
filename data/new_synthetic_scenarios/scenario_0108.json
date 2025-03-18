@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Dyspraxia",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "V showed signs of distress and refused to participate in an art class due to sensitivity to paint textures.",
+    "action": "The aide provided alternative materials that V found more comfortable, such as pastel crayons, and created a sensory-friendly space where V could safely explore art.",
+    "effect": "V became involved in the creative process while remaining calm, which facilitated his engagement and participation without distress.",
+    "grade": 5,
+    "topic": "Emotional Regulation Challenges",
+    "len": 134.66666666666666
+}

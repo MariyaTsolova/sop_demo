@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "woman",
+        "diagnosis": [
+            "Attachment disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "G felt over-stimulated during a crowded school sports event.",
+    "action": "The teacher aide told G to take deep breaths and encouraged her to rejoin her friends in the stands, but did not provide a quieter space to recover.",
+    "effect": "G\u2019s anxiety did not diminish, preventing her from re-engaging with the event and leaving her feeling isolated and unsupported.",
+    "grade": 3,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 111.33333333333333
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "During a fire drill, T was overwhelmed by the loud alarm sound and chaotic movement of classmates.",
+    "action": "The teacher aide instructed T to stay calm and keep up with the line without addressing the specific discomfort or offering ear protection.",
+    "effect": "T froze in place, unable to move or speak due to the overwhelming sensory input and lack of support.",
+    "grade": 3,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 112.33333333333333
+}

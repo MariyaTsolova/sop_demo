@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Sensory processing disorder",
+            "ADHD"
+        ]
+    },
+    "situation": "G became agitated and distracted during class because the fluorescent lights in the room were too bright and buzzing.",
+    "action": "The teacher aide dimmed some of the lights and provided G with a desk lamp that had a softer, warmer light. They also allowed G to use noise-cancelling headphones to block out the noise.",
+    "effect": "G was able to focus better and complete her tasks at a much improved rate with the adjusted lighting and reduced noise distractions.",
+    "grade": 4,
+    "topic": "Physical Environment Issues",
+    "len": 145.0
+}

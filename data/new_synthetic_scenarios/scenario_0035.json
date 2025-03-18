@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "ADHD"
+        ]
+    },
+    "situation": "R was overwhelmed when the planned school assembly was unexpectedly canceled, and all students were sent back to their classrooms.",
+    "action": "The teacher told R to 'deal with it,' and redirected focus to the lesson without providing any support to adjust to the schedule change.",
+    "effect": "R's inability to process the abrupt change led to increased fidgeting and a lack of concentration for the entire lesson. She needed more time than usual to settle down afterward.",
+    "grade": 1,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 148.0
+}

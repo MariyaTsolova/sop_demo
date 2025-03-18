@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Epilepsy"
+        ]
+    },
+    "situation": "G experienced stress from unpredictable changes in class routines, affecting her ability to interact with peers during group projects.",
+    "action": "The teacher aide maintained a predictable schedule for G and used a visual timetable to prepare her for any changes. They encouraged peer support by having a classmate help reinforce the planned routines.",
+    "effect": "G managed changes more effectively, reducing her stress levels and allowing her to participate in group projects. The structured environment and social support improved G\u2019s interaction capabilities and engagement with peers.",
+    "grade": 4,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 187.33333333333334
+}

@@ -1,0 +1,17 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Moderate to severe learning difficulties",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "F became distressed in a music class when the volume of the instruments was turned up to high.",
+    "action": "The teacher aide asked F to pay attention and try to enjoy the music like everyone else, dismissing his visible discomfort.",
+    "effect": "F covered his ears, becoming more agitated and unable to participate or engage in the class activity.",
+    "grade": 2,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 106.0
+}

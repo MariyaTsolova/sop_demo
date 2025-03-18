@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "Visual impairment",
+            "ADHD"
+        ]
+    },
+    "situation": "M was struggling to navigate the cluttered art room, leading to frustration and tripping over materials.",
+    "action": "The aide worked with the class to create clear, clutter-free pathways and labeled important items with tactile markers.",
+    "effect": "M was more comfortable moving around and could participate actively in art activities without unnecessary stress.",
+    "grade": 3,
+    "topic": "Physical Environment Issues",
+    "len": 112.0
+}

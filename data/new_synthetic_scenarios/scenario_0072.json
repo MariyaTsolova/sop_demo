@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Moderate to severe learning difficulties",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "F became distressed during the transition from lunchtime back to the classroom, often crying and resisting.",
+    "action": "The teacher aide attempted to physically guide F back to the classroom without explaining or consulting her about her needs, causing more resistance.",
+    "effect": "F became more upset and the resistance to transitions increased over time, making the process more difficult for all involved.",
+    "grade": 1,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 127.33333333333333
+}

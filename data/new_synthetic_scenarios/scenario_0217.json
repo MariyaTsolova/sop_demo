@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Moderate to severe learning difficulties",
+            "Visual impairment"
+        ]
+    },
+    "situation": "M struggled to see and participate in the sports day activities as she wasn't provided with the necessary visual aids.",
+    "action": "The teacher aide did not liaise with the main teacher for assistive tools, and instead told M to just do her best without proper support or guidance.",
+    "effect": "M couldn't engage in the activities, felt excluded from the event, and the situation negatively impacted her self-esteem and social interactions.",
+    "grade": 3,
+    "topic": "Special School Events",
+    "len": 137.33333333333334
+}

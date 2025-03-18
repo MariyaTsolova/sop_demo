@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Dyspraxia"
+        ]
+    },
+    "situation": "In a crowded hallway, Q became anxious and disoriented.",
+    "action": "The aide asked Q to wait until the hallway cleared, without offering any short-term coping method.",
+    "effect": "Q's anxiety increased, making it difficult for him to regain composure, affecting his transition to the next class.",
+    "grade": 1,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 89.33333333333333
+}

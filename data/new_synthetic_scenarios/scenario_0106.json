@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "13",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Dyscalculia"
+        ]
+    },
+    "situation": "J became frustrated and kicked a chair over after struggling with a complex math problem.",
+    "action": "The aide introduced a calming time-out space and discussed the problem in parts, using a visual and tactile method to break down the task.",
+    "effect": "J utilized the calming space and regained focus, successfully completing the math problem with the tactile aids, reducing his stress effectively.",
+    "grade": 4,
+    "topic": "Emotional Regulation Challenges",
+    "len": 124.0
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "Moderate to severe learning difficulties",
+            "Autism Spectrum Disorder"
+        ]
+    },
+    "situation": "E wouldn't start her writing assignment, crumpling up paper and expressing distress.",
+    "action": "Introduced a structured template outlining the writing task in simple steps, providing verbal prompts and visual aids.",
+    "effect": "E managed to follow the steps and completed her assignment with notable improvements, becoming more engaged in the activity.",
+    "grade": 3,
+    "topic": "Executive Functioning Challenges",
+    "len": 108.66666666666667
+}

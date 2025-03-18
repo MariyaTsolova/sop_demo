@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "P covered her ears and crouched under her desk when the class became particularly loud after a surprise birthday party broke out, causing sensory overload.",
+    "action": "The teacher aide calmly approached P and offered her ear defenders, whispering comforting words. They moved to a quiet corner of the room to decompress with her favorite book until the noise subsided.",
+    "effect": "P was able to rejoin the party once it quieted down and even socially interacted with peers, demonstrating controlled sensory responses.",
+    "grade": 5,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 163.66666666666666
+}

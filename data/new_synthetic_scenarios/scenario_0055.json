@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "M refused to participate in a role-play exercise with her peers, feeling anxious about performing in front of others.",
+    "action": "The teacher insisted that M join in without considering her anxiety levels or alternative ways to involve her.",
+    "effect": "M became more withdrawn and nervous, reinforcing her fear of peer interactions rather than overcoming it.",
+    "grade": 2,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 110.66666666666667
+}

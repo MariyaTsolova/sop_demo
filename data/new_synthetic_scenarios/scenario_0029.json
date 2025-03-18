@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Visual impairment",
+            "Dyspraxia"
+        ]
+    },
+    "situation": "S was disturbed when the reading period switched to an outdoor activity suddenly due to a sunny day.",
+    "action": "The teacher aide gave S options to choose how to participate outdoors, like sitting in a shaded area with support for mobility.",
+    "effect": "S felt empowered by the choice and enjoyed the outdoor activity safely, enhancing her participation.",
+    "grade": 4,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 109.0
+}

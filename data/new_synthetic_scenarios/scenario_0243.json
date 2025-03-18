@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Dyslexia",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "K refused to participate in an outdoor group activity after a fire drill which brought back traumatic memories from his past experience.",
+    "action": "The teacher aide invited K to discuss his feelings and provided reassurance by explaining the safety procedures post-drill, equipping him with a sense of security.",
+    "effect": "K's anxiety lessened after understanding the safety procedures and he rejoined the group activity with more confidence. The supportive intervention helped restore K's sense of safety.",
+    "grade": 3,
+    "topic": "External Trauma Impact",
+    "len": 160.66666666666666
+}

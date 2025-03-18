@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "6",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Hearing impairment"
+        ]
+    },
+    "situation": "J became agitated in the brightly lit art room when the fluorescent lights flickered.",
+    "action": "The teacher aide continued with the activity instructions, telling J to ignore the lights as they came back on shortly.",
+    "effect": "J couldn\u2019t concentrate on his task, continuing to express distress and discomfort, which led to him leaving the room.",
+    "grade": 2,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 107.0
+}

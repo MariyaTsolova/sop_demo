@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Dysgraphia"
+        ]
+    },
+    "situation": "P was struggling with an essay assignment, losing focus frequently and staring off into space.",
+    "action": "The teacher aide simply reprimanded P to pay attention and write faster without offering strategies to help focus.",
+    "effect": "P's essay remained incomplete, leading to feelings of inadequacy and frustration.",
+    "grade": 3,
+    "topic": "Academic Stress Situations",
+    "len": 96.33333333333333
+}

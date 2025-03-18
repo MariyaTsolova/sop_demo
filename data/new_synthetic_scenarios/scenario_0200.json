@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "S got anxious and accidentally pulled the fire alarm while trying to reach for something on the wall.",
+    "action": "The TA quickly calmed S down by taking him to a quieter room, reassuring him with a calm voice, and using deep breathing exercises.",
+    "effect": "S calmed down significantly after the TA's intervention, and the fire alarm was reset with minimal disruption to the school\u2019s routine.",
+    "grade": 4,
+    "topic": "Emergency Situations",
+    "len": 122.0
+}

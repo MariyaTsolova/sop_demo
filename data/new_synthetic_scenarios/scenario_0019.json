@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Dyslexia"
+        ]
+    },
+    "situation": "B was overwhelmed by the chaos and noise during a classroom group activity.",
+    "action": "The available staff member told B to just focus on the task and ignore distractions, not acknowledging his sensory challenge.",
+    "effect": "B's focus further deteriorated, isolating himself from his peers and becoming increasingly distressed, unable to participate.",
+    "grade": 2,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 108.33333333333333
+}

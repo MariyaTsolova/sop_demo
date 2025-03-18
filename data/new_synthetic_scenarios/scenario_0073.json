@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "B would frequently become restless and distracted when transitioning from indoor activities to outdoor recess.",
+    "action": "The teacher aide stood quietly watching B but did not intervene or provide a visual cue or routine to aid the transition.",
+    "effect": "B's behavior escalated, leading to a loss of valuable play time and increased frustration.",
+    "grade": 2,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 107.0
+}

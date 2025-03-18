@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Attachment disorder",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "R began clinging to the teacher when the class was going to an unfamiliar part of the school.",
+    "action": "The aide acknowledged R's discomfort and provided reassuring physical support while talking softly to reassure him about the new location, showing a picture of the destination.",
+    "effect": "R felt reassured and was able to move to the unfamiliar location with the class while holding a comforting support item brought from the classroom.",
+    "grade": 3,
+    "topic": "Emotional Regulation Challenges",
+    "len": 138.66666666666666
+}

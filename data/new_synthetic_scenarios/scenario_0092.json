@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "P was unable to articulate her discomfort with loud noises during assembly and started fidgeting and talking loudly.",
+    "action": "The teacher aide instructed P to be quiet without acknowledging her distress. No ear defenders or calming technique was applied.",
+    "effect": "P's behavior escalated, increasing her agitation, and the noise level impacted other students who found it difficult to follow the assembly.",
+    "grade": 2,
+    "topic": "Communication Breakdowns",
+    "len": 128.0
+}

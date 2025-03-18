@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "M was beginning to withdraw from class discussions due to his fear of making mistakes when speaking.",
+    "action": "The teacher aide implemented a buddy system, pairing M with a supportive peer. With the buddy, M practiced expressing his thoughts before sharing with the class. The aide also offered positive reinforcement for his attempts regardless of mistakes.",
+    "effect": "M gained more confidence in participating in class, reducing his anxiety and encouraging his verbal engagement.",
+    "grade": 5,
+    "topic": "Communication Breakdowns",
+    "len": 152.66666666666666
+}

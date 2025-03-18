@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "M was trying to follow a lesson using a text-to-speech tablet but the device malfunctioned, causing her to miss out on instructions and become confused.",
+    "action": "The teacher aide promptly provided M with paper copies of the lesson material and used simple language and gestures to explain the key points directly.",
+    "effect": "M was able to continue participating in the lesson without frustration, as the aide's intervention ensured she received the necessary information, demonstrating the importance of adaptability.",
+    "grade": 5,
+    "topic": "Technology Failures",
+    "len": 165.0
+}

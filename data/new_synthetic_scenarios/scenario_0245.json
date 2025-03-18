@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "S had difficulty entering the classroom after witnessing a minor car accident outside the school. He became extremely anxious and sat on the floor at the entrance, refusing to join the class.",
+    "action": "The teacher aide attempted to verbally encourage S to stand up and come inside, repeating instructions loudly. When S did not respond, the aide left him alone while attending to other tasks.",
+    "effect": "S remained outside the classroom for over an hour, missing out on important class activities. The loud approach contributed to S's anxiety, delaying his readiness to engage.",
+    "grade": 1,
+    "topic": "External Trauma Impact",
+    "len": 184.66666666666666
+}

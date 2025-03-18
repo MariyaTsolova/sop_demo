@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "Attachment disorder",
+            "Emotional regulation challenges"
+        ]
+    },
+    "situation": "D became visibly upset and left his desk, disrupting the class after receiving feedback on his math assignment.",
+    "action": "The teacher ignored D's reaction, continuing with the lesson without addressing his emotional state.",
+    "effect": "D remained detached and disruptive throughout the lesson. His distress wasn't acknowledged, affecting his performance and engagement.",
+    "grade": 2,
+    "topic": "Emotional Regulation Challenges",
+    "len": 114.66666666666667
+}

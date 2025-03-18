@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Hearing impairment",
+            "Attachment disorder"
+        ]
+    },
+    "situation": "During the transition from storytime to gym class, C often lagged behind and appeared confused.",
+    "action": "Without tailored communication, the teacher aide expected C to keep pace with verbal prompts, which he could not follow effectively.",
+    "effect": "C missed parts of gym class, feeling isolated and neglected due to unmet communication needs.",
+    "grade": 3,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 106.66666666666667
+}

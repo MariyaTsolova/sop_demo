@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "R struggled with group tasks in the classroom because of difficulty staying on task and understanding instructions.",
+    "action": "The teacher aide implemented visual step-by-step guides and facilitated small group activities where R could focus better. They also ensured frequent positive reinforcement for task completion.",
+    "effect": "R's ability to concentrate improved, and he stayed on task more consistently. He began contributing ideas and cooperating with peers, leading to his inclusion in group work and enhancing teamwork skills.",
+    "grade": 5,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 170.33333333333334
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Hearing impairment",
+            "Attachment disorder"
+        ]
+    },
+    "situation": "E constantly clings to the teacher aide's side during break time, making other students feel overlooked.",
+    "action": "The teacher aide asked E to play elsewhere but did not offer an alternative way to feel secure, which led to E feeling rejected and alone.",
+    "effect": "E felt abandoned, increasing his attachment issues rather than addressing the need for personal space.",
+    "grade": 3,
+    "topic": "Personal Space and Boundaries",
+    "len": 114.66666666666667
+}

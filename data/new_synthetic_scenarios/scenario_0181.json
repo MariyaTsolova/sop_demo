@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "G refused to transition from recess to math class and sat under the playground slide, upset and unresponsive.",
+    "action": "Used a visual timer to show G how much time she had left to play, then offered to hold her hand and walk together to class.",
+    "effect": "G responded well to the visual timer and felt reassured holding the teacher's hand, allowing her to transition smoothly to math class.",
+    "grade": 5,
+    "topic": "Executive Functioning Challenges",
+    "len": 122.0
+}

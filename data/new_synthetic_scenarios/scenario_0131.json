@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Dyscalculia"
+        ]
+    },
+    "situation": "T was given a math quiz, and halfway through, he started tapping his pencil on the desk loudly and disrupting classmates.",
+    "action": "The teacher aide sternly instructed T to stop tapping and finish the quiz without acknowledging his difficulty with the material.",
+    "effect": "T continued to tap, feeling more anxious and disconnected from the task, and ultimately did not complete the quiz.",
+    "grade": 1,
+    "topic": "Academic Stress Situations",
+    "len": 121.33333333333333
+}

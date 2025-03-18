@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Dyslexia"
+        ]
+    },
+    "situation": "J was unsettled and unable to focus after a sudden change in the day's timetable due to unforeseen weather conditions.",
+    "action": "The teacher aide sat down with J to go over a revised schedule using colour-coded blocks to visualize the new plan.",
+    "effect": "J regained his focus and was able to participate actively in the day's activities, feeling reassured by the structured visual guide.",
+    "grade": 4,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 121.66666666666667
+}

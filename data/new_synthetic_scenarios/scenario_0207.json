@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Epilepsy"
+        ]
+    },
+    "situation": "During a PE class, O collapsed to the ground in the middle of a game and began seizing.",
+    "action": "The teacher aide, unsure of how to handle a seizure, panicked and shouted for others to stay back while attempting to hold O still, which could potentially cause harm.",
+    "effect": "The situation drew unnecessary attention, adding to the chaos, while O was left without appropriate care until medical help arrived. Training on first aid for seizures was later requested for staff.",
+    "grade": 2,
+    "topic": "Emergency Situations",
+    "len": 150.66666666666666
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "M struggled to transition from playtime to classroom activities, becoming frustrated and throwing his backpack across the room.",
+    "action": "Gently guided M to a quiet corner and used visual schedules to help him understand the transition. Allowed M to choose a calming activity like coloring before returning to his desk.",
+    "effect": "M calmed down and was able to join the class activity after a short break, showing improved focus and reduced frustration.",
+    "grade": 4,
+    "topic": "Executive Functioning Challenges",
+    "len": 143.33333333333334
+}

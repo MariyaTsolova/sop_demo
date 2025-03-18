@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Hearing impairment"
+        ]
+    },
+    "situation": "C suddenly started hyperventilating in the middle of a math test upon hearing loud alarms from a fire drill she wasn't prepared for due to her hearing impairment.",
+    "action": "The teacher aide, not realizing the cause initially, dismissed C's distress by telling her to calm down and continue with the test without addressing her needs.",
+    "effect": "C's anxiety worsened until another teacher stepped in and understood her need to be escorted out to safety and briefed on the situation. C felt overwhelmed and unsupported initially, affecting her confidence in a safe school environment.",
+    "grade": 1,
+    "topic": "Emergency Situations",
+    "len": 186.33333333333334
+}

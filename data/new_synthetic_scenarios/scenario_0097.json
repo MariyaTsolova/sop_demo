@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Dyscalculia",
+            "ADHD"
+        ]
+    },
+    "situation": "F was unable to explain that he didn't understand the math problem, so he started doodling instead.",
+    "action": "The teacher aide ignored the doodling, assuming F was simply disinterested, and did not offer any additional explanation.",
+    "effect": "F fell behind on the math work, missing an opportunity for targeted support and further emphasizing his learning difficulties.",
+    "grade": 2,
+    "topic": "Communication Breakdowns",
+    "len": 115.33333333333333
+}

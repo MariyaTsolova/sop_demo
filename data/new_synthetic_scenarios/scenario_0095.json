@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "E couldn't express that she didn't want to participate in a loud group activity and started to cover her ears.",
+    "action": "The teacher aide insisted E join the group without offering noise-reduction headphones or a quieter alternative activity.",
+    "effect": "E became more anxious and upset, eventually leaving the room to calm herself, missing out on the learning opportunity and feeling unsupported.",
+    "grade": 3,
+    "topic": "Communication Breakdowns",
+    "len": 124.33333333333333
+}

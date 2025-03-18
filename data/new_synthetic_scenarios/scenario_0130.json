@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyslexia",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "M was given a reading assignment in class and immediately began to cry, stating that she couldn't do it.",
+    "action": "The teacher aide asked M to calm down and just try her best without offering any additional support or tools.",
+    "effect": "M continued to cry and was unable to complete the assignment, reinforcing her anxiety around reading assignments and impacting her confidence.",
+    "grade": 2,
+    "topic": "Academic Stress Situations",
+    "len": 118.33333333333333
+}

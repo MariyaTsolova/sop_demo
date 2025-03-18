@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Moderate to severe learning difficulties",
+            "Physical disabilities: mobility challenges"
+        ]
+    },
+    "situation": "During a mandatory earthquake drill, M was unable to duck and cover promptly due to his mobility challenges, causing worry and confusion.",
+    "action": "The teacher aide, having noted the concern, provided a sturdy, padded mat for M to slide to the safety of the desk, ensuring his head was protected.",
+    "effect": "M was able to participate safely in the drill which increased his confidence and reduced his stress about future drills.",
+    "grade": 3,
+    "topic": "Emergency Situations",
+    "len": 135.0
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "13",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyspraxia",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "During a physical education class involving coordination skills, K was having difficulty keeping up.",
+    "action": "The teacher aide encouraged K to keep trying without modifying the activity or providing additional support.",
+    "effect": "K became frustrated and self-conscious, further reducing her willingness to engage in physical activities.",
+    "grade": 1,
+    "topic": "Academic Stress Situations",
+    "len": 104.66666666666667
+}

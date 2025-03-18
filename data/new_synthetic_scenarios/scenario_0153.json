@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Dyspraxia",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "While transitioning between classes, R felt overwhelmed in a crowded hallway and stopped, blocking traffic.",
+    "action": "The teacher aide asked R to snap out of it and hurry up, a strategy that showed no empathy towards his discomfort in crowded spaces.",
+    "effect": "R froze and became more stressed, unable to proceed, contributing to congestion. The aide\u2019s approach failed to support R\u2019s transition.",
+    "grade": 1,
+    "topic": "Physical Environment Issues",
+    "len": 124.33333333333333
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "G often hugs her peers without warning, making them uncomfortable.",
+    "action": "The teacher aide admonished G for hugging, which embarrassed her in front of the class and did not explain the notion of consent or personal space.",
+    "effect": "G felt confused and isolated, unsure of how to socialize appropriately.",
+    "grade": 2,
+    "topic": "Personal Space and Boundaries",
+    "len": 94.66666666666667
+}

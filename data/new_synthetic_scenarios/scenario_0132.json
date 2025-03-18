@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "During a vocabulary test, E began to hum loudly and display repetitive movements, indicating stress.",
+    "action": "The teacher aide asked E to stop and focus on the test without providing alternatives or breaks.",
+    "effect": "E's humming got louder, leading to further distractions for herself and classmates, and she was unable to complete the test.",
+    "grade": 2,
+    "topic": "Academic Stress Situations",
+    "len": 106.66666666666667
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Dyspraxia"
+        ]
+    },
+    "situation": "M was asked to put on her coat and line up for recess but froze and couldn't begin the task.",
+    "action": "The TA simply repeated the instruction more loudly, expecting M to comply without offering steps or support.",
+    "effect": "M became more anxious and did not manage to put on her coat, resulting in further delay for her and her classmates.",
+    "grade": 2,
+    "topic": "Executive Functioning Challenges",
+    "len": 105.0
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Dyslexia",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "During a spelling competition, T felt anxious and began to panic because he was unable to spell the words correctly in front of the class.",
+    "action": "The teacher aide did not have a plan for such situations and simply told T to try his best. They failed to provide reassurance or alter the task to decrease his anxiety.",
+    "effect": "T's anxiety escalated, and he left the competition in tears, feeling embarrassed and unsupported by the adults present.",
+    "grade": 2,
+    "topic": "Special School Events",
+    "len": 142.0
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Dyscalculia"
+        ]
+    },
+    "situation": "K had difficulty organizing his thoughts and materials for a math project, leaving his workspace cluttered and chaotic.",
+    "action": "Assisted by organizing K\u2019s materials and creating a checklist of tasks to complete, emphasizing order and clarity.",
+    "effect": "K gained a clearer understanding of the steps needed, which helped him focus better and more efficiently complete his math project.",
+    "grade": 4,
+    "topic": "Executive Functioning Challenges",
+    "len": 121.33333333333333
+}

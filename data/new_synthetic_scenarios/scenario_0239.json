@@ -1,0 +1,17 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyscalculia",
+            "Epilepsy",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "During a math game on a computer, the system crashed, causing L to lose her progress. L, who has anxiety issues, began fidgeting and expressing concern about not being able to catch up.",
+    "action": "Without addressing L's anxiety, the teacher aide attempted to explain the technical problem in detail, which only confused and overwhelmed her further. The aide left L waiting while they attended to other students with similar issues.",
+    "effect": "L's anxiety was exacerbated, leading her to withdraw from participating in the activity altogether. This incident diminished her confidence in using technology for learning in future sessions.",
+    "grade": 1,
+    "topic": "Technology Failures",
+    "len": 203.66666666666666
+}

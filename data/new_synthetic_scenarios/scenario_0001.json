@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "During the school assembly, L started feeling overwhelmed by the crowded hall and loud announcements. L began fidgeting and repeatedly tapped her feet on the floor.",
+    "action": "The teacher aide instructed L to stop tapping her feet and sit still without acknowledging her discomfort. She then moved L to the back of the hall where it was even noisier due to the speakers.",
+    "effect": "L's anxiety increased and she became more restless, eventually leaving the assembly without permission. The response did not help L manage her sensory overload and heightened her stress.",
+    "grade": 1,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 181.33333333333334
+}

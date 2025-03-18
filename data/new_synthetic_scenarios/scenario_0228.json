@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Physical disabilities: Use of mobility aids",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "O was in need of assistance to move from his desk to a different part of the classroom for group work, but the substitute staff was unaware of his mobility challenges.",
+    "action": "The substitute asked O to join the group quickly without offering help. Seeing O struggle, other students attempted to assist, which created a chaotic environment in the class.",
+    "effect": "O felt unsupported and embarrassed, and the unnecessary chaos interrupted the lesson for everyone. It highlighted the substitute's lack of preparation and understanding of O's needs.",
+    "grade": 1,
+    "topic": "Substitute Staff Situations",
+    "len": 175.0
+}

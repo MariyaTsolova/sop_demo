@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyslexia",
+            "Attachment disorder"
+        ]
+    },
+    "situation": "R holds hands with her friends very tightly without asking, which causes distress.",
+    "action": "The teacher aide reprimanded R sharply, causing embarrassment but did not explain the importance of consent.",
+    "effect": "R felt alienated and was less willing to engage in social activities.",
+    "grade": 3,
+    "topic": "Personal Space and Boundaries",
+    "len": 86.33333333333333
+}

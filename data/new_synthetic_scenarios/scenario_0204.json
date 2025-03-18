@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "Hearing impairment",
+            "Autism Spectrum Disorder"
+        ]
+    },
+    "situation": "During a lockdown drill, T could not hear the verbal instructions over the intercom, leading him to remain disoriented and unsure of where to go.",
+    "action": "The teacher aide used sign language and visual cue cards to guide T to a safe zone in the classroom.",
+    "effect": "T was able to understand the situation clearly and felt more secure knowing he had a system of communication during emergencies.",
+    "grade": 5,
+    "topic": "Emergency Situations",
+    "len": 124.33333333333333
+}

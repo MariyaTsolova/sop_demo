@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Emotional regulation challenges",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "P became upset and unresponsive when teased by peers during recess.",
+    "action": "The playground supervisor told P to ignore the teasing and continue playing without further intervention or support.",
+    "effect": "P's emotional state worsened, and he chose to sit alone for the remainder of the recess. Peer relationships were impacted negatively.",
+    "grade": 2,
+    "topic": "Emotional Regulation Challenges",
+    "len": 105.33333333333333
+}

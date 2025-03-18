@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "Dyscalculia",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "T was uncomfortable and refused to work because his mathematics support session was moved earlier without prior notice.",
+    "action": "The teacher aide took T aside to explain why the schedule changed, and reassured him with additional support through the session.",
+    "effect": "T initially resisted but with understanding and support, he successfully completed the session, feeling more confident.",
+    "grade": 5,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 122.33333333333333
+}

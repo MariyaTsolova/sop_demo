@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "M often gets too close to other students during group activities, leading to discomfort among his peers.",
+    "action": "The teacher aide initially ignored M's behavior assuming it would resolve itself. When the discomfort continued, she moved M to a different group without explaining the concept of personal space, which left M confused.",
+    "effect": "M remained unsure about what he had done wrong, and the other students were still wary of interacting with him during activities.",
+    "grade": 2,
+    "topic": "Personal Space and Boundaries",
+    "len": 150.33333333333334
+}

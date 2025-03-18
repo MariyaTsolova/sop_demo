@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Attachment disorder"
+        ]
+    },
+    "situation": "M was clinging tightly to another student during group work, causing discomfort amongst peers.",
+    "action": "The teacher aide approached M with empathy and suggested a brief break to discuss her feelings privately. M was offered a fidget toy to provide comfort while reinforcing rules of personal boundaries through a social story.",
+    "effect": "This intervention helped M feel reassured, allowing her to return to the group and maintain a respectful distance during activity sessions.",
+    "grade": 5,
+    "topic": "Personal Space and Boundaries",
+    "len": 151.66666666666666
+}

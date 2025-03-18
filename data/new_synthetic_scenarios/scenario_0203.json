@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Epilepsy",
+            "Dyslexia"
+        ]
+    },
+    "situation": "A fire drill unexpectedly coincided with N having a mild seizure.",
+    "action": "The secondary school took her to the nurse's office and stayed with her, whispering soothing words and covering her with a light blanket until she recovered.",
+    "effect": "After resting quietly, N felt supported and returned to class with the TA, who stayed with her to monitor her comfort level.",
+    "grade": 4,
+    "topic": "Emergency Situations",
+    "len": 115.33333333333333
+}

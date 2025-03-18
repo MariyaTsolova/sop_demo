@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "H was upset when his story time was moved to the afternoon instead of its usual morning slot. He sat under the table refusing to come out.",
+    "action": "The TA coaxed H out with a lollipop without discussing the change or addressing his feelings about the schedule disruption.",
+    "effect": "H complied temporarily but remained agitated after the bribery wore off, showing prolonged negative behavior throughout the day.",
+    "grade": 3,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 129.66666666666666
+}

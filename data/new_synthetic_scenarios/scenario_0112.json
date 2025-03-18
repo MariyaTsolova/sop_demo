@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "During a group reading session, B began to sob and screamed after being asked to read aloud despite showing previous discomfort.",
+    "action": "The TA told B to 'just try' without addressing his distress, leaving him sitting with the group while moving on without further engagement.",
+    "effect": "B's distress was not addressed, leading to a disruption in the reading session. B withdrew further and avoided eye contact for the remainder of the class.",
+    "grade": 2,
+    "topic": "Emotional Regulation Challenges",
+    "len": 140.33333333333334
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Attachment disorder",
+            "ADHD"
+        ]
+    },
+    "situation": "T became distressed during recess after witnessing a playground accident, showing signs of agitation and verbal aggression.",
+    "action": "The teacher aide approached T with a composed demeanor, acknowledging her emotions and offering to talk about what she saw, allowing her to express her feelings in a safe space.",
+    "effect": "T calmed down after being given the opportunity to talk and was able to return to class without further distress. The attentive approach helped T process the external trauma she witnessed.",
+    "grade": 4,
+    "topic": "External Trauma Impact",
+    "len": 162.66666666666666
+}

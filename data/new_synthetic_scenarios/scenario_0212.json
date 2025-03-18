@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "During science fair presentation day, L was unable to speak in front of the class due to anxiety, becoming visibly upset when his turn came.",
+    "action": "The teacher aide discreetly approached L, encouraging him to take deep breaths and offering to stand by him while he presented his project. L was also given the option to present in a quieter setting with fewer peers.",
+    "effect": "With this support, L managed to give his presentation to a smaller group, which boosted his confidence and reduced his anxiety significantly.",
+    "grade": 4,
+    "topic": "Special School Events",
+    "len": 166.0
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "L started crying and shouting loudly in the classroom after being unable to finish his drawing during art time.",
+    "action": "The TA asked L to calm down but did not provide any additional support or alternative activities. After some time, another teacher took L out of the room to try and calm him down.",
+    "effect": "L became more distressed and continued shouting. The situation disrupted the class, and other students seemed distracted and concerned.",
+    "grade": 2,
+    "topic": "Emotional Regulation Challenges",
+    "len": 141.66666666666666
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "After the school's fire alarm went off unexpectedly, L started rocking back and forth, appearing disoriented and frightened due to the sudden noise.",
+    "action": "The teacher aide guided L to a quieter part of the school and offered a weighted blanket to help her feel grounded. Soft music through her headphones was also provided.",
+    "effect": "L gradually calmed down with the sensory inputs, and after a short time, was able to return to her classroom with a greater sense of stability. The thoughtful combination of strategies helped mitigate the immediate impact of the external stimulus.",
+    "grade": 5,
+    "topic": "External Trauma Impact",
+    "len": 187.66666666666666
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyslexia",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "J became anxious and overwhelmed during a reading exercise, dropping her book and retreating to a corner of the classroom.",
+    "action": "Approached J calmly, suggesting the use of a reading guide with a highlighted section to reduce visual stress. Offered positive reinforcement for attempting the work.",
+    "effect": "J picked up the book again and used the reading guide, managing to read several paragraphs independently and gaining confidence in reading aloud.",
+    "grade": 4,
+    "topic": "Executive Functioning Challenges",
+    "len": 144.33333333333334
+}

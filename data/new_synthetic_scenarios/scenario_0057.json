@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyspraxia",
+            "Epilepsy"
+        ]
+    },
+    "situation": "J felt left out during PE sessions due to her coordination difficulties and fear of risk in activities.",
+    "action": "The aide only encouraged J from the sidelines, without adapting activities or providing structured support.",
+    "effect": "J continued to feel inadequate and distanced herself from participating with her classmates.",
+    "grade": 3,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 100.66666666666667
+}

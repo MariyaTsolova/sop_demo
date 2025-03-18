@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Dyslexia"
+        ]
+    },
+    "situation": "H was restless and found it difficult to concentrate during a writing task, causing frustration and incomplete work.",
+    "action": "The TA employed a multisensory approach, where H used typing on a keyboard with word prediction software to assist with his writing. She allowed H frequent movement breaks to release built-up energy and refocus.",
+    "effect": "H completed the writing task with fewer errors thanks to the supportive technology and managed his restlessness with the movement breaks. This method led to better focus and a sense of achievement in his writing endeavors.",
+    "grade": 3,
+    "topic": "Academic Stress Situations",
+    "len": 183.0
+}

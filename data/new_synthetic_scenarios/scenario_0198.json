@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "B was unable to follow the order of stations in gym class and missed her turn.",
+    "action": "The teacher aide raised their voice to inform B she was not paying attention, rather than reiterating the sequence or providing visual support.",
+    "effect": "B became upset and isolated herself from the activity, feeling embarrassed and confused.",
+    "grade": 1,
+    "topic": "Executive Functioning Challenges",
+    "len": 103.0
+}

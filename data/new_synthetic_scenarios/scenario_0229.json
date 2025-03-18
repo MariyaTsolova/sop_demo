@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Hearing impairment"
+        ]
+    },
+    "situation": "The lesson involved listening to audio and answering questions. The substitute forgot to use the hearing aid support system for J, affecting J\u2019s ability to follow along.",
+    "action": "Instead of finding an alternative, the substitute just told J to try harder to focus. No additional support was given, and J was left out of the activity.",
+    "effect": "J felt isolated and frustrated, as he could not participate in an essential part of the lesson. This incident could lead to J feeling overlooked in future classes.",
+    "grade": 3,
+    "topic": "Substitute Staff Situations",
+    "len": 162.0
+}

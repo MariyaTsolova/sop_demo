@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Hearing impairment",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "Z expressed confusion and distress when the usual music class was moved to a different room.",
+    "action": "The teacher aide personally walked Z to the new location, explaining the reason behind the move while signing the information.",
+    "effect": "Z felt reassured and adjusted to the change, continuing to enjoy the music class in the new setting.",
+    "grade": 4,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 106.0
+}

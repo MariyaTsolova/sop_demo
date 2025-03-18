@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "Epilepsy",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "L was becoming anxious due to the daily announcements being played over a loud intercom.",
+    "action": "The aide coordinated with staff to deliver announcements via green coded cards to L, ensuring he could read them instead.",
+    "effect": "L remained calm during announcements and his anxiety significantly decreased, making him more open to learning.",
+    "grade": 5,
+    "topic": "Physical Environment Issues",
+    "len": 106.66666666666667
+}

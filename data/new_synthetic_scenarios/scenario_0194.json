@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Dyscalculia",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "C was supposed to sort objects into groups but mixed everything together and looked at the TA for help.",
+    "action": "The TA told C to 'just focus' and did not break down the task or provide examples.",
+    "effect": "C became more confused and disengaged, unable to complete the sorting task.",
+    "grade": 3,
+    "topic": "Executive Functioning Challenges",
+    "len": 86.66666666666667
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyslexia",
+            "ADHD"
+        ]
+    },
+    "situation": "J struggled to write down homework assignments and started to crumple the pages of her notebook.",
+    "action": "The teacher aide reminded J of the punishment for failing to complete her assignments instead of assisting with coping strategies or organization techniques.",
+    "effect": "J felt discouraged and further frustrated, stopping any attempts to record her homework.",
+    "grade": 1,
+    "topic": "Executive Functioning Challenges",
+    "len": 113.66666666666667
+}

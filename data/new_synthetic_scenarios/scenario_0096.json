@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "6",
+        "gender": "man",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Hearing impairment"
+        ]
+    },
+    "situation": "B did not hear the teacher's instruction clearly and began playing with toys instead of participating in circle time.",
+    "action": "The teacher aide directed B to join the circle without checking his understanding or addressing his hearing needs.",
+    "effect": "B felt frustrated and misunderstood, which led to a loss of engagement in circle time and hindered his participation.",
+    "grade": 1,
+    "topic": "Communication Breakdowns",
+    "len": 116.0
+}

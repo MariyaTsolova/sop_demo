@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Dyspraxia"
+        ]
+    },
+    "situation": "During a group project, G struggled to express her ideas with her teammates and sat quietly, feeling left out.",
+    "action": "The teacher aide directed G to speak up without offering additional communication support tools or mediation among peers.",
+    "effect": "G's ideas went unheard, leading to feelings of frustration and exclusion. She showed signs of disengagement in the group activity thereafter.",
+    "grade": 2,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 124.0
+}

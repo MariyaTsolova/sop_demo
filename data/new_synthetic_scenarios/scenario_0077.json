@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Visual impairment"
+        ]
+    },
+    "situation": "T had trouble transitioning from group activities to independent reading time, often losing focus and becoming distracted.",
+    "action": "The teacher aide attempted to manage this by raising her voice rather than assisting T in settling into the new task.",
+    "effect": "T remained distracted, and her reading progress was limited, causing frustration.",
+    "grade": 2,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 106.66666666666667
+}

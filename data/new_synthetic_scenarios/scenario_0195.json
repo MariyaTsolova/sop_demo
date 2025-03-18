@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "woman",
+        "diagnosis": [
+            "Moderate to severe learning difficulties",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "L was directed to choose a book for reading time but sat still, overwhelmed by the options.",
+    "action": "The teacher aide stood by L without providing specific options or guidance to narrow her choices.",
+    "effect": "L remained in her seat indecisively and did not engage with any book during the period.",
+    "grade": 2,
+    "topic": "Executive Functioning Challenges",
+    "len": 91.66666666666667
+}

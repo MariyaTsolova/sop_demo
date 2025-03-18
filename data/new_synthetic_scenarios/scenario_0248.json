@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Hearing impairment"
+        ]
+    },
+    "situation": "V was visibly shaken and started crying after two of her classmates began arguing loudly nearby. She tried to communicate her discomfort but struggled to make herself understood.",
+    "action": "Unable to calm V, the aide simply gestured for her to wait and returned to focus on the class at large. V was eventually given noise-canceling headphones without further explanation.",
+    "effect": "V remained distressed, unable to convey her needs effectively, which left her feeling isolated. The delayed intervention did not provide immediate relief, impacting her mood and focus for the rest of the lesson.",
+    "grade": 2,
+    "topic": "External Trauma Impact",
+    "len": 190.33333333333334
+}

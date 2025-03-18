@@ -1,0 +1,15 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder"
+        ]
+    },
+    "situation": "K often taps her friends on the head when standing in line, which annoys them.",
+    "action": "The teacher aide just moved K to the end of the line every time without discussing why the behavior was inappropriate.",
+    "effect": "K felt outcast and didn\u2019t learn why the behavior upset her classmates.",
+    "grade": 1,
+    "topic": "Personal Space and Boundaries",
+    "len": 88.66666666666667
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Visual impairment",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "F expressed reluctance to leave the comfort of his library spot to attend science experiments in another room.",
+    "action": "The teacher created a tactile map to help F visualize and prepare for the transition path to the science room. He was also paired with a peer who regularly navigated class changes alongside him.",
+    "effect": "The tactile map enhanced F's understanding of the environment, building confidence in moving spaces. Peer support further encouraged him, making the transition less intimidating and more inclusive.",
+    "grade": 5,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 167.0
+}

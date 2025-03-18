@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "Dyslexia",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "When transitioning from art class to science, J became withdrawn and slow to gather his materials, appearing anxious about the shift in activities.",
+    "action": "A peer buddy system was implemented where J's classmates assisted in gently reminding him of the transition times. A transitional object, like a sketchbook with spaces for science drawings, was used to help provide continuity between classes.",
+    "effect": "J felt supported and reassured having his peers guide him through transitions. The sketchbook offered a creative bridge between subjects, reducing anxiety associated with class changes. This collaborative approach enabled smoother transitions and increased social interaction.",
+    "grade": 5,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 221.66666666666666
+}

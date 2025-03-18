@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "B often misunderstood instructions during classroom activities, which caused her to fall behind her classmates.",
+    "action": "The teacher aide developed a set of simple, illustrated instruction cards to accompany verbal instructions. They also provided B with extra time to process and repeat the instructions to confirm understanding.",
+    "effect": "B was able to follow along more successfully and demonstrated increased engagement with her lessons.",
+    "grade": 4,
+    "topic": "Communication Breakdowns",
+    "len": 140.0
+}

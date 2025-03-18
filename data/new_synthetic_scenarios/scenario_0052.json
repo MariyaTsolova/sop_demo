@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "P often interrupted his peers during class discussions and had difficulty waiting for his turn, causing irritation among classmates.",
+    "action": "A teacher aide asked P to sit at the back of the room away from the discussion instead of helping him with turn-taking techniques.",
+    "effect": "P felt isolated and missed out on engaging in the conversation, which could have helped him practice social skills.",
+    "grade": 1,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 125.66666666666667
+}

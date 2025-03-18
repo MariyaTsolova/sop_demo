@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Dyspraxia"
+        ]
+    },
+    "situation": "K avoided group physical activities because of challenges with coordination and peer interactions.",
+    "action": "The teacher aide introduced adaptive physical education tools and broke down tasks into smaller steps. They also facilitated a peer support system where classmates encouraged K during activities.",
+    "effect": "K started participating more actively in physical activities, feeling supported by peers. The modifications made physical tasks less daunting, improving K's confidence in group settings and fostering better peer interactions.",
+    "grade": 5,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 172.66666666666666
+}

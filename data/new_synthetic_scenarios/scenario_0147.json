@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "E was covering his ears due to the fire alarm test which was too loud for him.",
+    "action": "The aide prepared E with noise-cancelling headphones and practiced a fire drill routine in advance to desensitize him to the alarm noise.",
+    "effect": "During the test, E stayed calm and engaged quickly with the practice routine, reducing distress and confusion.",
+    "grade": 5,
+    "topic": "Physical Environment Issues",
+    "len": 108.33333333333333
+}

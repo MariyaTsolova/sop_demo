@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Moderate to severe learning difficulties",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "E was panicking during the science quiz, muttering that he didn't understand the questions, leading to an increase in anxiety.",
+    "action": "The TA offered E the use of a quiet area with fewer distractions to work through the quiz at his own pace. She reassured him that it was okay to ask for clarification on questions and provided examples related to his interests. E was able to attempt the quiz with reduced stress.",
+    "effect": "E's anxiety levels decreased, and he was able to complete more questions than he initially thought possible. His understanding improved with the one-on-one support and breakdown of tasks, boosting his confidence.",
+    "grade": 4,
+    "topic": "Academic Stress Situations",
+    "len": 205.66666666666666
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Dyslexia"
+        ]
+    },
+    "situation": "While preparing for the annual talent show, S had difficulty memorizing her lines and was on the verge of giving up, feeling overwhelmed by the pressure.",
+    "action": "The teacher aide worked with S using fun mnemonic devices and rhythm to help her remember her lines. Additionally, they scheduled regular breaks during practice to manage S's attention more effectively.",
+    "effect": "S felt more confident and was able to perform her part successfully, enjoying the experience and receiving praise from peers and teachers.",
+    "grade": 4,
+    "topic": "Special School Events",
+    "len": 164.33333333333334
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "6",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "C was uncomfortable with the close proximity of others during circle time and reacted by pushing.",
+    "action": "The teacher aide sensitively rearranged seating to create more room and explained the 'Bubble of Space' concept. Used a simple, child-friendly social story to reinforce understanding and provided C with a stress ball.",
+    "effect": "C felt more comfortable with the increased space and the push stimulus was reduced, creating a more inclusive and pleasant circle time.",
+    "grade": 3,
+    "topic": "Personal Space and Boundaries",
+    "len": 149.66666666666666
+}

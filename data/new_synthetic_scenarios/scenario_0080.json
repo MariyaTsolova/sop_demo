@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "K was becoming increasingly frustrated during a group reading activity because he could not communicate his thoughts clearly.",
+    "action": "The teacher aide introduced a communication board to assist K in expressing his ideas. Visual cues were used alongside verbal explanations to guide K. The aide encouraged peer support by asking K's classmates to give him more time to share his ideas.",
+    "effect": "K gradually started using the communication board and was able to convey his thoughts more clearly. This allowed him to participate more in the discussion, reducing his frustration.",
+    "grade": 4,
+    "topic": "Communication Breakdowns",
+    "len": 185.33333333333334
+}

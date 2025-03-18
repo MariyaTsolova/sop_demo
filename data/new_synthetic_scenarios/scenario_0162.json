@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Dyscalculia",
+            "ADHD"
+        ]
+    },
+    "situation": "P frequently leaned on his classmates' desks during math lessons, disturbing their concentration.",
+    "action": "The teacher aide set clear visual boundaries on the floor using colorful tape and privately explained to P the importance of respecting others' spaces. Engaged P in a role-play exercise to practice maintaining personal space.",
+    "effect": "P was able to better visualize personal space boundaries and showed significant improvement in respecting others' areas, resulting in a calmer classroom environment.",
+    "grade": 4,
+    "topic": "Personal Space and Boundaries",
+    "len": 162.33333333333334
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "15",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Hearing impairment"
+        ]
+    },
+    "situation": "N felt unhappy and disconnected during a group activity that was too loud and visually busy.",
+    "action": "The aide intervened by offering N noise-reducing devices and a visual communication board to interact with the group non-verbally, seated in a quieter area.",
+    "effect": "N was able to engage with her peers comfortably using the tools, maintaining her emotional regulation throughout the activity.",
+    "grade": 4,
+    "topic": "Emotional Regulation Challenges",
+    "len": 124.66666666666667
+}

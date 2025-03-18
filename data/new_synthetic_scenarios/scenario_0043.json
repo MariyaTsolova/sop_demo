@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "6",
+        "gender": "woman",
+        "diagnosis": [
+            "Moderate to severe learning difficulties",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "E was hesitant to join her peers in outdoor games, fearing she wouldn't understand the rules quickly enough.",
+    "action": "The teacher aide paired E with a buddy who explained the games one step at a time. Visual aids with simplified instructions were also provided to help E grasp the rules at her own pace.",
+    "effect": "E gradually joined her peers, observing and participating in the games. Having support from a buddy and visual aids reduced her anxiety, leading to more successful social interactions and participation in playtime activities.",
+    "grade": 4,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 172.66666666666666
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyslexia",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "J struggled every time there was a transition from math to reading, often lagging behind the other students.",
+    "action": "The teacher aide simply repeated louder instructions each time without addressing J directly or offering support, leaving her feeling overwhelmed and further confused.",
+    "effect": "J felt increasingly anxious about these transitions and her participation diminished as she developed a fear of being hurried.",
+    "grade": 2,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 133.66666666666666
+}

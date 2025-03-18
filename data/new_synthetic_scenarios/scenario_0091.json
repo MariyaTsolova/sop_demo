@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyslexia",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "During reading time, S became confused with the task instructions and sat quietly, unable to ask for help.",
+    "action": "The teacher aide assumed S understood and did not check in with her. S was not given any alternative resources or support.",
+    "effect": "S remained unable to participate, becoming increasingly anxious and upset. She lost valuable reading practice and felt isolated from her peers.",
+    "grade": 1,
+    "topic": "Communication Breakdowns",
+    "len": 123.66666666666667
+}

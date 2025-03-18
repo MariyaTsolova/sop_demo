@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "6",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Complex needs"
+        ]
+    },
+    "situation": "L found it hard to transition from group activities to independent work, often crying and holding onto his group materials.",
+    "action": "Introducing a 'transition book' where L could stick images of completed group work helped create closure on activities. Affirmative praise from the teacher when closing one activity and starting another provided encouragement.",
+    "effect": "The transition book gave L a visual record of his successes, making the process of moving from group work to independence less daunting. Positive reinforcement strengthened his confidence to approach individual tasks.",
+    "grade": 4,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 188.66666666666666
+}

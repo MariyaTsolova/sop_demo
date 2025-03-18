@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "J was unsettled during a math lesson with a substitute teacher and started to fidget and make noises that disrupted the class.",
+    "action": "The substitute teacher noticed J's restlessness and shifted the lesson to include a more interactive group activity, allowing J to move around the classroom while participating.",
+    "effect": "J was able to engage positively with the class activity and showed improved focus, which helped maintain a calmer classroom environment.",
+    "grade": 4,
+    "topic": "Substitute Staff Situations",
+    "len": 146.33333333333334
+}

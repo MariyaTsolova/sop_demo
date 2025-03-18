@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "N struggled with the crowded and noisy lunch hall during break time, becoming visibly anxious and teary.",
+    "action": "The teacher asked N to go outside and get some fresh air, inadvertently increasing her anxiety as she feared missing lunch. The teacher left N by herself without seeking further support.",
+    "effect": "N felt abandoned and confused about what to do, spending the rest of the lunch period isolated outside. The action failed to provide comfort or address her sensory overload.",
+    "grade": 2,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 154.33333333333334
+}

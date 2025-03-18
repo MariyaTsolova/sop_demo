@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "T was working on a digital whiteboard when the screen froze, causing him to become visibly upset and start flapping his hands in distress.",
+    "action": "The teacher aide approached calmly and redirected T's focus by introducing a tactile activity with textured materials. She reassured him the issue would be fixed soon and offered headsets for noise reduction.",
+    "effect": "T's distress decreased with the change in activity, and he was able to re-engage once the technology was fixed, feeling supported by the alternative sensory input.",
+    "grade": 4,
+    "topic": "Technology Failures",
+    "len": 169.66666666666666
+}

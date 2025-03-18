@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Hearing impairment"
+        ]
+    },
+    "situation": "S panicked during a thunderstorm because of the noise, causing her to hide under a table.",
+    "action": "The teacher aide loudly instructed S to come out, inadvertently exacerbating her anxiety instead of providing comfort or solutions for the noise.",
+    "effect": "S remained hidden, distrustful of the aide\u2019s actions, and was not able to resume class activities until the storm ended.",
+    "grade": 2,
+    "topic": "Physical Environment Issues",
+    "len": 118.0
+}

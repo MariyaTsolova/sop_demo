@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "6",
+        "gender": "woman",
+        "diagnosis": [
+            "Epilepsy",
+            "Speech and language disorders"
+        ]
+    },
+    "situation": "V became disoriented when recess was extended because a planned lesson was canceled. She started crying uncontrollably.",
+    "action": "The teacher tried to quiet V by offering her candy without explaining the change in the schedule.",
+    "effect": "V remained confused and felt more insecure about the changes, which made her dependent on rewards rather than understanding the reason for routine changes.",
+    "grade": 3,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 123.66666666666667
+}

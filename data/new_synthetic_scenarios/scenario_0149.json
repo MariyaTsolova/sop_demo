@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Dyspraxia",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "H was struggling to navigate the narrow and tightly packed library space, often bumping into shelves.",
+    "action": "The aide reorganized the layout to create wider aisles and ensured frequently needed books were at accessible heights to minimize movement challenges.",
+    "effect": "H felt more independent in accessing library resources and was happier spending time there.",
+    "grade": 3,
+    "topic": "Physical Environment Issues",
+    "len": 114.0
+}

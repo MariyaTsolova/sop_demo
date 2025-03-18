@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "G consistently stood too close to peers during sports practice, causing discomfort.",
+    "action": "The teacher aide introduced visual markers on the gym floor and provided individualized coaching on spatial awareness. Offered verbal encouragement and a reward system for improvements observed during practice.",
+    "effect": "G gained a better understanding of personal space and improved his participation in sports with supportive peer interactions.",
+    "grade": 4,
+    "topic": "Personal Space and Boundaries",
+    "len": 139.33333333333334
+}

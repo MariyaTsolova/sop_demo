@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Hearing impairment"
+        ]
+    },
+    "situation": "R found it challenging to follow conversations in noisy environments, which affected his participation in group activities.",
+    "action": "The teacher aide used assisted listening devices to help R hear better in group settings. They also set up smaller, quieter group spaces and encouraged peers to face R when speaking for better lip-reading.",
+    "effect": "R's participation in group activities improved, and he felt more connected with his peers.",
+    "grade": 4,
+    "topic": "Communication Breakdowns",
+    "len": 139.33333333333334
+}

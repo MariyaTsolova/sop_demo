@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Attachment disorder"
+        ]
+    },
+    "situation": "D had difficulty concentrating on his art assignment, appearing restless and anxious when faced with open-ended tasks.",
+    "action": "Provided clear instructions and a structured example to follow, while offering frequent reassurance and feedback.",
+    "effect": "D showed a decrease in anxiety and improved focus, completing his art assignment with creativity and enthusiasm.",
+    "grade": 4,
+    "topic": "Executive Functioning Challenges",
+    "len": 114.33333333333333
+}

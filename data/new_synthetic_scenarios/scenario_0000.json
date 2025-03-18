@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "K was in the music class when the noise from the instruments became overwhelming. K covered his ears, started crying, and attempted to leave the room.",
+    "action": "The teacher raised her voice over the noise to get K's attention. She insisted K stays in the room and pay attention without addressing his distress from the noise. This made K cry louder and more distressed, eventually bolting out of the class.",
+    "effect": "K did not settle back into the class and missed the rest of the lesson. The reaction didn't address K's sensory needs and failed to provide a quiet space for him to calm down.",
+    "grade": 2,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 190.0
+}

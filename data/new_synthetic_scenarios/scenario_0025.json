@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "R was visibly upset when he discovered the science experiment he was waiting for all week was postponed.",
+    "action": "The teacher aide used a visual calendar to show R the new date for the experiment, and involved him in preparing the materials for next time.",
+    "effect": "R felt reassured seeing the concrete rescheduling and was engaged in preparation tasks, which calmed his anxiety.",
+    "grade": 5,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 119.33333333333333
+}

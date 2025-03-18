@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Dyspraxia"
+        ]
+    },
+    "situation": "T was becoming frustrated and angry as his handwriting kept smudging during a written task, affecting his concentration and output.",
+    "action": "To help T, the TA provided a pencil grip and some extra writing material designed to accommodate his needs. She encouraged him to use a slant board to help improve his control and posture while writing. With these adjustments, T found writing less frustrating and was able to concentrate more effectively.",
+    "effect": "T's writing improved, and he completed the task with much clearer handwriting. The accommodations helped reduce his frustration, boosting his confidence and willingness to engage in written assignments.",
+    "grade": 4,
+    "topic": "Academic Stress Situations",
+    "len": 212.66666666666666
+}

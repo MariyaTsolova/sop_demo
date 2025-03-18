@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "Attachment disorder",
+            "Visual impairment"
+        ]
+    },
+    "situation": "C was struggling with a science project involving visual components, leading to frustration.",
+    "action": "The teacher aide simply encouraged C to manage on his own and 'figure it out'.",
+    "effect": "C became more frustrated and disengaged with the project, feeling unsupported.",
+    "grade": 2,
+    "topic": "Academic Stress Situations",
+    "len": 82.66666666666667
+}

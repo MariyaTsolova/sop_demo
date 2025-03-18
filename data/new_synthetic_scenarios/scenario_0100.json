@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "M felt overwhelmed during a noisy gym class. He began to cover his ears and displayed visible signs of distress, such as crying and retreating to a corner.",
+    "action": "The aide guided M to a quieter area and provided noise-canceling headphones from his kit. She demonstrated deep breathing exercises to help him calm down. Once settled, they slowly reintroduced him to the class by watching from afar.",
+    "effect": "M was able to return to class without further incident after using the headphones and practicing deep breathing. This allowed him to reengage with peers in a controlled manner.",
+    "grade": 5,
+    "topic": "Emotional Regulation Challenges",
+    "len": 188.0
+}

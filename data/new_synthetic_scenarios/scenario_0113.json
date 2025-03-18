@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "After the playground session, A became agitated and started throwing her belongings when asked to line up to go back to class.",
+    "action": "The teacher raised their voice, telling A to stop immediately and pick up her things without offering any calming strategies.",
+    "effect": "A's agitation increased, and the transition back to the classroom was delayed. Her peers became quiet and uneasy.",
+    "grade": 1,
+    "topic": "Emotional Regulation Challenges",
+    "len": 121.33333333333333
+}

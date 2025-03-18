@@ -1,0 +1,17 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder",
+            "ADHD"
+        ]
+    },
+    "situation": "J felt overwhelmed by the loud music and unexpected noises from the school talent show. She covered her ears and started screaming out of frustration.",
+    "action": "The teacher aide approached J but didn't have any noise-cancelling headphones or alternative strategies to offer. They asked J to quiet down, hoping she would calm herself.",
+    "effect": "J continued to scream as the noise persisted, and the lack of appropriate support heightened her anxiety. This disrupted the talent show momentarily and resulted in J being even more distressed.",
+    "grade": 1,
+    "topic": "Special School Events",
+    "len": 172.0
+}

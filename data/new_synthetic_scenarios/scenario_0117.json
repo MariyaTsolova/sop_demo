@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyspraxia",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "J had a meltdown in the cafeteria due to the overwhelming noise and busy environment.",
+    "action": "The teacher aide told J to sit down and eat her lunch, expecting the situation to resolve itself.",
+    "effect": "J's overwhelm increased, resulting in her refusal to eat and withdrawal from the group. The incident caused disruption in the dining area.",
+    "grade": 1,
+    "topic": "Emotional Regulation Challenges",
+    "len": 106.66666666666667
+}

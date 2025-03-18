@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "C faced difficulty managing her excitement and began shouting out answers during a quiet reading session.",
+    "action": "The aide calmly redirected her enthusiasm by acknowledging her eagerness and inviting her to hold a 'special helper' object that reminded her she could answer next. Meanwhile, the aide encouraged quiet listening by engaging her in a silent reading activity.",
+    "effect": "C was able to control her impulse to shout out and participated respectfully in the reading activity, which prevented disruption and maintained a positive atmosphere.",
+    "grade": 4,
+    "topic": "Emotional Regulation Challenges",
+    "len": 176.0
+}

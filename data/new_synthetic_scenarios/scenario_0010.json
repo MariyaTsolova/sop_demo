@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "P started screaming and covering his ears during a noisy school assembly.",
+    "action": "The teacher aide shouted over the noise, trying to explain the assembly program to P and insisted he participate. The aide tried to keep him inside by holding his hands to stop him from leaving.",
+    "effect": "P became more distressed and increased in volume, eventually escalating his distress to a meltdown. The attempt to restrain him further added to his sensory overload.",
+    "grade": 2,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 144.33333333333334
+}

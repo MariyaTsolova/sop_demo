@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "ADHD",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "E had difficulty understanding and processing instructions during timed tasks, causing stress and incomplete work.",
+    "action": "The teacher aide provided E with personalized step-by-step guides with the use of visual aids. Timing was adjusted to allow E to process information at her own pace, reducing pressure.",
+    "effect": "E managed to complete tasks more independently and efficiently, with reduced anxiety levels.",
+    "grade": 5,
+    "topic": "Communication Breakdowns",
+    "len": 130.0
+}

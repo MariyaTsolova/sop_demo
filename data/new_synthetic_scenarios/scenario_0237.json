@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "woman",
+        "diagnosis": [
+            "Moderate to severe learning difficulties",
+            "ADHD"
+        ]
+    },
+    "situation": "While W was using a laptop for a writing assignment, the document she was working on failed to save and all her input was lost. She became frustrated and slammed the laptop shut.",
+    "action": "The teacher aide scolded W for being careless with technology and suggested that she should start over from the beginning. No effort was made to comfort or help W devise a plan to recover her work.",
+    "effect": "W felt demotivated and disinterested for the rest of the lesson, resulting in her not completing the assignment at all. The corrective action further discouraged her from using similar tools in the future.",
+    "grade": 2,
+    "topic": "Technology Failures",
+    "len": 193.33333333333334
+}

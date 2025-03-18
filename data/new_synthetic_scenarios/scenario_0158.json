@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "13",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyslexia",
+            "Dyspraxia"
+        ]
+    },
+    "situation": "N found the bright and busy classroom decorations overwhelming during a reading session.",
+    "action": "The aide told N to close her eyes for a moment and take a deep breath but did not address the ongoing distraction or provide a more permanent solution.",
+    "effect": "N was able to briefly refocus but became distracted again shortly after. The aide\u2019s approach was a temporary fix that didn't solve the main issue.",
+    "grade": 3,
+    "topic": "Physical Environment Issues",
+    "len": 128.33333333333334
+}

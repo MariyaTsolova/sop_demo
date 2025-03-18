@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "11",
+        "gender": "man",
+        "diagnosis": [
+            "Hearing impairment",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "During a cultural celebration event, H had difficulty following the storytelling segment due to the background noise from others talking.",
+    "action": "The TA provided H with an FM system to better hear the storyteller and sat him closer to the presentation to help reduce the noise interference.",
+    "effect": "H was able to engage with the story and enjoyed the event, feeling more included and able to participate in discussions afterward.",
+    "grade": 5,
+    "topic": "Special School Events",
+    "len": 137.0
+}

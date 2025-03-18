@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "L ran out of the classroom unexpectedly and into the street, all the while seemingly oblivious to the oncoming traffic.",
+    "action": "The teacher aide chased after L, yelling at him to stop without using any of the calming techniques previously recommended.",
+    "effect": "L was startled and began running faster, putting him in more danger. The incident highlighted the need for effective training in emergency response for children with special needs.",
+    "grade": 3,
+    "topic": "Emergency Situations",
+    "len": 140.66666666666666
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "L became visibly upset when the class was rearranged unexpectedly for a collaborative project.",
+    "action": "The aide offered L a brief individual break and explained the new setup with clarity. They also provided a task card with step-by-step instructions to make the situation feel more predictable.",
+    "effect": "L adapted to the changes more readily after understanding the steps involved, leading to her positively engaging with the project activity.",
+    "grade": 5,
+    "topic": "Emotional Regulation Challenges",
+    "len": 141.66666666666666
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "M was in the cafeteria when the noise level increased drastically due to an unexpected fire drill, causing him to cover his ears and begin to rock back and forth.",
+    "action": "The teacher aide quickly led M out of the cafeteria to a quieter hallway, handed him noise-canceling headphones, and spoke softly to reassure him. They used calming breathing techniques together until M felt centered.",
+    "effect": "M was able to calm down and return to class without further distress, demonstrating an increased tolerance for returning to noisy environments as the noise-canceling headphones were effective. M returned to classes after agreeing to wear headphones next time.",
+    "grade": 5,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 212.66666666666666
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "12",
+        "gender": "man",
+        "diagnosis": [
+            "Sensory processing disorder",
+            "Dyslexia"
+        ]
+    },
+    "situation": "T panicked and expressed distress when it came time to present his project in front of the class.",
+    "action": "The aide offered him the option to first present to a small, familiar group as practice. They provided a calming strategy, allowing the use of stress balls beforehand.",
+    "effect": "T was able to perform his presentation successfully in front of the small group, which built his confidence to eventually present to the full class seated among his peers.",
+    "grade": 4,
+    "topic": "Emotional Regulation Challenges",
+    "len": 145.0
+}

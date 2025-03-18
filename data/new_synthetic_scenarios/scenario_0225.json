@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "A substitute teacher failed to recognize M\u2019s need for a sensory break and continued with class activities. M began to rock back and forth and cover his ears, unable to focus on the lesson.",
+    "action": "The substitute teacher raised their voice, attempting to redirect M by speaking more loudly. They moved on with the lesson without addressing M's need for a sensory break.",
+    "effect": "M became more distressed, eventually needing to leave the room with the regular teacher aide, interrupting both his and his peers' learning. The situation escalated due to lack of understanding of his needs.",
+    "grade": 2,
+    "topic": "Substitute Staff Situations",
+    "len": 188.66666666666666
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "M became anxious and withdrew upon realizing the school assembly was scheduled earlier than usual.",
+    "action": "The teacher aide calmly explained the change using a social story and gave M noise-cancelling headphones. Then, guided M to the assembly hall explaining each step.",
+    "effect": "M was initially unsettled but gradually relaxed with the explanation and sensory support, managing to sit through the assembly without distress.",
+    "grade": 5,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 135.0
+}

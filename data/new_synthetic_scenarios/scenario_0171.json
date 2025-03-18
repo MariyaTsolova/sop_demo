@@ -1,0 +1,15 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "T begins to panic and scream when another student sits too close to her during a reading session.",
+    "action": "The teacher aide comforted T quietly but did not address the issue with the other student, leaving T uncomfortable without a solution to her anxiety.",
+    "effect": "T feels anxious about future reading sessions, fearing repeated invasions of her personal space.",
+    "grade": 2,
+    "topic": "Personal Space and Boundaries",
+    "len": 114.0
+}

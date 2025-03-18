@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Attachment disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "K became distraught after discovering her favourite art class was canceled and replaced with math.",
+    "action": "The teacher aide acknowledged K's frustration and promised an art session after school. Redirected attention, Kresumed the math class calmly.",
+    "effect": "K settled down once she understood there was a plan for her to enjoy art later, and she completed math work with minimal fuss.",
+    "grade": 4,
+    "topic": "Routine Disruptions - Changes in daily schedule or expected activities",
+    "len": 121.66666666666667
+}

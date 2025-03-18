@@ -1,0 +1,17 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "woman",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Dyslexia",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "A was using a text-to-speech app on a tablet during a group reading session when the app suddenly crashed. A became visibly upset and threw the tablet on the floor.",
+    "action": "The teacher aide attempted to start a conversation with A about the importance of taking care of school property, ignoring the immediate emotional distress A was experiencing. The aid then promised to fix the tablet by the end of the day but didn\u2019t offer a short-term solution or any reassurance.",
+    "effect": "A remained upset and disengaged from the session, feeling frustrated about not being able to participate in real-time. The group reading activity continued without her, which increased her feelings of exclusion.",
+    "grade": 2,
+    "topic": "Technology Failures",
+    "len": 223.66666666666666
+}

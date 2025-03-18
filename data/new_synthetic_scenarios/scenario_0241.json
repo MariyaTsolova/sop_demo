@@ -1,0 +1,17 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "ADHD",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "M was startled by the sound of thunder during an art class and started to scream, disrupting the class and appearing visibly upset.",
+    "action": "The teacher aide, understanding his sensitivity to sound, quickly guided M to the sensory room where he could calm down with dim lighting and calming sensory materials.",
+    "effect": "After spending some time in the sensory room, M managed to regain his composure and returned to the classroom in a much calmer state, ready to participate in the remainder of the class. The quick intervention prevented further escalation.",
+    "grade": 4,
+    "topic": "External Trauma Impact",
+    "len": 179.0
+}

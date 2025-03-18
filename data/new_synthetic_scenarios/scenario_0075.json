@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "6",
+        "gender": "woman",
+        "diagnosis": [
+            "Dyspraxia",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "L had difficulty transitioning from carpet activities to table work, often wandering off or playing with nearby objects.",
+    "action": "The teacher aide hastily moved L to the table without explaining what was happening or offering any positive encouragement.",
+    "effect": "L felt disoriented and resistant, losing focus on the new activity and disrupting other students.",
+    "grade": 2,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 113.33333333333333
+}

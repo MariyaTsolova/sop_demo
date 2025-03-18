@@ -1,0 +1,17 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "G was supposed to organize his books into his backpack but ended up staring into space, not making any move to do so.",
+    "action": "The TA tapped the desk loudly and asked G why he wasn't packing up, providing no additional scaffold or help.",
+    "effect": "G felt startled and confused by the noise and pressure, and remained unable to organize himself, leading to him missing the start of the next activity.",
+    "grade": 1,
+    "topic": "Executive Functioning Challenges",
+    "len": 125.66666666666667
+}

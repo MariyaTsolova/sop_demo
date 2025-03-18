@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "A substitute teacher struggled with H's reluctance to participate in class due to the change in routine, and H was avoiding eye contact and interactions.",
+    "action": "The teacher aide provided H with a visual schedule that highlighted the day's activities and spent time one-on-one with her explaining the changes gently.",
+    "effect": "H gradually became more comfortable and began participating in group activities safely within her boundaries, feeling reassured about the day's plan.",
+    "grade": 5,
+    "topic": "Substitute Staff Situations",
+    "len": 152.0
+}

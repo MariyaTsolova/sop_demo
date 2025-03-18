@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Attachment disorder",
+            "ADHD"
+        ]
+    },
+    "situation": "F was frequently touching personal belongings of other students without permission.",
+    "action": "The teacher aide implemented a 'Hands-off Agreement' in the class, rewarding students, including F, for respecting ownership. Conducted a small-group activity focusing on personal and public property understanding.",
+    "effect": "F responded positively to the structured rules and incentives, leading to reduced instances of personal violation behaviors, fostering a respectful class culture.",
+    "grade": 5,
+    "topic": "Personal Space and Boundaries",
+    "len": 153.0
+}

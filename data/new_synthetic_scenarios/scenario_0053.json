@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "woman",
+        "diagnosis": [
+            "Social Interaction Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "During a music class, H covered her ears and sat apart from the group, looking distressed as the instruments played loudly.",
+    "action": "The teacher removed the loud instruments but did not address H's need to reintegrate with the group or provide sensory calming strategies.",
+    "effect": "H did not return to the group activity, missing out on the chance to interact with her peers and enjoy the class.",
+    "grade": 2,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 124.66666666666667
+}

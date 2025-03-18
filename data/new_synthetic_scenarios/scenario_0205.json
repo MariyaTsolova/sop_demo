@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "M was outside for recess when he suddenly broke out into a loud, distressed scream, covering his ears and spinning in circles.",
+    "action": "The teacher aide initially yelled at M to stop screaming and tried to forcibly lead him away from the playground, ignoring his distress. Other students watched and began to gather around, adding to M's upset.",
+    "effect": "M's distress escalated further due to the loud reprimand and crowd, and it took a considerable amount of time for M to calm down after being removed to a quieter space. The ineffective approach prolonged the disturbance to other students and heightened M's sensory overload.",
+    "grade": 2,
+    "topic": "Emergency Situations",
+    "len": 202.66666666666666
+}

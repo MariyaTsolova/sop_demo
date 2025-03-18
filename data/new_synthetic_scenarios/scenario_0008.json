@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "J began to scream and hit his desk when a new class horn alarm was tested unexpectedly for fire drill preparedness.",
+    "action": "Aides quickly enacted a strategy by using calm words and turning down the lights while guiding J to a safe space with weighted blankets. They employed visualization tactics of his favorite calm scene to soothe him.",
+    "effect": "J gradually settled down, effectively using calming visuals to return to class without sustained agitation.",
+    "grade": 3,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 145.33333333333334
+}

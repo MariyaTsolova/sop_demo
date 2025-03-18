@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "ADHD",
+            "Moderate to severe learning difficulties"
+        ]
+    },
+    "situation": "E was supposed to clean up his desk after art class but seemed overwhelmed and started to throw materials on the floor instead.",
+    "action": "The teacher aide quickly told E to hurry as they were running out of time, without offering any specific help or guidance.",
+    "effect": "E continued to be distressed, and the mess increased as he threw more items in frustration, disrupting the class transition.",
+    "grade": 2,
+    "topic": "Executive Functioning Challenges",
+    "len": 124.33333333333333
+}

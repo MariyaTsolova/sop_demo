@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "9",
+        "gender": "man",
+        "diagnosis": [
+            "Speech and language disorders",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "C needed help during a class debate but avoided eye contact and remained silent when it was his turn to speak.",
+    "action": "The teacher asked other students to proceed without addressing C\u2019s communication struggles or giving him additional support.",
+    "effect": "C felt more nervous and isolated, missing a key opportunity to practice verbal expression in a supportive setting.",
+    "grade": 2,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 116.0
+}

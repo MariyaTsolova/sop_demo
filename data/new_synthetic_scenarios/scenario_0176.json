@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "7",
+        "gender": "man",
+        "diagnosis": [
+            "Speech and language disorders",
+            "ADHD"
+        ]
+    },
+    "situation": "4 tends to interrupt peers during sharing time, stepping into their personal space.",
+    "action": "The teacher aide tells 4 to 'quiet down' without offering alternative communication methods or explaining the disruption.",
+    "effect": "4 remained puzzled about the interruption issue and continued this behavior in subsequent sessions.",
+    "grade": 2,
+    "topic": "Personal Space and Boundaries",
+    "len": 101.0
+}

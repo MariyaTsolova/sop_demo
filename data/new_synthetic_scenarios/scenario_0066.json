@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "woman",
+        "diagnosis": [
+            "Anxiety disorders",
+            "Dyspraxia"
+        ]
+    },
+    "situation": "R often panicked when moving from recess back to the classroom, getting stuck on the playground.",
+    "action": "Teachers began using a musical cue\u2014playing a specific song when it was time to transition\u2014to signal the end of recess. Additionally, a familiar teacher aide provided reassurance and physical presence to guide R back inside.",
+    "effect": "The consistency of the musical cue became a comforting signal for R, easing her anxiety about returning to class. With the aid's assistance, transitions became smoother and more predictable.",
+    "grade": 5,
+    "topic": "Transition Difficulties - Moving between different activities or spaces",
+    "len": 169.66666666666666
+}

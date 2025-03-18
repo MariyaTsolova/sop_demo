@@ -1,0 +1,17 @@
+{
+    "student_profile": {
+        "age": "10",
+        "gender": "man",
+        "diagnosis": [
+            "Dyslexia",
+            "Autism Spectrum Disorder",
+            "Sensory processing disorder"
+        ]
+    },
+    "situation": "M became distressed in the art room due to the fluorescent lighting and commotion as other children moved around in excitement.",
+    "action": "The teaching assistant told M to focus on his art project and ignore the flickering lights and noise. She ignored M's escalating agitation and did not move him to a quieter area.",
+    "effect": "M's discomfort turned into a meltdown, and he ran out of the room. The situation was not effectively managed and led to further distress.",
+    "grade": 1,
+    "topic": "Sensory Overload Situations - scenarios involving overwhelming sensory inputs like loud noises, bright lights, or crowded spaces",
+    "len": 147.33333333333334
+}

@@ -1,0 +1,16 @@
+{
+    "student_profile": {
+        "age": "8",
+        "gender": "man",
+        "diagnosis": [
+            "Autism Spectrum Disorder",
+            "Anxiety disorders"
+        ]
+    },
+    "situation": "During recess, L avoided playing with classmates and chose instead to sit alone on a bench. When a group of peers approached him to join their game, L began to cry.",
+    "action": "A TA came over and asked L why he was sitting alone but did not offer any further support or strategies. The TA simply advised L to join the playgroup and left.",
+    "effect": "L remained on the bench throughout recess feeling overwhelmed, without any peer interaction.",
+    "grade": 2,
+    "topic": "Social Interaction Challenges - Difficulties with peer interactions, challanges during",
+    "len": 138.66666666666666
+}
