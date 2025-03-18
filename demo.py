@@ -256,70 +256,58 @@ else:
                 st.warning("Please fill in the student profile and situation before proceeding.")
 
     with tab3:
-        st.subheader("Self Assess")
-
-        if "data" not in st.session_state:
-            st.session_state.data = ""
-
-        if "text_situation_gen" not in st.session_state:
-            st.session_state.text_situation_gen = ""
-
-        if "text_reaction_test" not in st.session_state:
-            st.session_state.text_reaction_test = ""
-            
-        if "text_reaction_true" not in st.session_state:
-            st.session_state.text_reaction_true = ""
-
-        if st.button("New Scenario"):
-            
-            
-            
-            
-            
-            
-            scenario_path = knowledge_base.get_rand_scenario_high_grade()
-            with open(scenario_path, 'r') as file:
-                st.session_state.data = json.load(file)
-
-            st.session_state.text_situation = f"""Age of student: {st.session_state.data['student_profile']['age']}
-Gender: {st.session_state.data['student_profile']['gender']}
-Conditions: {', '.join(st.session_state.data['student_profile']["diagnosis"])}
-\nSituation: {st.session_state.data['situation']}"""
-            
-            st.session_state.text_reaction_test = " "
-            st.session_state.text_reaction_true = " "
-            st.rerun() 
-
-
-#             st.session_state.text_reaction_test = ""
-#             st.session_state.text_reaction_true = ""
-
-#             scenario_path = knowledge_base.get_rand_scenario_high_grade()
-#             with open(scenario_path, 'r') as file:
-#                 st.session_state.data = json.load(file)
-                
-                
-                            
+            st.subheader("Self Assess")
         
-                
-       
-
-#         st.session_state.text_situation_gen = f"""Age of student: {st.session_state.data['student_profile']['age']}
-# Gender: {st.session_state.data['student_profile']['gender']}
-# Conditions: {', '.join(st.session_state.data['student_profile']["diagnosis"])}
-# \nSituation: {st.session_state.data['situation']}"""
-
-
-        text_area_sc = st.text_area("Situation", st.session_state.text_situation_gen, height=170, label_visibility = 'collapsed')
-        text_area_react_test = st.text_area("What would you do?", st.session_state.text_reaction_test, height = 150, key = "text_reaction_test")
         
-        if st.button("Submit"):
-            st.session_state.text_reaction_true = st.session_state.data['action']
-            st.rerun()
+            if "data" not in st.session_state:
+                scenario_path = knowledge_base.get_rand_scenario_high_grade()
+                with open(scenario_path, 'r') as file:
+                    st.session_state.data = json.load(file)
+                st.session_state.text_reaction_test = ""  
+                st.session_state.text_reaction_true = ""
+        
+        
+            if "text_situation_gen" not in st.session_state:
+                st.session_state.text_situation_gen = f"""Age of student: {st.session_state.data['student_profile']['age']}
+        Gender: {st.session_state.data['student_profile']['gender']}
+        Conditions: {', '.join(st.session_state.data['student_profile']["diagnosis"])}
+        \nSituation: {st.session_state.data['situation']}"""
+        
             
-        text_area_react_true = st.text_area("Reaction", st.session_state.text_reaction_true, height=170, label_visibility = 'collapsed', key = "text_reaction_true")
-
-
+            if st.button("New Scenario"):
+                scenario_path = knowledge_base.get_rand_scenario_high_grade()
+                with open(scenario_path, 'r') as file:
+                    st.session_state.data = json.load(file)
+        
+                # Reset responses
+                st.session_state.text_reaction_test = ""
+                st.session_state.text_reaction_true = ""
+        
+                # Update the displayed situation text
+                st.session_state.text_situation_gen = f"""Age of student: {st.session_state.data['student_profile']['age']}
+        Gender: {st.session_state.data['student_profile']['gender']}
+        Conditions: {', '.join(st.session_state.data['student_profile']["diagnosis"])}
+        \nSituation: {st.session_state.data['situation']}"""
+        
+        
+            text_area_sc = st.text_area("Situation",  
+                                        st.session_state.text_situation_gen,  
+                                        height=170,  
+                                        label_visibility='collapsed')
+        
+            text_area_react_test = st.text_area("What would you do?",  
+                                                height=150,  
+                                                key="text_reaction_test")  
+        
+            
+            if st.button("Submit"):
+                st.session_state.text_reaction_true = st.session_state.data['action']
+        
+            
+            text_area_react_true = st.text_area("Reaction",  
+                                                height=170,  
+                                                label_visibility='collapsed',  
+                                                key="text_reaction_true")  
     # Footer
     st.markdown("---")
     st.markdown("Developed for showcasing purposes only - No real Scenarios used")
