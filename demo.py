@@ -66,7 +66,6 @@ def login():
 def logout():
     st.session_state["authenticated"] = False
     st.session_state["username"] = None
-    st.rerun()
 
 # Initialize session state
 if "authenticated" not in st.session_state:
@@ -76,8 +75,9 @@ if "authenticated" not in st.session_state:
 if not st.session_state["authenticated"]:
     login()
 else:
-    st.sidebar.button("Logout", on_click=logout)
-
+    if st.sidebar.button("Logout"):
+        logout()  
+        st.rerun()  
 
 
     # Main Web App
