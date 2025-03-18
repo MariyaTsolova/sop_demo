@@ -4,5 +4,4 @@ sentence-transformers
 streamlit
 chroma-haystack
 pypdf
-yaml
 hashlib
