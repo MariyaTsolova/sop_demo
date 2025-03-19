@@ -204,6 +204,7 @@ else:
                     st.success(f"Suggested Action: {suggested_action}")
 
                 if service == 2:
+                    # TODO @st.cache_resourse 
                     path_document_store = os.path.join("data", "doc_store_pdfs.pkl")
                     doc_store_pdf = InMemoryDocumentStore.load_from_disk(path_document_store)                   
                     
@@ -223,7 +224,7 @@ else:
                     query = student_profile + " " + situation
                     result = query_pipeline.run({"text_embedder": {"text": query}})
 
-                    chunks = [d.content for d in result['retriever']['documents'] if d.score>0.4]
+                    chunks = [d.content for d in result['retriever']['documents'] if d.score>0.2]
                     chunks = "\n\n".join(chunks)
 
                     suggest_action_kb_prompt = f"""
@@ -257,7 +258,7 @@ else:
 
     with tab3:
             st.subheader("Self Assess")
-        
+            # TODO -> Change from text box to "printing box"
         
             if "data" not in st.session_state:
                 scenario_path = knowledge_base.get_rand_scenario_high_grade()

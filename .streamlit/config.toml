@@ -1,0 +1,10 @@
+# .streamlit/config.toml
+
+[theme]
+primaryColor = "#f69c2f"  # Vibrant teal for accents
+backgroundColor = "#ffffff"  # White background for a clean look
+secondaryBackgroundColor = "#f4f4f4"  # Light gray for contrast
+textColor = "#000000"  # Black text for readability
+font = "sans serif"  # Modern and clean font style
+
+
