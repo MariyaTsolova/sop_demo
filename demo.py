@@ -293,7 +293,8 @@ else:
             text_area_sc = st.text_area("Situation",  
                                         st.session_state.text_situation_gen,  
                                         height=170,  
-                                        label_visibility='collapsed')
+                                        label_visibility='collapsed',
+                                         disabled=True)
         
             text_area_react_test = st.text_area("What would you do?",  
                                                 height=150,  
@@ -307,7 +308,8 @@ else:
             text_area_react_true = st.text_area("Reaction",  
                                                 height=170,  
                                                 label_visibility='collapsed',  
-                                                key="text_reaction_true")  
+                                                key="text_reaction_true",
+                                                 disabled=True)  
     # Footer
     st.markdown("---")
     st.markdown("Developed for showcasing purposes only - No real Scenarios used")
