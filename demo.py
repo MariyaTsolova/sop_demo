@@ -151,6 +151,16 @@ else:
             else:
                 st.warning("Please fill in all fields before proceeding.")
 
+
+        st.markdown("""
+        The rating is from 1 to 5:
+        - 1 - bad reaction
+        - 2 - ineffective reaction
+        - 3 - slightly effective reaction
+        - 4 - effective reaction
+        - 5 - very effective reaction 
+        """)
+
     # Second Tab: Suggest an Action
     with tab2:
         st.subheader("Suggest an Action")
