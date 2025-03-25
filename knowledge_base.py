@@ -24,7 +24,8 @@ from haystack.components.writers import DocumentWriter
 import contextualiser
 
 #%%
-CHUNK_SIZE = 250
+CHUNK_SIZE_WORD = 250
+CHUNK_SIZE_SENT = 5
 
 # path_choma_document_store = os.path.join("data", "chroma", "documents_KB")
 data_folder = "data"
@@ -32,9 +33,18 @@ docs_folder = os.path.join(data_folder, "knowledge_base_documents")
 
 docs_names = os.listdir(docs_folder)
 docs_paths = [os.path.join(docs_folder, d) for d in docs_names]
+# TODO: Fix so that is not hardcoded
+meta_docs_urls = [{'url': "https://drive.google.com/file/d/166LzAs4UUYY2nmfvEFE7NUcJyEIfBoc3"},
+                {'url': "https://drive.google.com/file/d/18VgDE6jXP5eN_4w_IPbsUVu8tW-V4ep2"},
+                {'url': "https://drive.google.com/file/d/1ux2ZVY-H62jpu0xzPvuWIaW6mMGtPxRN"},
+                {'url': "https://drive.google.com/file/d/1JdqrM1riD57oBlBO2rxsYWM-BECtkBOI"},
+                {'url': "https://drive.google.com/file/d/1xo_7Q7LxUFHSLjQLhEE8MuxPnqGFEGEo"},
+                {'url': "https://drive.google.com/file/d/15hzWFmt9ugrCbsAJ92_TVEsM3OynBXSb"},
+                {'url': "https://drive.google.com/file/d/1J2sZ87itIDhKcF_wmZN2TcBeZRLjlMJP"},
+                {'url': "https://drive.google.com/file/d/12d5Fo1ObDfvHoTKsFaIGk8SOLLRsczYw"}]
 
 pdf_kb = False
-sc_kb = True
+sc_kb = False
 comb_kb = False
 
 # %%
@@ -60,8 +70,9 @@ def preprocess_pdfs(document_store):
 
     openai_key = st.secrets["API_keys"]["openai"]
 
-    document_splitter = DocumentSplitter(split_by="word", split_length=CHUNK_SIZE, split_overlap=50)
-    document_contextualiser = contextualiser.ContextualTextPreProcessor(chunk_size=CHUNK_SIZE, api_key=openai_key)
+    # TODO: split_by word or sentence? -> sentence gave a bit higher score
+    document_splitter = DocumentSplitter(split_by="sentence", split_length=CHUNK_SIZE_SENT, split_overlap=1)
+    document_contextualiser = contextualiser.ContextualTextPreProcessor(chunk_size=CHUNK_SIZE_SENT, api_key=openai_key)
     document_embedder = SentenceTransformersDocumentEmbedder()
     # TODO - Add bm25 embedding pdf files
     # TODO - It cannot read and convert to Documents, two of the pdfs, cryptography>=3.1 is required for AES algorithm
@@ -81,7 +92,7 @@ def preprocess_pdfs(document_store):
     pdf_preprocessing_pipeline.connect("document_splitter", "document_contextualiser.documents")
     pdf_preprocessing_pipeline.connect("document_contextualiser", "document_embedder")
     pdf_preprocessing_pipeline.connect("document_embedder", "document_writer")
-    pdf_preprocessing_pipeline.run({"pdf_converter": {"sources": docs_paths}})
+    pdf_preprocessing_pipeline.run({"pdf_converter": {"sources": docs_paths, "meta": meta_docs_urls}})
     print("pdf preprocessing pipeline finished")
 
     return document_store
@@ -115,7 +126,7 @@ def convert_all_json_to_text():
 
 def preprocess_scenarios(document_store):
 
-    # TODO Decide what to do with the metadata 
+    # TODO What to do with the metadata 
     print("scenarios preprocessing beginning")
     scenarios_txt = convert_all_json_to_text()
 
@@ -164,6 +175,7 @@ def create_combined_kb():
     else:
         doc_store_pdfs = preprocess_pdfs(InMemoryDocumentStore(embedding_similarity_function="cosine"))
 
+    # TODO: Check if doc_store_scenarios already exists 
     document_store_combined = preprocess_scenarios(doc_store_pdfs)
     return document_store_combined
 
@@ -171,7 +183,7 @@ def create_combined_kb():
 if __name__ == "__main__":
     if pdf_kb:
         document_store_pdf = create_pdf_kb()
-        document_store_pdf.save_to_disk("data/doc_store_pdfs.pkl")
+        document_store_pdf.save_to_disk("data/doc_store_pdfs_sent.pkl")
 
     if sc_kb:
         document_store_scenario = create_scenario_kb()
