@@ -80,7 +80,7 @@ else:
         st.rerun()  
 
 
-    # Main Web App
+# Main Web App
     st.title("Action Recommender for Teachers")
 
     st.markdown(
@@ -267,7 +267,8 @@ else:
 
     with tab3:
             st.subheader("Self Assess")
-        
+
+
         
             if "data" not in st.session_state:
                 scenario_path = knowledge_base.get_rand_scenario_high_grade()
@@ -300,11 +301,19 @@ else:
         \nSituation: {st.session_state.data['situation']}"""
         
         
-            text_area_sc = st.text_area("Situation",  
-                                        st.session_state.text_situation_gen,  
-                                        height=170,  
-                                        label_visibility='collapsed',
-                                         disabled=True)
+            # text_area_sc = st.text_area("Situation",  
+            #                             st.session_state.text_situation_gen,  
+            #                             height=170,  
+            #                             label_visibility='collapsed',
+            #                              disabled=True)
+
+
+
+            st.markdown(f"""
+                    <div style="border: 1px solid #ccc; padding: 10px; border-radius: 5px; background-color: #f8f9fa; color: black; font-size: 16px;">
+                        {st.session_state.text_situation_gen}
+                    </div>
+                """, unsafe_allow_html=True)
         
             text_area_react_test = st.text_area("What would you do?",  
                                                 height=150,  
@@ -315,11 +324,34 @@ else:
                 st.session_state.text_reaction_true = st.session_state.data['action']
         
             
-            text_area_react_true = st.text_area("Reaction",  
-                                                height=170,  
-                                                label_visibility='collapsed',  
-                                                key="text_reaction_true",
-                                                 disabled=True)  
+
+
+
+           
+
+            # Non-editable text box
+            # text_area_react_true = st.text_area("Reaction",  
+            #                                     height=170,  
+            #                                     label_visibility='collapsed',  
+            #                                     key="text_reaction_true",
+            #                                     disabled=True)
+
+            st.markdown(f"""
+                    <div style="border: 1px solid #ccc; padding: 10px; border-radius: 5px; background-color: #f8f9fa; color: black; font-size: 16px;">
+                        {st.session_state.text_reaction_true}
+                    </div>
+                """, unsafe_allow_html=True)
+                                        
+
+
+
+############################################################
+
+    #         text_area_react_true = st.text_area("Reaction",  
+    #                                             height=170,  
+    #                                             label_visibility='collapsed',  
+    #                                             key="text_reaction_true",
+    #                                              disabled=True)  
     # Footer
     st.markdown("---")
     st.markdown("Developed for showcasing purposes only - No real Scenarios used")
