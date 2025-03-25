@@ -151,6 +151,16 @@ else:
             else:
                 st.warning("Please fill in all fields before proceeding.")
 
+
+        st.markdown("""
+        The rating is from 1 to 5:
+        - 1 - bad reaction
+        - 2 - ineffective reaction
+        - 3 - slightly effective reaction
+        - 4 - effective reaction
+        - 5 - very effective reaction 
+        """)
+
     # Second Tab: Suggest an Action
     with tab2:
         st.subheader("Suggest an Action")
@@ -315,7 +325,8 @@ else:
             text_area_sc = st.text_area("Situation",  
                                         st.session_state.text_situation_gen,  
                                         height=170,  
-                                        label_visibility='collapsed')
+                                        label_visibility='collapsed',
+                                         disabled=True)
         
             text_area_react_test = st.text_area("What would you do?",  
                                                 height=150,  
@@ -329,7 +340,8 @@ else:
             text_area_react_true = st.text_area("Reaction",  
                                                 height=170,  
                                                 label_visibility='collapsed',  
-                                                key="text_reaction_true")  
+                                                key="text_reaction_true",
+                                                 disabled=True)  
     # Footer
     st.markdown("---")
     st.markdown("Developed for showcasing purposes only - No real Scenarios used")
