@@ -205,7 +205,7 @@ else:
 
                 if service == 2:
                     # TODO @st.cache_resourse 
-                    path_document_store = os.path.join("data", "doc_store_pdfs.pkl")
+                    path_document_store = os.path.join("data", "doc_store_pdfs_sent.pkl")
                     doc_store_pdf = InMemoryDocumentStore.load_from_disk(path_document_store)                   
                     
                     # # BM25 Retriever
@@ -224,8 +224,11 @@ else:
                     query = student_profile + " " + situation
                     result = query_pipeline.run({"text_embedder": {"text": query}})
 
-                    chunks = [d.content for d in result['retriever']['documents'] if d.score>0.2]
-                    chunks = "\n\n".join(chunks)
+                    # chunks = [d.content for d in result['retriever']['documents'] if d.score>0.2]
+                    chunks_all_info = [f"""Content: {d.content}, Filepath: {d.meta['file_path']}, page number: 
+                                       {d.meta['page_number']}, URL: {d.meta['url']}, Score: {d.score}""" for d in result['retriever']['documents'] if d.score>0.2]
+                    # meta_chunks = [[d.meta['file_path'], d.meta['page_number'], d.meta['url'], d.score] for d in result['retriever']['documents'] if d.score>0.2]
+                    chunks_prompt = "\n\n".join(chunks_all_info)
 
                     suggest_action_kb_prompt = f"""
                     You are a helpful assistant that helps resolving problematic situations involving student with special educational needs.
@@ -234,9 +237,20 @@ else:
                     The situation that happened with the student is:
                     {situation}.
                     PDF document chunks:
-                    {chunks}
-                    Taking into account the student profile, the situation and the information from the chunks, 
+                    {chunks_prompt}
+                    Taking into account the student profile, the situation and only the "Content" information from the chunks, 
                     suggest what would be the best and most effective action in such situation in a short paragraph with up to 3 step.
+
+                    Using the content and metadata from all the chunks you found usefull and used to generate the answer, and
+                    output the result in the format:
+                    
+                    File name: 
+                    \n
+                    Page:
+                    \n
+                    URL:
+                    \n
+                    Score: 
                     """
 
                     openai_key = st.secrets["API_keys"]["openai"]
@@ -252,13 +266,20 @@ else:
                     suggested_action = response.choices[0].message.content
 
                     st.success(f"Suggested Action: {suggested_action}")
-                    
+              
+#                     for id_chunk, chunk in enumerate(chunks):
+#                         st.write(f"""Chunk: {chunk} \n
+# File Name: {meta_chunks[id_chunk][0]} \n
+# Page: {meta_chunks[id_chunk][1]} \n
+# URL: {meta_chunks[id_chunk][2]} \n
+# Score: {meta_chunks[id_chunk][3]} \n
+# ======================================================= \n""")                     
+
             else:
                 st.warning("Please fill in the student profile and situation before proceeding.")
 
     with tab3:
             st.subheader("Self Assess")
-            # TODO -> Change from text box to "printing box"
         
             if "data" not in st.session_state:
                 scenario_path = knowledge_base.get_rand_scenario_high_grade()
@@ -312,6 +333,3 @@ else:
     # Footer
     st.markdown("---")
     st.markdown("Developed for showcasing purposes only - No real Scenarios used")
-
-
-
