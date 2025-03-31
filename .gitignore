@@ -3,3 +3,4 @@
 __pycache__
 data/knowledge_base_documents/*
 *.pkl
+.spyproject
