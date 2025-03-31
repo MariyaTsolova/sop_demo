@@ -382,7 +382,7 @@ else:
               
             # Reset button to clear chat
             if st.button("🔄 Start New Chat"):
-                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за спарвяне със конкретна ситуация свързана с вашето дете. Какъво се случи?"}]
+                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за справяне с конкретна ситуация свързана с вашето дете. Какъво се случи?"}]
                 # st.session_state.awaiting_product_questions = False
                 # st.session_state.recommended_products = None
                 # st.session_state.recommendation_output = None
@@ -398,7 +398,7 @@ else:
             language_switch = False
             final_summary = []
             if "messages" not in st.session_state:
-                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за спарвяне със конкретна ситуация свързана с вашето дете. Какъво се случи?"}]
+                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за справяне с конкретна ситуация свързана с вашето дете. Какъво се случи?"}]
 
 
             main_prompt = f""" Ти си асистент, който задава въпроси на потребителя относно здравословното състояние на детето им, което есъс Специални Образователни Потребности. 
