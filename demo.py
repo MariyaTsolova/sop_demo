@@ -81,19 +81,19 @@ else:
 
 
 # Main Web App
-    st.title("Action Recommender for Teachers")
+    st.title("Virtual Assistant for SEND")
 
     st.markdown(
         """
         This app helps teachers working with autistic students by:
         - **Rating an action** given a student profile and situation.
         - **Suggesting an action** for a specific student profile and situation.
-        - Training platform for **Self Assessing tool** for teachers
+        - Training tool for **Self Assessment** for teachers
         """
     )
 
     # Tabs for the three functionalities
-    tab1, tab2, tab3, tab4 = st.tabs(["Rate an Action", "Suggest an Action", "Self Assessment", "Assistant"])
+    tab1, tab2, tab3, tab4 = st.tabs(["Rate an Action", "Suggest an Action", "Self Assessment - Training", "Assistant"])
 
     # First Tab: Rate an Action
     with tab1:
@@ -289,7 +289,7 @@ else:
                 st.warning("Please fill in the student profile and situation before proceeding.")
 
     with tab3:
-            st.subheader("Self Assess")
+            st.subheader("Self Assessment - Training")
 
         
             if "data" not in st.session_state:
@@ -382,41 +382,38 @@ else:
               
             # Reset button to clear chat
             if st.button("🔄 Start New Chat"):
-                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за спарвяне със конкретна ситуация свързана с вашето дете. Какъво се случи?"}]
+                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за справяне с конкретна ситуация свързана с вашето дете. Какъво се случи?"}]
                 # st.session_state.awaiting_product_questions = False
                 # st.session_state.recommended_products = None
                 # st.session_state.recommendation_output = None
                 st.rerun()        
-        
-        
-        
-        
-        
+
+
             openai_key = st.secrets["API_keys"]["openai"]
             client = openai.OpenAI(api_key = openai_key)
             st.subheader("Assistant")
             language_switch = False
             final_summary = []
             if "messages" not in st.session_state:
-                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за спарвяне със конкретна ситуация свързана с вашето дете. Какъво се случи?"}]
+                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за спрaвяне с конкретна ситуация свързана с вашето дете. Какво се случи?"}]
 
 
-            main_prompt = f""" Ти си асистент, който задава въпроси на потребителя относно здравословното състояние на детето им, което есъс Специални Образователни Потребности. 
+            main_prompt = f""" Ти си асистент, който задава въпроси на потребителя относно здравословното състояние на детето им, което е със Специални Образователни Потребности. 
            Ти не съветваш, а само задаваш въпроси относно състоянието и симптомите на детето.
            Трябва да използваш наръчника водене на разговор. Ако има конкретни въпроси, които трябва да зададеш, не ги променяй.
-           Винаги трябва да водиш разговора на български, ако {language_switch ==False} и на английски, ако {language_switch == True}.
+           Винаги трябва да водиш разговора на български, ако {language_switch == False} и на английски, ако {language_switch == True}.
 
             
            Наръчник за водене на разговор:
             1. Започни разговора със следното изречение на езика дефиниран чрез {language_switch}.
-            На български: Здравейте! Аз съм тук, за да ви помогна за спарвяне със конкретна ситуация свързана с вашето дете. Какъво се случи?
+            На български: Здравейте! Аз съм тук, за да ви помогна за спрaвяне с конкретна ситуация свързана с вашето дете. Какъво се случи?
             На английски: Hello! I am here to help you with specific situation involving your child. What happend?"
 
             2. Събери информация относно **всички** аспекти, които са база за обобщението **като задаваш по 1 въпрос на итерация**:
                **Контекст**
                    Какъвa е ситуацията с вашето дете, отговорът на първия въпрос. Къде се случва ситуацията вкъщи, навън, в училище? Има ли други участници в ситуацията?
                **Възраст на детето**
-                   Задължително попитай за възрастта на детето.
+                   Задължително попитай за възрастта на детето ако не е зададено досега като информация.
                    Ако детето е под 3 месеца или е новородено, включете специална бележка, че тези възрастови групи може да изискват по-спешно внимание. 
                    Ако детето е НАД 18 години, потвърдете отново дали това е действителната възраст и обърнете внимание, че вие работите с деца.
                **Състояние**
@@ -430,7 +427,7 @@ else:
                **Допълнителна информация**
                    Посещава ли детето специализирани центрове за обучение?
                    Взимало ли е детето лекарства за подобряване на сегашното му състояние.
-                   Има ли друга промяна в поведението на детето - способност да се храни, дехидратация, необичайно плачене.
+                   Има ли друга промяна в поведението на детето - способност да се храни, дехидратация.
 
            3. Фокусирай се само върху сегашното състояние.
                Ако потребителят започне да обсъжда хронични заболявания или дългосрочни терапии, учтиво обяснете, че този асистент е предназначен само за конкретни ситуации и ги насърчете да се консултират с подходящ специалист.
@@ -515,15 +512,6 @@ else:
                         st.write(bot_response)
 
 
-
-
-
-            
-            
-
-            
-    
-    
     # Footer
     st.markdown("---")
     st.markdown("Developed for showcasing purposes only - No real Scenarios used")
