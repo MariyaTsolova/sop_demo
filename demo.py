@@ -29,6 +29,40 @@ def hash_password(password):
 openai_key = st.secrets["API_keys"]["openai"]
 client = openai.OpenAI(api_key = openai_key)
 
+@st.cache_resource
+def start_knowledge_base():
+    path_document_store = os.path.join("data", "doc_store_pdfs_sent.pkl")
+    doc_store_pdf = InMemoryDocumentStore.load_from_disk(path_document_store)                   
+    
+    # # BM25 Retriever
+    # retriever = InMemoryBM25Retriever(document_store=doc_store_pdf)
+    # pipeline = Pipeline()
+    # pipeline.add_component(instance=retriever, name="retriever")
+    # result = pipeline.run(data={"retriever": {"query":"Age: 10, Gender: female, Diagnosis: ADHD. Situation: The kid fell from the chair and hurt his head."}})               
+    # result['retriever']['documents'][0].content
+
+    # Embedding Retriever
+    query_pipeline = Pipeline()
+    query_pipeline.add_component("text_embedder", SentenceTransformersTextEmbedder())
+    query_pipeline.add_component("retriever", InMemoryEmbeddingRetriever(document_store=doc_store_pdf))
+    query_pipeline.connect("text_embedder.embedding", "retriever.query_embedding")
+    query_pipeline.warm_up()
+    return doc_store_pdf, query_pipeline
+
+doc_store, pipeline = start_knowledge_base()
+
+def query_knowledge_base(query_text, n=5):
+    res = pipeline.run({"text_embedder": {"text": query_text}, "retriever": {"top_k": n}})
+    return res['retriever']['documents']
+
+def format_chunks(documents):
+    # chunks = [d.content for d in result['retriever']['documents'] if d.score>0.2]
+    chunks_all_info = [f"""Content: {d.content}, Filepath: {d.meta['file_path']}, page number: 
+                        {d.meta['page_number']}, URL: {d.meta['url']}, Score: {d.score}""" for d in documents] # if d.score>0.2]
+    # meta_chunks = [[d.meta['file_path'], d.meta['page_number'], d.meta['url'], d.score] for d in result['retriever']['documents'] if d.score>0.2]
+    chunks_str = "\n\n".join(chunks_all_info)
+    return chunks_str
+
 # Load credentials from the config file
 def load_users():
     if not os.path.exists(CONFIG_FILE):
@@ -199,9 +233,6 @@ else:
             if student_profile and situation:
                 if service == 1:
                     # Call your action suggestion function
-                    openai_key = st.secrets["API_keys"]["openai"]
-                    client = openai.OpenAI(api_key = openai_key)
-
                     response = client.chat.completions.create(
                         model="gpt-4o-mini",
                         messages=[
@@ -215,31 +246,11 @@ else:
 
                 if service == 2:
                     # TODO @st.cache_resourse 
-                    path_document_store = os.path.join("data", "doc_store_pdfs_sent.pkl")
-                    doc_store_pdf = InMemoryDocumentStore.load_from_disk(path_document_store)                   
                     
-                    # # BM25 Retriever
-                    # retriever = InMemoryBM25Retriever(document_store=doc_store_pdf)
-                    # pipeline = Pipeline()
-                    # pipeline.add_component(instance=retriever, name="retriever")
-                    # result = pipeline.run(data={"retriever": {"query":"Age: 10, Gender: female, Diagnosis: ADHD. Situation: The kid fell from the chair and hurt his head."}})               
-                    # result['retriever']['documents'][0].content
-
-                    # Embedding Retriever
-                    query_pipeline = Pipeline()
-                    query_pipeline.add_component("text_embedder", SentenceTransformersTextEmbedder())
-                    query_pipeline.add_component("retriever", InMemoryEmbeddingRetriever(document_store=doc_store_pdf))
-                    query_pipeline.connect("text_embedder.embedding", "retriever.query_embedding")
-
                     query = student_profile + " " + situation
-                    result = query_pipeline.run({"text_embedder": {"text": query}})
-
-                    # chunks = [d.content for d in result['retriever']['documents'] if d.score>0.2]
-                    chunks_all_info = [f"""Content: {d.content}, Filepath: {d.meta['file_path']}, page number: 
-                                       {d.meta['page_number']}, URL: {d.meta['url']}, Score: {d.score}""" for d in result['retriever']['documents'] if d.score>0.2]
-                    # meta_chunks = [[d.meta['file_path'], d.meta['page_number'], d.meta['url'], d.score] for d in result['retriever']['documents'] if d.score>0.2]
-                    chunks_prompt = "\n\n".join(chunks_all_info)
-
+                    result = query_knowledge_base(query)
+                    chunks_prompt = format_chunks(result)
+                    
                     suggest_action_kb_prompt = f"""
                     You are a helpful assistant that helps resolving problematic situations involving student with special educational needs.
                     The profile of the student is:
@@ -403,6 +414,7 @@ else:
         For the scenario you want to know what initiated this problematic situation or if there were any triggers and what was the setting (place, time ...) 
         If you feel like you gathered enough information to suggest an action, before suggesting anything i expect you return a tool call calling the query_knowledge_base function with a small summary as and input!! 
         You will get relevant chunks as an input to then make a suggestion.        
+        I demand that you always in every chat after gathering sufficient information about the situation and before making a suggestion you make this tool call so that your answer can be enhanced and the user can be provided with source to believe the application.
         """}
 
         TOOLS = [{
@@ -428,23 +440,27 @@ else:
         }]
 
         WELCOME_MESSAGE = {"role": "assistant", "content": "Hello, how can i help you today?"}
+        SYSTEM_MESSAGE = SYSTEM_MESSAGE_TOOL # Choose version
 
         if "messages" not in st.session_state:
-            st.session_state.messages = [SYSTEM_MESSAGE_SUGGEST, WELCOME_MESSAGE]
+            st.session_state.messages = [SYSTEM_MESSAGE, WELCOME_MESSAGE]
 
         # Reset button to clear chat
         if st.button("🔄 Start New Chat"):
-            st.session_state.messages = [SYSTEM_MESSAGE_SUGGEST, WELCOME_MESSAGE]
+            st.session_state.messages = [SYSTEM_MESSAGE, WELCOME_MESSAGE]
             st.rerun()
 
 
         chat_container = st.container()
 
         with chat_container:
-            for msg in st.session_state.messages[1:]:
-                #if "__SUMMARY_READY__" not in msg["content"]:
-                    with st.chat_message(msg["role"]):
-                        st.markdown(msg["content"])
+            for msg in st.session_state.messages:
+                if type(msg) == dict:  
+                    role = msg.get('role', 'else')
+                    if role == "user" or role == "assistant":
+                        with st.chat_message(role):
+                            st.markdown(msg["content"])
+
 
         # Add an empty container below messages (pushing input box to the bottom)
         st.empty()
@@ -459,19 +475,62 @@ else:
                     st.markdown(user_input)
 
             with st.spinner("Thinking..."):
-                response = client.chat.completions.create(model="gpt-o1", messages=st.session_state.messages, temperature=0.7, tools=TOOLS)
-                result = response.choices[0].message.content
-
-                if "__SUGGESTION__" in result:
-                    print("Bot made a suggestion")
-                    print(result)
-                st.session_state.messages.append({"role": "assistant", "content": result})
-
-                if "__SUMMARY_READY__" not in result:
+                response = client.chat.completions.create(model="o3-mini", messages=st.session_state.messages, tools=TOOLS)
+                response_message = response.choices[0].message.content
+                
+                print(response)
+                if response_message is not None:                   
+                    st.session_state.messages.append({"role": "assistant", "content": response_message})
                     with chat_container:
                         with st.chat_message("assistant"):
-                            st.markdown(result)
+                            st.markdown(response_message)
 
+
+                else: 
+                    print("\n\nTOOL CALLING\n")
+                    st.session_state.messages.append(response.choices[0].message)
+
+                    tool_call = response.choices[0].message.tool_calls[0]
+                    tool_args = json.loads(tool_call.function.arguments)
+                    tool_input = tool_args['query_text']
+
+                    documents = query_knowledge_base(tool_input)
+                    formated_chunks = format_chunks(documents)
+
+                    st.session_state.messages.append({                               # append result message
+                        "role": "tool",
+                        "tool_call_id": tool_call.id,
+                        "content": formated_chunks
+                    })
+
+                    system_context_message = {"role": "system", "content": f"""
+                    You the Assistant just made the tool call query_knowledge_base():
+                    Taking into account the persons profile, the situation and only the "Content" information from the chunks, 
+                    suggest what would be the best and most effective action in such situation in a short paragraph with up to 3 step.
+
+                    Also cite chunks from documents u found usefull. Append you suggestion by outputing citations in the format:
+
+                    File name: 
+                    \n
+                    Page:
+                    \n
+                    URL:
+                    """}
+
+                    st.session_state.messages.append(system_context_message)
+
+                    response = client.chat.completions.create(model="o3-mini", messages=st.session_state.messages, tools=TOOLS)
+                    response_message = response.choices[0].message.content
+                    print(response)
+
+                    if response_message is not None:
+                        st.session_state.messages.append({"role": "assistant", "content": response_message})
+
+                        with chat_container:
+                            with st.chat_message("assistant"):
+                                st.markdown(response_message)
+                    else:
+                        print("\n\n OH Oh! Double Tool Call\n")
     # Footer
     st.markdown("---")
     st.markdown("Developed for showcasing purposes only - No real Scenarios used")
