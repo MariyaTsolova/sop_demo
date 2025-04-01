@@ -1,6 +1,6 @@
 .streamlit/secrets.toml
 #./data/
-__pycache__
+
 data/knowledge_base_documents/*
 *.pkl
 .spyproject
