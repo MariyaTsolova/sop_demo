@@ -382,7 +382,7 @@ else:
               
             # Reset button to clear chat
             if st.button("🔄 Start New Chat"):
-                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за справяне с конкретна ситуация свързана с вашето дете. Какъво се случи?"}]
+                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за справяне с конкретна ситуация свързана с вашето дете. Какъво се случи?\n Hello! I'm here to help you deal with a specific situation related to your child. What happened?"}]
                 # st.session_state.awaiting_product_questions = False
                 # st.session_state.recommended_products = None
                 # st.session_state.recommendation_output = None
@@ -396,7 +396,7 @@ else:
             final_summary = []
             if "messages" not in st.session_state:
 
-                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за справяне с конкретна ситуация свързана с вашето дете. Какъво се случи?"}]
+                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за справяне с конкретна ситуация свързана с вашето дете. Какъво се случи? \n Hello! I'm here to help you deal with a specific situation related to your child. What happened?"}]
 
 
 
@@ -470,6 +470,114 @@ else:
 
 
 
+            def translate_to_english(text):
+                """Translate Bulgarian text to English for better moderation accuracy."""
+                try:
+                    response = client.chat.completions.create(
+                        model="gpt-4o-mini",
+                        messages=[
+                            {"role": "system", "content": "Translate the following text from Bulgarian to English."},
+                            {"role": "user", "content": text}
+                        ],
+                        temperature=0
+                    )
+                    return response.choices[0].message.content
+                except Exception as e:
+                    st.error(f'Translation error: {e}')
+                    return text  # If translation fails, return the original text
+
+
+
+
+
+            def moderate_text(text):
+                """Use OpenAI's moderation API to check for violations."""
+                try:
+                    translated_text = translate_to_english(text)
+                    response = client.moderations.create(
+                        model="omni-moderation-latest",
+                        input=translated_text
+                    )
+                    flagged = response.results[0].flagged  # Check if flagged
+                    moderation_result = response.results[0]
+                    categories = response.results[0].categories  # Get category details
+                    
+                    category_scores = dict(moderation_result.category_scores)
+                    return flagged, categories, category_scores
+                except Exception as e:
+                    st.error(f"Error in moderation: {e}")
+                    return False, {}
+
+
+
+
+
+
+
+           
+
+
+
+            # def moderate_text(text): 
+            #     """Use OpenAI's moderation API to check for violations with maximum sensitivity."""
+            #     try:
+            #         translated_text = translate_to_english(text)
+            #         response = client.moderations.create(
+            #             model="omni-moderation-latest",
+            #             input=translated_text
+            #         )
+            
+            #         moderation_result = response.results[0]
+            #         category_scores = dict(moderation_result.category_scores)  # Convert to dictionary
+                    
+            #         # Set a strict sensitivity threshold (0.1 for all categories)
+            #         SENSITIVITY_THRESHOLD = 0.2  
+            
+            #         # Flag if any category exceeds the threshold
+            #         is_flagged = any(score > SENSITIVITY_THRESHOLD for score in category_scores.values())
+            
+            #         return is_flagged, moderation_result.categories, category_scores
+            #     except Exception as e:
+            #         st.error(f"Error in moderation: {e}")
+            #         return False, {}
+
+
+
+
+
+
+
+
+
+
+
+            # def moderate_text(text):
+            #     """Check if the text is flagged as inappropriate using OpenAI moderation."""
+            #     try:
+            #         translated_text = translate_to_english(text)  # Translate before moderation
+            #         response = client.moderations.create(
+            #             model="omni-moderation-latest",
+            #             input=translated_text
+            #         )
+            #         flagged = response.results[0].flagged  # Check if flagged
+            #         categories = response.results[0].categories  # Get category details
+            #         return flagged, categories
+            #     except Exception as e:
+            #         st.error(f"Error in moderation: {e}")
+            #         return False, {}
+                    
+                    
+                    
+                    
+                    
+                #     return response.results[0].flagged  # True if flagged, False otherwise
+                # except Exception as e:
+                #     st.error(f"Moderation error: {e}")
+                #     return False  # Assume safe if an error occurs
+            
+
+
+
 
             def chatbot_response(messages):
                 chat_completion = client.chat.completions.create(
@@ -492,11 +600,37 @@ else:
                 # User input box
             user_input = st.chat_input("Напишете съобщение...")
                 
-            if user_input:
-                with chat_container:
+            if user_input:               
                 
+                flagged, categories, category_scores = moderate_text(user_input)
+
+                
+                if flagged:
+                        st.warning("⚠️ Вашето съобщение беше маркирано като неподходящо. Достъпът ви до чата е ограничен.")
+                        st.write(category_scores)
+                        st.stop()  # Stop further execution
+                
+                with chat_container:
                     with st.chat_message("user"):
                         st.write(user_input)
+                        st.write(category_scores)
+           
+                
+                
+               
+            # def extract_summary(response_text):
+            #     try:
+            #         summary = json.loads(response_text)  # Convert JSON string to dictionary
+            #         if isinstance(summary, dict):  # Ensure it is a dictionary
+            #             return summary
+            #     except json.JSONDecodeError:
+            #         pass  # If it's not a valid JSON, return None or handle accordingly
+            #     return None
+            
+            
+                                        
+                             
+            
                     
                 # Append user message
                 st.session_state.messages.append({"role": "user", "content": user_input})
@@ -512,6 +646,17 @@ else:
                 with chat_container:
                     with st.chat_message("assistant"):
                         st.write(bot_response)
+                        
+                        
+                        
+                # # Extract summary if it exists
+                # summary = extract_summary(bot_response)
+                
+                # # Store the summary separately if it exists
+                # if summary:
+                #     st.session_state["summary"] = summary
+                #     st.write("✅ Обобщението е създадено успешно.")
+                #     st.json(summary)  # Display structured summary for validation
 
 
     # Footer
