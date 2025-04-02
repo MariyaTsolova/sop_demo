@@ -24,6 +24,44 @@ st.set_page_config(
 
 CONFIG_FILE = "config_credentials.yaml"
 
+
+openai_key = st.secrets["API_keys"]["openai"]
+client = openai.OpenAI(api_key = openai_key)
+
+@st.cache_resource
+def start_knowledge_base():
+    path_document_store = os.path.join("data", "doc_store_pdfs_sent.pkl")
+    doc_store_pdf = InMemoryDocumentStore.load_from_disk(path_document_store)                   
+    
+    # # BM25 Retriever
+    # retriever = InMemoryBM25Retriever(document_store=doc_store_pdf)
+    # pipeline = Pipeline()
+    # pipeline.add_component(instance=retriever, name="retriever")
+    # result = pipeline.run(data={"retriever": {"query":"Age: 10, Gender: female, Diagnosis: ADHD. Situation: The kid fell from the chair and hurt his head."}})               
+    # result['retriever']['documents'][0].content
+
+    # Embedding Retriever
+    query_pipeline = Pipeline()
+    query_pipeline.add_component("text_embedder", SentenceTransformersTextEmbedder())
+    query_pipeline.add_component("retriever", InMemoryEmbeddingRetriever(document_store=doc_store_pdf))
+    query_pipeline.connect("text_embedder.embedding", "retriever.query_embedding")
+    query_pipeline.warm_up()
+    return doc_store_pdf, query_pipeline
+
+doc_store, pipeline = start_knowledge_base()
+
+def query_knowledge_base(query_text, n=5):
+    res = pipeline.run({"text_embedder": {"text": query_text}, "retriever": {"top_k": n}})
+    return res['retriever']['documents']
+
+def format_chunks(documents):
+    # chunks = [d.content for d in result['retriever']['documents'] if d.score>0.2]
+    chunks_all_info = [f"""Content: {d.content}, Filepath: {d.meta['file_path']}, page number: 
+                        {d.meta['page_number']}, URL: {d.meta['url']}, Score: {d.score}""" for d in documents] # if d.score>0.2]
+    # meta_chunks = [[d.meta['file_path'], d.meta['page_number'], d.meta['url'], d.score] for d in result['retriever']['documents'] if d.score>0.2]
+    chunks_str = "\n\n".join(chunks_all_info)
+    return chunks_str
+
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
 
@@ -136,9 +174,6 @@ else:
         if st.button("Rate Action"):
             
             if st.session_state.text_student_profile and situation and action:
-                openai_key = st.secrets["API_keys"]["openai"]
-                client = openai.OpenAI(api_key = openai_key)
-
                 response = client.chat.completions.create(
                     model="gpt-4o-mini",
                     messages=[
@@ -199,8 +234,6 @@ else:
             if student_profile and situation:
                 if service == 1:
                     # Call your action suggestion function
-                    openai_key = st.secrets["API_keys"]["openai"]
-                    client = openai.OpenAI(api_key = openai_key)
 
                     response = client.chat.completions.create(
                         model="gpt-4o-mini",
@@ -214,31 +247,10 @@ else:
                     st.success(f"Suggested Action: {suggested_action}")
 
                 if service == 2:
-                    # TODO @st.cache_resourse 
-                    path_document_store = os.path.join("data", "doc_store_pdfs_sent.pkl")
-                    doc_store_pdf = InMemoryDocumentStore.load_from_disk(path_document_store)                   
                     
-                    # # BM25 Retriever
-                    # retriever = InMemoryBM25Retriever(document_store=doc_store_pdf)
-                    # pipeline = Pipeline()
-                    # pipeline.add_component(instance=retriever, name="retriever")
-                    # result = pipeline.run(data={"retriever": {"query":"Age: 10, Gender: female, Diagnosis: ADHD. Situation: The kid fell from the chair and hurt his head."}})               
-                    # result['retriever']['documents'][0].content
-
-                    # Embedding Retriever
-                    query_pipeline = Pipeline()
-                    query_pipeline.add_component("text_embedder", SentenceTransformersTextEmbedder())
-                    query_pipeline.add_component("retriever", InMemoryEmbeddingRetriever(document_store=doc_store_pdf))
-                    query_pipeline.connect("text_embedder.embedding", "retriever.query_embedding")
-
                     query = student_profile + " " + situation
-                    result = query_pipeline.run({"text_embedder": {"text": query}})
-
-                    # chunks = [d.content for d in result['retriever']['documents'] if d.score>0.2]
-                    chunks_all_info = [f"""Content: {d.content}, Filepath: {d.meta['file_path']}, page number: 
-                                       {d.meta['page_number']}, URL: {d.meta['url']}, Score: {d.score}""" for d in result['retriever']['documents'] if d.score>0.2]
-                    # meta_chunks = [[d.meta['file_path'], d.meta['page_number'], d.meta['url'], d.score] for d in result['retriever']['documents'] if d.score>0.2]
-                    chunks_prompt = "\n\n".join(chunks_all_info)
+                    result = query_knowledge_base(query)
+                    chunks_prompt = format_chunks(result)
 
                     suggest_action_kb_prompt = f"""
                     You are a helpful assistant that helps resolving problematic situations involving student with special educational needs.
@@ -255,16 +267,11 @@ else:
                     output the result in the format:
                     
                     File name: 
-                    \n
+                    
                     Page:
-                    \n
-                    URL:
-                    \n
-                    Score: 
-                    """
 
-                    openai_key = st.secrets["API_keys"]["openai"]
-                    client = openai.OpenAI(api_key = openai_key)
+                    URL:
+                    """
 
                     response = client.chat.completions.create(
                         model="gpt-4o-mini",
@@ -276,15 +283,7 @@ else:
                     suggested_action = response.choices[0].message.content
 
                     st.success(f"Suggested Action: {suggested_action}")
-              
-#                     for id_chunk, chunk in enumerate(chunks):
-#                         st.write(f"""Chunk: {chunk} \n
-# File Name: {meta_chunks[id_chunk][0]} \n
-# Page: {meta_chunks[id_chunk][1]} \n
-# URL: {meta_chunks[id_chunk][2]} \n
-# Score: {meta_chunks[id_chunk][3]} \n
-# ======================================================= \n""")                     
-
+               
             else:
                 st.warning("Please fill in the student profile and situation before proceeding.")
 
@@ -344,41 +343,20 @@ else:
             
             if st.button("Submit"):
                 st.session_state.text_reaction_true = st.session_state.data['action']
-        
-            
-
-
-
-           
-
-            # Non-editable text box
-            # text_area_react_true = st.text_area("Reaction",  
-            #                                     height=170,  
-            #                                     label_visibility='collapsed',  
-            #                                     key="text_reaction_true",
-            #                                     disabled=True)
 
             st.markdown(f"""
                     <div style="border: 1px solid #ccc; padding: 10px; border-radius: 5px; background-color: #f8f9fa; color: black; font-size: 16px;">
                         {st.session_state.text_reaction_true}
                     </div>
                 """, unsafe_allow_html=True)
-                                        
-
-
-
-############################################################
-
-    #         text_area_react_true = st.text_area("Reaction",  
-    #                                             height=170,  
-    #                                             label_visibility='collapsed',  
-    #                                             key="text_reaction_true",
-    #                                              disabled=True)  
-    
-    
-    
-    
+                                    
     with tab4:
+            def chatbot_response(messages):
+                chat_completion = client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=messages,
+                )
+                return chat_completion.choices[0].message.content
               
             # Reset button to clear chat
             if st.button("🔄 Start New Chat"):
@@ -389,23 +367,20 @@ else:
                 st.rerun()        
 
 
-            openai_key = st.secrets["API_keys"]["openai"]
-            client = openai.OpenAI(api_key = openai_key)
             st.subheader("Assistant")
             language_switch = False
             final_summary = []
             if "messages" not in st.session_state:
-
-                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за справяне с конкретна ситуация свързана с вашето дете. Какъво се случи? \n Hello! I'm here to help you deal with a specific situation related to your child. What happened?"}]
+                st.session_state.messages = [{"role": "assistant", "content": "Здравейте! Аз съм тук, за да ви помогна за справяне с конкретна ситуация свързана с вашето дете. Какъво се случи? \n\n Hello! I'm here to help you deal with a specific situation related to your child. What happened?"}]
 
 
 
             main_prompt = f""" Ти си асистент, който задава въпроси на потребителя относно здравословното състояние на детето им, което е със Специални Образователни Потребности. 
            Ти не съветваш, а само задаваш въпроси относно състоянието и симптомите на детето.
            Трябва да използваш наръчника водене на разговор. Ако има конкретни въпроси, които трябва да зададеш, не ги променяй.
-           Винаги трябва да водиш разговора на български, ако {language_switch == False} и на английски, ако {language_switch == True}.
 
-            
+           Говори на Български или англиски зависи от това в кои език ти говори потребилтеля!
+
            Наръчник за водене на разговор:
             1. Започни разговора със следното изречение на езика дефиниран чрез {language_switch}.
             На български: Здравейте! Аз съм тук, за да ви помогна за спрaвяне с конкретна ситуация свързана с вашето дете. Какъво се случи?
@@ -444,7 +419,7 @@ else:
                    Има ли физическо нараняване? 
            Ако потребителя споменава ситуация, която е животозастрашаваща (например затруднено дишане, тежко нараняване), незабавно съветвайте да се свържат с спешна медицинска помощ.
 
-           5. След събиране на всичката информация по аспектите от стъпка 2, задай следния въпрос спрямо езика на разговора. Не променяй въпроса, задай го точно така:
+           5. След събиране на всичката информация по аспектите от стъпка 2, задай следния въпрос спрямо езика на потребитела.
                Български: "Искате ли да добавите нещо друго релевантно към ситуацията?"
                Английски: "Do you want to add any other relevant information?"
               
@@ -454,7 +429,7 @@ else:
 
            7. Ако потребителят не одобри обобщението, питай последващи въпроси какво да се промени и покажи модифицираната версия на обобщението.
 
-           8. **ВАЖНО: При одобрение на обобщението от потребителя би добави ЗАДЪЛЖИТЕЛНО фразата **__SUMMARY_READY__**. **
+           8. **ВАЖНО: При одобрение на обобщението от потребителя звършва твоята задача. Върни обобщението на система като добавиш ЗАДЪЛЖИТЕЛНО фразата **__SUMMARY_READY__**. За систевма напиши обобщението на англииски.**
 
            9. Тон и етика:
                Бъди учтив и съпричастен.
@@ -466,8 +441,6 @@ else:
                Осигури защита на личните данни (в рамките на възможностите на ИИ).
 
                """
-
-
 
 
             def translate_to_english(text):
@@ -489,54 +462,21 @@ else:
 
 
 
-
-            # def moderate_text(text):
-            #     """Use OpenAI's moderation API to check for violations."""
-            #     try:
-            #         translated_text = translate_to_english(text)
-            #         response = client.moderations.create(
-            #             model="omni-moderation-latest",
-            #             input=translated_text
-            #         )
-            #         flagged = response.results[0].flagged  # Check if flagged
-            #         moderation_result = response.results[0]
-            #         categories = response.results[0].categories  # Get category details
-                    
-            #         category_scores = dict(moderation_result.category_scores)
-            #         return flagged, categories, category_scores
-            #     except Exception as e:
-            #         st.error(f"Error in moderation: {e}")
-            #         return False, {}
-
-
-
-
-
-
-
-           
-
-
-
-            def moderate_text(text): 
-                """Use OpenAI's moderation API to check for violations with maximum sensitivity."""
+            def moderate_text(text):
+                """Use OpenAI's moderation API to check for violations."""
                 try:
                     translated_text = translate_to_english(text)
                     response = client.moderations.create(
                         model="omni-moderation-latest",
                         input=translated_text
                     )
-            
+                    flagged = response.results[0].flagged  # Check if flagged
                     moderation_result = response.results[0]
-                    category_scores = dict(moderation_result.category_scores)  # Convert to dictionary
+                    categories = response.results[0].categories  # Get category details
+
                     
-                    # Set a strict sensitivity threshold (0.1 for all categories)
-                    SENSITIVITY_THRESHOLD = 0.5  
-            
-                    # Flag if any category exceeds the threshold
-                    is_flagged = any(score > SENSITIVITY_THRESHOLD for score in category_scores.values())
-            
-                    return is_flagged, moderation_result.categories, category_scores
+                    category_scores = dict(moderation_result.category_scores)
+                    return flagged, categories, category_scores
                 except Exception as e:
                     st.error(f"Error in moderation: {e}")
                     return False, {}
@@ -548,6 +488,33 @@ else:
 
 
 
+           
+
+
+
+            # def moderate_text(text): 
+            #     """Use OpenAI's moderation API to check for violations with maximum sensitivity."""
+            #     try:
+            #         translated_text = translate_to_english(text)
+            #         response = client.moderations.create(
+            #             model="omni-moderation-latest",
+            #             input=translated_text
+            #         )
+
+            
+            #         moderation_result = response.results[0]
+            #         category_scores = dict(moderation_result.category_scores)  # Convert to dictionary
+                    
+            #         # Set a strict sensitivity threshold (0.1 for all categories)
+            #         SENSITIVITY_THRESHOLD = 0.5  
+            
+            #         # Flag if any category exceeds the threshold
+            #         is_flagged = any(score > SENSITIVITY_THRESHOLD for score in category_scores.values())
+            
+            #         return is_flagged, moderation_result.categories, category_scores
+            #     except Exception as e:
+            #         st.error(f"Error in moderation: {e}")
+            #         return False, {}
 
 
 
@@ -575,17 +542,6 @@ else:
                 #     st.error(f"Moderation error: {e}")
                 #     return False  # Assume safe if an error occurs
             
-
-
-
-
-            def chatbot_response(messages):
-                chat_completion = client.chat.completions.create(
-                    model="gpt-4o-mini",
-                    messages=messages,
-                    temperature=0
-                )
-                return chat_completion.choices[0].message.content
             
             chat_container = st.container()
             
@@ -599,39 +555,20 @@ else:
                     
                 # User input box
             user_input = st.chat_input("Напишете съобщение...")
-                
+
             if user_input:               
                 
                 flagged, categories, category_scores = moderate_text(user_input)
-
                 
                 if flagged:
                         st.warning("⚠️ Вашето съобщение беше маркирано като неподходящо. Достъпът ви до чата е ограничен.")
                         st.write(category_scores)
-                        st.stop()  # Stop further execution
-                
+                        #st.stop()  # Stop further execution
+                print(flagged)
                 with chat_container:
                     with st.chat_message("user"):
                         st.write(user_input)
-                        st.write(category_scores)
            
-                
-                
-               
-            # def extract_summary(response_text):
-            #     try:
-            #         summary = json.loads(response_text)  # Convert JSON string to dictionary
-            #         if isinstance(summary, dict):  # Ensure it is a dictionary
-            #             return summary
-            #     except json.JSONDecodeError:
-            #         pass  # If it's not a valid JSON, return None or handle accordingly
-            #     return None
-            
-            
-                                        
-                             
-            
-                    
                 # Append user message
                 st.session_state.messages.append({"role": "user", "content": user_input})
                 
@@ -643,21 +580,47 @@ else:
                 st.session_state.messages.append({"role": "assistant", "content": bot_response})
                 
                 # Display bot response
-                with chat_container:
-                    with st.chat_message("assistant"):
-                        st.write(bot_response)
-                        
-                        
-                        
-                # # Extract summary if it exists
-                # summary = extract_summary(bot_response)
-                
-                # # Store the summary separately if it exists
-                # if summary:
-                #     st.session_state["summary"] = summary
-                #     st.write("✅ Обобщението е създадено успешно.")
-                #     st.json(summary)  # Display structured summary for validation
 
+            
+                # Extract summary if it exist
+                
+                # Store the summary separately if it exists
+                if "__SUMMARY_READY__" in bot_response:
+                    st.session_state["summary"] = bot_response
+                    print(st.session_state.summary)
+                    st.write("✅ Обобщението е създадено успешно.")
+                    print("\n\n Summary \n")
+
+                    documents = query_knowledge_base(bot_response)
+                    formated_chunks = format_chunks(documents)
+
+                    summary_ready_prompt = f"""
+                    You are a helpful assistant that helps resolving problematic situations involving student with special educational needs.
+                    There is the following situation:
+                    {bot_response}
+                    PDF document chunks for context:
+                    {formated_chunks}
+                    Taking into account the situation and only the "Content" information from the chunks, 
+                    suggest what would be the best and most effective action in such situation in a short paragraph with up to 3 step.
+
+                    Using the content and metadata from all the chunks you found usefull and used to generate the answer, and
+                    output the result in the format:
+                    
+                    File name: 
+                    
+                    Page:
+
+                    URL:
+                    """
+
+                    suggestion = chatbot_response([{"role": "system", "content": summary_ready_prompt}])
+                    with chat_container:
+                        with st.chat_message("assistant"):
+                            st.write(suggestion)
+                else:
+                    with chat_container:
+                        with st.chat_message("assistant"):
+                            st.write(bot_response)
 
     # Footer
     st.markdown("---")
