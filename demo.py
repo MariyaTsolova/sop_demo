@@ -490,23 +490,23 @@ else:
 
 
 
-            def moderate_text(text):
-                """Use OpenAI's moderation API to check for violations."""
-                try:
-                    translated_text = translate_to_english(text)
-                    response = client.moderations.create(
-                        model="omni-moderation-latest",
-                        input=translated_text
-                    )
-                    flagged = response.results[0].flagged  # Check if flagged
-                    moderation_result = response.results[0]
-                    categories = response.results[0].categories  # Get category details
+            # def moderate_text(text):
+            #     """Use OpenAI's moderation API to check for violations."""
+            #     try:
+            #         translated_text = translate_to_english(text)
+            #         response = client.moderations.create(
+            #             model="omni-moderation-latest",
+            #             input=translated_text
+            #         )
+            #         flagged = response.results[0].flagged  # Check if flagged
+            #         moderation_result = response.results[0]
+            #         categories = response.results[0].categories  # Get category details
                     
-                    category_scores = dict(moderation_result.category_scores)
-                    return flagged, categories, category_scores
-                except Exception as e:
-                    st.error(f"Error in moderation: {e}")
-                    return False, {}
+            #         category_scores = dict(moderation_result.category_scores)
+            #         return flagged, categories, category_scores
+            #     except Exception as e:
+            #         st.error(f"Error in moderation: {e}")
+            #         return False, {}
 
 
 
@@ -518,28 +518,28 @@ else:
 
 
 
-            # def moderate_text(text): 
-            #     """Use OpenAI's moderation API to check for violations with maximum sensitivity."""
-            #     try:
-            #         translated_text = translate_to_english(text)
-            #         response = client.moderations.create(
-            #             model="omni-moderation-latest",
-            #             input=translated_text
-            #         )
+            def moderate_text(text): 
+                """Use OpenAI's moderation API to check for violations with maximum sensitivity."""
+                try:
+                    translated_text = translate_to_english(text)
+                    response = client.moderations.create(
+                        model="omni-moderation-latest",
+                        input=translated_text
+                    )
             
-            #         moderation_result = response.results[0]
-            #         category_scores = dict(moderation_result.category_scores)  # Convert to dictionary
+                    moderation_result = response.results[0]
+                    category_scores = dict(moderation_result.category_scores)  # Convert to dictionary
                     
-            #         # Set a strict sensitivity threshold (0.1 for all categories)
-            #         SENSITIVITY_THRESHOLD = 0.2  
+                    # Set a strict sensitivity threshold (0.1 for all categories)
+                    SENSITIVITY_THRESHOLD = 0.5  
             
-            #         # Flag if any category exceeds the threshold
-            #         is_flagged = any(score > SENSITIVITY_THRESHOLD for score in category_scores.values())
+                    # Flag if any category exceeds the threshold
+                    is_flagged = any(score > SENSITIVITY_THRESHOLD for score in category_scores.values())
             
-            #         return is_flagged, moderation_result.categories, category_scores
-            #     except Exception as e:
-            #         st.error(f"Error in moderation: {e}")
-            #         return False, {}
+                    return is_flagged, moderation_result.categories, category_scores
+                except Exception as e:
+                    st.error(f"Error in moderation: {e}")
+                    return False, {}
 
 
 
