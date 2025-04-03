@@ -4,16 +4,25 @@ import pandas as pd
 import json
 import openai
 import os
-
+# from knowledge_base import start_knowledge_base, query_knowledge_base, format_chunks
+from knowledge_base import start_knowledge_base
 from haystack import Pipeline
 from haystack.document_stores.in_memory import InMemoryDocumentStore
 from haystack.components.retrievers.in_memory import InMemoryEmbeddingRetriever, InMemoryBM25Retriever
 from haystack.components.embedders import SentenceTransformersTextEmbedder
 
+#from haystack_integrations.components.embedders.fastembed import FastembedTextEmbedder
+
 import knowledge_base
 
 import yaml
 import hashlib
+
+
+
+
+
+
 
 # Set up Streamlit page configuration
 st.set_page_config(
@@ -28,25 +37,26 @@ CONFIG_FILE = "config_credentials.yaml"
 openai_key = st.secrets["API_keys"]["openai"]
 client = openai.OpenAI(api_key = openai_key)
 
-@st.cache_resource
-def start_knowledge_base():
-    path_document_store = os.path.join("data", "doc_store_pdfs_sent.pkl")
-    doc_store_pdf = InMemoryDocumentStore.load_from_disk(path_document_store)                   
+# @st.cache_resource
+# def start_knowledge_base():
+#     path_document_store = os.path.join("data", "doc_store_pdfs_sent.pkl")
+#     doc_store_pdf = InMemoryDocumentStore.load_from_disk(path_document_store)                   
     
-    # # BM25 Retriever
-    # retriever = InMemoryBM25Retriever(document_store=doc_store_pdf)
-    # pipeline = Pipeline()
-    # pipeline.add_component(instance=retriever, name="retriever")
-    # result = pipeline.run(data={"retriever": {"query":"Age: 10, Gender: female, Diagnosis: ADHD. Situation: The kid fell from the chair and hurt his head."}})               
-    # result['retriever']['documents'][0].content
+#     # # BM25 Retriever
+#     # retriever = InMemoryBM25Retriever(document_store=doc_store_pdf)
+#     # pipeline = Pipeline()
+#     # pipeline.add_component(instance=retriever, name="retriever")
+#     # result = pipeline.run(data={"retriever": {"query":"Age: 10, Gender: female, Diagnosis: ADHD. Situation: The kid fell from the chair and hurt his head."}})               
+#     # result['retriever']['documents'][0].content
 
-    # Embedding Retriever
-    query_pipeline = Pipeline()
-    query_pipeline.add_component("text_embedder", SentenceTransformersTextEmbedder())
-    query_pipeline.add_component("retriever", InMemoryEmbeddingRetriever(document_store=doc_store_pdf))
-    query_pipeline.connect("text_embedder.embedding", "retriever.query_embedding")
-    query_pipeline.warm_up()
-    return doc_store_pdf, query_pipeline
+#     # Embedding Retriever
+#     query_pipeline = Pipeline()
+#     # query_pipeline.add_component("text_embedder", FastembedTextEmbedder())
+#     query_pipeline.add_component("text_embedder", SentenceTransformersTextEmbedder())
+#     query_pipeline.add_component("retriever", InMemoryEmbeddingRetriever(document_store=doc_store_pdf))
+#     query_pipeline.connect("text_embedder.embedding", "retriever.query_embedding")
+#     query_pipeline.warm_up()
+#     return doc_store_pdf, query_pipeline
 
 doc_store, pipeline = start_knowledge_base()
 
