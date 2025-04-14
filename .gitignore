@@ -1,5 +1,7 @@
 .streamlit/secrets.toml
-#./data/
-__pycache__
+
+# Ignore Python bytecode files
+__pycache__/
+
 data/knowledge_base_documents/*
 #*.pkl
