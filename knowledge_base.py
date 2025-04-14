@@ -23,6 +23,16 @@ from haystack.components.writers import DocumentWriter
 
 import contextualiser
 
+from haystack.components.embedders import SentenceTransformersTextEmbedder
+from haystack.components.retrievers.in_memory import InMemoryEmbeddingRetriever, InMemoryBM25Retriever
+
+
+
+
+
+
+
+
 #%%
 CHUNK_SIZE_WORD = 250
 CHUNK_SIZE_SENT = 5
@@ -192,3 +202,58 @@ if __name__ == "__main__":
     if comb_kb:
         document_store_combined = create_combined_kb() 
         document_store_pdf.save_to_disk("data/doc_store_combined.pkl")
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+#%% additional functions needed for the demo
+
+
+@st.cache_resource
+def start_knowledge_base():
+    path_document_store = os.path.join("data", "doc_store_pdfs_sent.pkl")
+    doc_store_pdf = InMemoryDocumentStore.load_from_disk(path_document_store)                   
+    
+    # # BM25 Retriever
+    # retriever = InMemoryBM25Retriever(document_store=doc_store_pdf)
+    # pipeline = Pipeline()
+    # pipeline.add_component(instance=retriever, name="retriever")
+    # result = pipeline.run(data={"retriever": {"query":"Age: 10, Gender: female, Diagnosis: ADHD. Situation: The kid fell from the chair and hurt his head."}})               
+    # result['retriever']['documents'][0].content
+
+    # Embedding Retriever
+    query_pipeline = Pipeline()
+    # query_pipeline.add_component("text_embedder", FastembedTextEmbedder())
+    query_pipeline.add_component("text_embedder", SentenceTransformersTextEmbedder())
+    query_pipeline.add_component("retriever", InMemoryEmbeddingRetriever(document_store=doc_store_pdf))
+    query_pipeline.connect("text_embedder.embedding", "retriever.query_embedding")
+    query_pipeline.warm_up()
+    return doc_store_pdf, query_pipeline
+
+# doc_store, pipeline = start_knowledge_base()
+
+# def query_knowledge_base(query_text, n=5):
+#     res = pipeline.run({"text_embedder": {"text": query_text}, "retriever": {"top_k": n}})
+#     return res['retriever']['documents']
+
+# def format_chunks(documents):
+#     # chunks = [d.content for d in result['retriever']['documents'] if d.score>0.2]
+#     chunks_all_info = [f"""Content: {d.content}, Filepath: {d.meta['file_path']}, page number: 
+#                         {d.meta['page_number']}, URL: {d.meta['url']}, Score: {d.score}""" for d in documents] # if d.score>0.2]
+#     # meta_chunks = [[d.meta['file_path'], d.meta['page_number'], d.meta['url'], d.score] for d in result['retriever']['documents'] if d.score>0.2]
+#     chunks_str = "\n\n".join(chunks_all_info)
+#     return chunks_str
+        
+        
+        
+        

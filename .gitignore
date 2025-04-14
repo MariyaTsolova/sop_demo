@@ -4,4 +4,6 @@
 __pycache__/
 
 data/knowledge_base_documents/*
-#*.pkl
+*.pkl
+.spyproject
+__pycache__/
