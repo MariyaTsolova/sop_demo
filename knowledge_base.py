@@ -44,16 +44,16 @@ docs_folder = os.path.join(data_folder, "knowledge_base_documents")
 docs_names = os.listdir(docs_folder)
 docs_paths = [os.path.join(docs_folder, d) for d in docs_names]
 # TODO: Fix so that is not hardcoded
-meta_docs_urls = [{'url': "https://drive.google.com/file/d/166LzAs4UUYY2nmfvEFE7NUcJyEIfBoc3"},
-                {'url': "https://drive.google.com/file/d/18VgDE6jXP5eN_4w_IPbsUVu8tW-V4ep2"},
-                {'url': "https://drive.google.com/file/d/1ux2ZVY-H62jpu0xzPvuWIaW6mMGtPxRN"},
-                {'url': "https://drive.google.com/file/d/1JdqrM1riD57oBlBO2rxsYWM-BECtkBOI"},
-                {'url': "https://drive.google.com/file/d/1xo_7Q7LxUFHSLjQLhEE8MuxPnqGFEGEo"},
-                {'url': "https://drive.google.com/file/d/15hzWFmt9ugrCbsAJ92_TVEsM3OynBXSb"},
-                {'url': "https://drive.google.com/file/d/1J2sZ87itIDhKcF_wmZN2TcBeZRLjlMJP"},
-                {'url': "https://drive.google.com/file/d/12d5Fo1ObDfvHoTKsFaIGk8SOLLRsczYw"}]
+meta_docs_urls = [{'url': "https://www.autismeducationtrust.org.uk/sites/default/files/2023-06/aet-schools-standards-framework.pdf"},
+                {'url': "https://d2tic4wvo1iusb.cloudfront.net/production/eef-guidance-reports/behaviour/EEF_Improving_behaviour_in_schools_Report.pdf?v=1744623901"},
+                {'url': "https://d2tic4wvo1iusb.cloudfront.net/production/eef-guidance-reports/primary-sel/EEF_Social_and_Emotional_Learning.pdf?v=1744624017"},
+                {'url': "https://d2tic4wvo1iusb.cloudfront.net/production/eef-guidance-reports/send/eef_special_educational_needs_in_mainstream_schools_guidance_report_2025-04-10-110432_klxp.pdf?v=1744624032"},
+                {'url': "https://www.autismeducationtrust.org.uk/sites/default/files/2022-05/gap-report-case-studies_i-s.pdf"},
+                {'url': "https://www.autismeducationtrust.org.uk/sites/default/files/2022-01/NAS-Education-Report-2021-A4.pdf"},
+                {'url': "https://www.autismeducationtrust.org.uk/sites/default/files/2022-02/Post-16-Standards-Framework_T-HUB-Sc-Mt.pdf"},
+                {'url': "https://www.durham.gov.uk/media/31169/SEND-toolkit-Section-2c-Coordinating-SEND-Provision-in-Post-16/pdf/SENDToolkitSection2cCoordinatingSENDProvisionP16andP19updated.pdf?m=1643107539743"}]
 
-pdf_kb = False
+pdf_kb = True
 sc_kb = False
 comb_kb = False
 

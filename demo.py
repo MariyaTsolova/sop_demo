@@ -21,7 +21,21 @@ import hashlib
 
 
 
+template_prompt = """
+Situation and profile of kid: 
+{prompt_problem}
 
+========
+
+Additional information:  
+    
+{prompt_product}
+
+========
+
+Question: 
+{prompt_question}
+"""
 
 
 # Set up Streamlit page configuration
@@ -66,11 +80,18 @@ def query_knowledge_base(query_text, n=5):
 
 def format_chunks(documents):
     # chunks = [d.content for d in result['retriever']['documents'] if d.score>0.2]
-    chunks_all_info = [f"""Content: {d.content}, Filepath: {d.meta['file_path']}, page number: 
-                        {d.meta['page_number']}, URL: {d.meta['url']}, Score: {d.score}""" for d in documents] # if d.score>0.2]
+
+    chunks_all_info = [{"content": d.content,
+                        "filepath": d.meta['file_path'],
+                        "page_number": d.meta['page_number'],
+                        "URL": d.meta['url'],
+                        "cos_dist": d.score} for d in documents]
+    
     # meta_chunks = [[d.meta['file_path'], d.meta['page_number'], d.meta['url'], d.score] for d in result['retriever']['documents'] if d.score>0.2]
-    chunks_str = "\n\n".join(chunks_all_info)
-    return chunks_str
+    # chunks_str = "\n\n".join(chunks_all_info)
+
+
+    return chunks_all_info
 
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
@@ -261,7 +282,6 @@ else:
 
         student_profile = st.text_area("Student Profile:", placeholder="Describe the student's profile...", key = "text_student_profile_tab2")
         situation = st.text_area("Situation:", placeholder="Describe the action to be rated...", key = "text_situation_tab2")
-        use_knowledge_base = st.checkbox("Use Knowledge Base", key="suggest_kb")
 
         suggest_action_prompt = f"""
         You are a helpful assistant that helps resolving problematic situations involving student with special educational needs.
@@ -271,67 +291,109 @@ else:
         {situation}.
         Suggest what would be the best and most effective action in such situation in a short paragraph with up to 3 steps taking into accout the student's profile.
         """
-
-        if use_knowledge_base:
-            service = 2
-        else: 
-            service = 1
-
-        if st.button("Suggest Action"):
-            
+    
+        if st.button("Chat Only"):
             if student_profile and situation:
-                if service == 1:
-                    # Call your action suggestion function
 
+                response = client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=[
+                        {"role": "system", "content": "You are a helpful assistant."},
+                        {"role": "user", "content": suggest_action_prompt}
+                    ]
+                )
+                suggested_action = response.choices[0].message.content
+
+                st.success(f"Suggested Action: {suggested_action}")                 
+                                  
+            else:
+                st.warning("Please fill in the student profile and situation before proceeding.")
+
+        if st.button("Knowledge base only"):
+            if student_profile and situation:
+
+                query = student_profile + " " + situation
+                retrieved_chunks = query_knowledge_base(query)
+                chunks_prompt = format_chunks(retrieved_chunks)
+
+                # conver to a dataframe
+                col_names = ['Content',
+                             'Filepath',
+                             'page_number',
+                             'URL',
+                             'score']
+                
+                df_chunks = pd.DataFrame(chunks_prompt)
+                
+                prompt_ranking = """
+                Give a score from 1 to 10 on how relevant the content of the chunk is to the situation and the profile. Give the score first in your answer.
+            """
+                arr_actions = []
+                for i,row in df_chunks.iterrows():
+                    
+                    chunk_content = row.content
+            
+                    prompt = template_prompt.format(prompt_problem=query,
+                                                    prompt_product=chunk_content,
+                                                    prompt_question=prompt_ranking)
+                    
                     response = client.chat.completions.create(
-                        model="gpt-4o-mini",
-                        messages=[
-                            {"role": "system", "content": "You are a helpful assistant."},
-                            {"role": "user", "content": suggest_action_prompt}
-                        ]
-                    )
+                    model="gpt-4o-mini",
+                    messages=[
+                        {"role": "system", "content": "You are a helpful assistant."},
+                        {"role": "user", "content": prompt}
+                    ]
+                )
+                    # dict_chat_completion = chat_completion.model_dump()
                     suggested_action = response.choices[0].message.content
+                    arr_actions.append(suggested_action)
+                arr_actions
+                chunks_prompt
 
-                    st.success(f"Suggested Action: {suggested_action}")
+            else:
+                st.warning("Please fill in the student profile and situation before proceeding.")
 
-                if service == 2:
-                    
-                    query = student_profile + " " + situation
-                    result = query_knowledge_base(query)
-                    chunks_prompt = format_chunks(result)
+        if st.button("Chat and Knowledge base"):
+            if student_profile and situation:
 
-                    suggest_action_kb_prompt = f"""
-                    You are a helpful assistant that helps resolving problematic situations involving student with special educational needs.
-                    The profile of the student is:
-                    {student_profile}.
-                    The situation that happened with the student is:
-                    {situation}.
-                    PDF document chunks:
-                    {chunks_prompt}
-                    Taking into account the student profile, the situation and only the "Content" information from the chunks, 
-                    suggest what would be the best and most effective action in such situation in a short paragraph with up to 3 step.
+                query = student_profile + " " + situation
+                retrieved_chunks = query_knowledge_base(query)
+                chunks_prompt = format_chunks(retrieved_chunks)
 
-                    Using the content and metadata from all the chunks you found usefull and used to generate the answer, and
-                    output the result in the format:
-                    
-                    File name: 
-                    
-                    Page:
+                suggest_action_kb_prompt = f"""
+                You are a helpful assistant that helps resolving problematic situations involving student with special educational needs.
+                The profile of the student is:
+                {student_profile}.
+                The situation that happened with the student is:
+                {situation}.
+                PDF document chunks:
+                {chunks_prompt}
+                Taking into account the student profile, the situation and only the "Content" information from the chunks, 
+                suggest what would be the best and most effective action in such situation in a short paragraph with up to 3 step.
 
-                    URL:
-                    """
+                After that display the word "RESOURCES:" as a title for the next part. Then, using the content and metadata from all the chunks you found usefull and used to generate the answer, and
+                output the result in the format:
 
-                    response = client.chat.completions.create(
-                        model="gpt-4o-mini",
-                        messages=[
-                            {"role": "system", "content": "You are a helpful assistant."},
-                            {"role": "user", "content": suggest_action_kb_prompt}
-                        ]
-                    )
-                    suggested_action = response.choices[0].message.content
+                Full Chunk Content:
+                
+                File name: 
+                
+                Page number:
 
-                    st.success(f"Suggested Action: {suggested_action}")
-               
+                URL:
+                """
+
+                response = client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=[
+                        {"role": "system", "content": "You are a helpful assistant."},
+                        {"role": "user", "content": suggest_action_kb_prompt}
+                    ]
+                )
+                suggested_action = response.choices[0].message.content
+
+                st.success(f"Suggested Action: {suggested_action}")
+
             else:
                 st.warning("Please fill in the student profile and situation before proceeding.")
 
