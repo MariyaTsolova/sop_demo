@@ -72,6 +72,35 @@ client = openai.OpenAI(api_key = openai_key)
 #     query_pipeline.warm_up()
 #     return doc_store_pdf, query_pipeline
 
+@st.cache_resource
+def init_profiles():
+    return pd.DataFrame(columns=["identification", "age", "gender", "diagnosis", "other_remarks"])
+
+saved_profiles = init_profiles()
+
+@st.dialog("Choose a saved Profile")
+def choose_profile():
+    if saved_profiles.empty:
+        st.warning("The List of saved profiles is Empty! \n Please create one or input the profile manually")
+        return
+    
+    def write_name(index):
+        return str(index) + ": " + saved_profiles.loc[index, 'identification']
+
+    profile_index = st.selectbox("Profile:", range(len(saved_profiles)), format_func=write_name, index=None)
+
+    if not profile_index is None:
+        profile = saved_profiles.loc[profile_index]
+        profile_string = f"{profile['age']} years, \n{profile['gender']}"
+
+        if profile['diagnosis'] != "":
+            profile_string = profile_string + f", \n{profile['diagnosis']}"
+        if profile['other_remarks'] != "":
+            profile_string = profile_string + f", \nOther Remarks: {profile['other_remarks']}"
+
+        st.session_state['text_student_profile_tab2'] = profile_string
+        st.rerun()
+
 doc_store, pipeline = start_knowledge_base()
 
 def query_knowledge_base(query_text, n=5):
@@ -200,7 +229,7 @@ else:
     )
 
     # Tabs for the three functionalities
-    tab1, tab2, tab3, tab4 = st.tabs(["Rate an Action", "Suggest an Action", "Self Assessment - Training", "Assistant"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["Rate an Action", "Suggest an Action", "Self Assessment - Training", "Assistant", "Input Profile"])
 
     # First Tab: Rate an Action
     with tab1:
@@ -274,11 +303,17 @@ else:
         if "text_situation_tab2" not in st.session_state:
             st.session_state.text_situation_tab2 = ""
 
-        clear_tab2 = st.button('Clear and start a new situation', key="tab2")
-        if clear_tab2:
-            st.session_state.text_student_profile_tab2 = ""
-            st.session_state.text_situation_tab2 = ""
+        button_left, button_right = st.columns([7, 3])
 
+        with button_left:
+            clear_tab2 = st.button('Clear and start a new situation', key="tab2")
+            if clear_tab2:
+                st.session_state.text_student_profile_tab2 = ""
+                st.session_state.text_situation_tab2 = ""
+
+        with button_right:
+            if st.button("Load saved profile", use_container_width=True ):
+                choose_profile()
 
         student_profile = st.text_area("Student Profile:", placeholder="Describe the student's profile...", key = "text_student_profile_tab2")
         situation = st.text_area("Situation:", placeholder="Describe the action to be rated...", key = "text_situation_tab2")
@@ -837,6 +872,43 @@ else:
                     with chat_container:
                         with st.chat_message("assistant"):
                             st.write(bot_response)
+
+
+    with tab5:
+
+        new_profile = None
+
+        known_diseases = ["ADHD", "Autistic Spectrum Disorder", "Epilepsy", "Sensory Disorder", "Anxiety", "Dyslexia", "Dyspraxia","Dyscalculia", "Attachment Disorder", "Retardation"]
+
+        with st.form("Input form to save a new profile", clear_on_submit=True):
+
+            idname = st.text_input("Identification / Name")
+
+            # st.markdown("#### :red[*] Age")
+            age = st.text_input("Age")
+
+            gender = st.radio("Gender", ("male", "female"), horizontal=True)
+
+            diagnosis = st.multiselect("Diagnosis", known_diseases)
+
+            remark = st.text_input("Other Remarks")
+
+            if st.form_submit_button():
+                # fist check that there is Empty but neccessary field
+                if (idname == "") or (age == "") or not gender:
+                    st.warning("The first 3 inputs are necessary")
+
+                else:
+                    diagnosis_str = ", ".join(diagnosis)
+                    new_profile = {"identification": idname, 
+                                   "age": age, 
+                                   "gender": gender, 
+                                   "diagnosis": diagnosis_str, 
+                                   "other_remarks": remark}
+
+                    saved_profiles.loc[len(saved_profiles)] = new_profile
+                
+
 
     # Footer
     st.markdown("---")
