@@ -98,8 +98,9 @@ def choose_profile():
         if profile['other_remarks'] != "":
             profile_string = profile_string + f", \nOther Remarks: {profile['other_remarks']}"
 
-        st.session_state['text_student_profile_tab2'] = profile_string
+        st.session_state['profile_string'] = profile_string
         st.rerun()
+        return st.session_state['profile_string']
 
 doc_store, pipeline = start_knowledge_base()
 
@@ -229,10 +230,44 @@ else:
     )
 
     # Tabs for the three functionalities
-    tab1, tab2, tab3, tab4, tab5 = st.tabs(["Rate an Action", "Suggest an Action", "Self Assessment - Training", "Assistant", "Input Profile"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["Input Profile", "Rate an Action", "Suggest an Action", "Self Assessment - Training", "Assistant"])
+
+    with tab1:
+
+        new_profile = None
+
+        known_diseases = ["ADHD", "Autistic Spectrum Disorder", "Epilepsy", "Sensory Disorder", "Anxiety", "Dyslexia", "Dyspraxia","Dyscalculia", "Attachment Disorder", "Retardation"]
+
+        with st.form("Input form to save a new profile", clear_on_submit=True):
+
+            idname = st.text_input("Identification / Name")
+
+            # st.markdown("#### :red[*] Age")
+            age = st.text_input("Age")
+
+            gender = st.radio("Gender", ("male", "female"), horizontal=True)
+
+            diagnosis = st.multiselect("Diagnosis", known_diseases)
+
+            remark = st.text_input("Other Remarks")
+
+            if st.form_submit_button():
+                # fist check that there is Empty but neccessary field
+                if (idname == "") or (age == "") or not gender:
+                    st.warning("The first 3 inputs are necessary")
+
+                else:
+                    diagnosis_str = ", ".join(diagnosis)
+                    new_profile = {"identification": idname, 
+                                   "age": age, 
+                                   "gender": gender, 
+                                   "diagnosis": diagnosis_str, 
+                                   "other_remarks": remark}
+
+                    saved_profiles.loc[len(saved_profiles)] = new_profile
 
     # First Tab: Rate an Action
-    with tab1:
+    with tab2:
         st.subheader("Rate an Action")
 
         if "text_student_profile" not in st.session_state:
@@ -242,11 +277,24 @@ else:
         if "text_action" not in st.session_state:
             st.session_state.text_action = ""
 
-        clear_tab1 = st.button('Clear and start a new situation', key="tab1")
-        if clear_tab1:
-            st.session_state.text_student_profile = ""
-            st.session_state.text_situation = ""
-            st.session_state.text_action = ""
+        if "profile_string" not in st.session_state:
+            st.session_state.profile_string = ""
+
+        button_left, button_right = st.columns([7, 3])
+
+        with button_left:
+            clear_tab1 = st.button('Clear and start a new situation', key="tab2")
+            if clear_tab1:
+                st.session_state.text_student_profile = ""
+                st.session_state.text_situation = ""
+                st.session_state.text_action = ""
+                st.session_state.profile_string = ""
+
+        with button_right:
+            if st.button("Load saved profile", use_container_width=True ):
+                st.session_state.profile_string = choose_profile()
+        
+        st.session_state['text_student_profile'] =  st.session_state.profile_string
 
         student_profile = st.text_area("Student Profile:", placeholder="Describe the student's profile...", key = "text_student_profile")
         situation = st.text_area("Situation:", placeholder="Describe the action to be rated", key = "text_situation")
@@ -294,26 +342,32 @@ else:
         - 5 - very effective reaction 
         """)
 
+
     # Second Tab: Suggest an Action
-    with tab2:
+    with tab3:
         st.subheader("Suggest an Action")        
 
         if "text_student_profile_tab2" not in st.session_state:
             st.session_state.text_student_profile_tab2 = ""
         if "text_situation_tab2" not in st.session_state:
             st.session_state.text_situation_tab2 = ""
+        if "profile_string" not in st.session_state:
+            st.session_state.profile_string = ""
 
         button_left, button_right = st.columns([7, 3])
 
         with button_left:
-            clear_tab2 = st.button('Clear and start a new situation', key="tab2")
+            clear_tab2 = st.button('Clear and start a new situation', key="tab3")
             if clear_tab2:
                 st.session_state.text_student_profile_tab2 = ""
                 st.session_state.text_situation_tab2 = ""
+                st.session_state.profile_string = ""
 
         with button_right:
-            if st.button("Load saved profile", use_container_width=True ):
-                choose_profile()
+            if st.button("Load saved profile", use_container_width=True, key = ''):
+                st.session_state.profile_string = choose_profile()
+                
+        st.session_state['text_student_profile_tab2'] = st.session_state.profile_string
 
         student_profile = st.text_area("Student Profile:", placeholder="Describe the student's profile...", key = "text_student_profile_tab2")
         situation = st.text_area("Situation:", placeholder="Describe the action to be rated...", key = "text_situation_tab2")
@@ -478,7 +532,7 @@ else:
             else:
                 st.warning("Please fill in the student profile and situation before proceeding.")
 
-    with tab3:
+    with tab4:
             st.subheader("Self Assessment - Training")
 
         
@@ -541,22 +595,34 @@ else:
                     </div>
                 """, unsafe_allow_html=True)
                                     
-    with tab4:
+    with tab5:
+            if "profile_string" not in st.session_state:
+                st.session_state.profile_string = ""
+
             def chatbot_response(messages):
                 chat_completion = client.chat.completions.create(
                     model="gpt-4o-mini",
                     messages=messages,
                 )
                 return chat_completion.choices[0].message.content
-              
-            # Reset button to clear chat
-            if st.button("🔄 Start New Chat"):
-                st.session_state.messages = [{"role": "assistant",
+            
+
+            button_left, button_right = st.columns([7, 3])
+
+            with button_left:
+                if st.button("🔄 Start New Chat", key="assistant_new"):
+                    st.session_state.messages = [{"role": "assistant",
                                               "content": "Здравейте! Аз съм тук, за да ви помогна за справяне с конкретна ситуация свързана с вашето дете. Какво се случи? \n\n Hello! I'm here to help you deal with a specific situation related to your child. What happened?"}]
-                # st.session_state.awaiting_product_questions = False
-                # st.session_state.recommended_products = None
-                # st.session_state.recommendation_output = None
-                st.rerun()        
+                    # st.session_state.awaiting_product_questions = False
+                    # st.session_state.recommended_products = None
+                    # st.session_state.recommendation_output = None
+                    st.rerun()  
+
+            # with button_right:
+            #     if st.button("Load saved profile", use_container_width=True, key = 'assistant_load'):  
+            #         profile_string = choose_profile()
+                
+            #         st.session_state['text_student_profile_tab2'] = profile_string
 
 
             st.subheader("Assistant")
@@ -567,38 +633,53 @@ else:
                                               "content": "Здравейте! Аз съм тук, за да ви помогна за справяне с конкретна ситуация свързана с вашето дете. Какво се случи? \n\n Hello! I'm here to help you deal with a specific situation related to your child. What happened?"}]
 
 
+            #TODO: BG - 18 years old; EN - 25 years old
+            #  and note that you work with children
+            # - Are there communication and interaction problems? Are there Cognitive impairments? Are there social, emotional or mental health problems?
+                        # - Are there special sensory and/or physical needs? Are there specific medical or neurological needs?
 
-            main_prompt = """You are an assistant, who answers in the language the user chooses. You ask the user questions regarding the health condition of the child, which has Special Educational Needs.
+            # **Child's diagnosis**
+            #             - Please provide the ICD code?
+
+            # - Ask at least 2 clarifying questions for each symptom to get enough detail.
+            # TODO: Give a suggestion directly after if the user gives a summary 
+
+            main_prompt = """You are a helpful assistant, supporting a teacher who is describing a child with special educational needs and a specific situation. You always answer in the language the user chooses.
             You do not give advice, only ask questions about the condition and symptoms of the child.
             You should use the interview guide. If there are specific questions you need to ask, don't change them.
+
+            Start by asking the following questions, one at a time. If the teacher has already loaded the child’s profile (age, gender, diagnosis), skip those questions.
             
             Interview guide:
                 1. Gather information on **all** aspects that are the basis for the summary **by asking 1 question per iteration**:
                     **Context**
-                        - What is the situation with your child. 
-                        - Where did the situation happen: at home, outside, at school? 
+                        - What is the situation with your child?
+                        - Where did the situation happen: at home, at school or somewhere else? 
                         - Are there other participants in the situation?
                     **Child's Age**
-                        - Be sure to ask for the child's age if it has not been provided as information before.
-                        - If the child is OVER 18, reconfirm that this is the actual age and note that you work with children.
-                    # **Condition**
-                        - Are there communication and interaction problems? Are there Cognitive impairments? Are there social, emotional or mental health problems?
-                        - Are there special sensory and/or physical needs? Are there specific medical or neurological needs?
-                    **Child's diagnosis**
-                        - Please provide the ICD code?
+                        - What is the child's age
+                        - If the child is OVER 25, reconfirm that this is the actual age.
+                    # **Diagnosis**
+                        - From the main categories of need:
+                            - Cognition and Learning
+                            - Communication and Interaction
+                            - Social, emotional or mental health
+                            - Sensory and/or physical needs
+                            - Medical Conditions
+                            Do the child's needs fall under one or more of these categories?
+                        - What is your child's diagnosis if they have one?
                         
                         
                     **Additional information**
-                        - Does the child attend specialized training centers?
-                        - Has the child taken medication to improve its current condition. If so, what kind?
+                        - Does the child attend specialist center or school?
+                        - Does the child take any medication to improve its current condition. If so, what kind?
                         
                 
                 2. Focus only on the current situation.
-                    - If the user starts discussing chronic illnesses or long-term therapies, politely explain that this assistant is only intended for specific situations and encourage them to consult an appropriate specialist.
+                    - If the user starts discussing generic situations related to conditions, politely explain that this assistant is only intended for specific situations and encourage them to consult an appropriate specialist.
                     
                 3. Gather information in small increments.
                     - Ask only one question at a time.
-                    - Ask at least 2 clarifying questions for each symptom to get enough detail.
                     - Do not mix questions about aspects defined in point 1.
                     - For example, if the situation was not at home:
                         - Where exactly?
@@ -808,13 +889,14 @@ else:
 
             if user_input:               
                 
-                flagged, categories, category_scores = moderate_text(user_input)
+                # TODO: fix the moderation
+                # flagged, categories, category_scores = moderate_text(user_input)
                 
-                if flagged:
-                        st.warning("⚠️ Вашето съобщение беше маркирано като неподходящо. Достъпът ви до чата е ограничен.")
-                        # st.write(category_scores)
-                        st.stop()  # Stop further execution
-                print(flagged)
+                # if flagged:
+                #         st.warning("⚠️ Вашето съобщение беше маркирано като неподходящо. Достъпът ви до чата е ограничен.")
+                #         # st.write(category_scores)
+                #         st.stop()  # Stop further execution
+                # print(flagged)
                 with chat_container:
                     with st.chat_message("user"):
                         st.write(user_input)
@@ -838,7 +920,7 @@ else:
                 if "__SUMMARY_READY__" in bot_response:
                     st.session_state["summary"] = bot_response
                     print(st.session_state.summary)
-                    st.write("✅ Обобщението е създадено успешно.")
+                    st.write("✅ Summary is ready. Please wait...")
                     print("\n\n Summary \n")
 
                     documents = query_knowledge_base(bot_response)
@@ -851,7 +933,7 @@ else:
                     PDF document chunks for context:
                     {formated_chunks}
                     Taking into account the situation and only the "Content" information from the chunks, 
-                    suggest what would be the best and most effective action in such situation in a short paragraph with up to 3 step.
+                    suggest what would be the best and most effective action specific to the agreed situation in up to 3 step.
                     It is mandatory to write the suggestion in the language used in the summary.
 
                     Using the content and metadata from all the chunks you found usefull and used to generate the answer, and
@@ -873,40 +955,6 @@ else:
                         with st.chat_message("assistant"):
                             st.write(bot_response)
 
-
-    with tab5:
-
-        new_profile = None
-
-        known_diseases = ["ADHD", "Autistic Spectrum Disorder", "Epilepsy", "Sensory Disorder", "Anxiety", "Dyslexia", "Dyspraxia","Dyscalculia", "Attachment Disorder", "Retardation"]
-
-        with st.form("Input form to save a new profile", clear_on_submit=True):
-
-            idname = st.text_input("Identification / Name")
-
-            # st.markdown("#### :red[*] Age")
-            age = st.text_input("Age")
-
-            gender = st.radio("Gender", ("male", "female"), horizontal=True)
-
-            diagnosis = st.multiselect("Diagnosis", known_diseases)
-
-            remark = st.text_input("Other Remarks")
-
-            if st.form_submit_button():
-                # fist check that there is Empty but neccessary field
-                if (idname == "") or (age == "") or not gender:
-                    st.warning("The first 3 inputs are necessary")
-
-                else:
-                    diagnosis_str = ", ".join(diagnosis)
-                    new_profile = {"identification": idname, 
-                                   "age": age, 
-                                   "gender": gender, 
-                                   "diagnosis": diagnosis_str, 
-                                   "other_remarks": remark}
-
-                    saved_profiles.loc[len(saved_profiles)] = new_profile
                 
 
 
