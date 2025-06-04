@@ -100,7 +100,6 @@ def choose_profile():
 
         st.session_state['profile_string'] = profile_string
         st.rerun()
-        return st.session_state['profile_string']
 
 doc_store, pipeline = start_knowledge_base()
 
@@ -618,13 +617,16 @@ else:
                     # st.session_state.recommendation_output = None
                     st.rerun()  
 
-            # with button_right:
-            #     if st.button("Load saved profile", use_container_width=True, key = 'assistant_load'):  
-            #         profile_string = choose_profile()
-                
-            #         st.session_state['text_student_profile_tab2'] = profile_string
-
-
+            with button_right:
+                if st.button("Load saved profile", use_container_width=True, key='assistant_load'):  
+                    choose_profile()
+                    
+                    # Append profile as a system message to the conversation history
+                    st.session_state.messages.append({
+                        "role": "system",
+                        "content": f"Profile loaded: {st.session_state.profile_string}"
+                    })
+            
             st.subheader("Assistant")
             # language_switch = False
             final_summary = []
@@ -642,22 +644,39 @@ else:
             #             - Please provide the ICD code?
 
             # - Ask at least 2 clarifying questions for each symptom to get enough detail.
+            # the aspects defined in step 2
             # TODO: Give a suggestion directly after if the user gives a summary 
 
-            main_prompt = """You are a helpful assistant, supporting a teacher who is describing a child with special educational needs and a specific situation. You always answer in the language the user chooses.
+            if st.session_state.profile_string:
+                profile_note = f"""
+                The teacher has already provided this child profile information:
+                {st.session_state.profile_string}
+
+                Do not ask about age, gender, or diagnosis again.
+                Continue with the rest of the questions in the guide.
+                """
+            else:
+                profile_note = ""
+
+
+
+            main_prompt = f"""You are a helpful assistant, supporting a teacher who is describing a child with special educational needs and a specific situation. You always answer in the language the user chooses.
             You do not give advice, only ask questions about the condition and symptoms of the child.
             You should use the interview guide. If there are specific questions you need to ask, don't change them.
 
             Start by asking the following questions, one at a time. If the teacher has already loaded the child’s profile (age, gender, diagnosis), skip those questions.
             
+            {profile_note}
+
             Interview guide:
                 1. Gather information on **all** aspects that are the basis for the summary **by asking 1 question per iteration**:
                     **Context**
                         - What is the situation with your child?
                         - Where did the situation happen: at home, at school or somewhere else? 
                         - Are there other participants in the situation?
-                    **Child's Age**
+                    **Child's Age and Genger**
                         - What is the child's age
+                        - What is the child's gender 
                         - If the child is OVER 25, reconfirm that this is the actual age.
                     # **Diagnosis**
                         - From the main categories of need:
@@ -671,7 +690,7 @@ else:
                         
                         
                     **Additional information**
-                        - Does the child attend specialist center or school?
+                        - Does the child attend specialist center or mainstream school?
                         - Does the child take any medication to improve its current condition. If so, what kind?
                         
                 
@@ -691,7 +710,13 @@ else:
                     - English: "Do you want to add any other relevant information?"
 
                 5. If the user has nothing relevant to add, make a summary. Give the answer in dictionary format with the following structure:
-                    - Keys are the aspects defined in step 2. In bold text and values ​​are the user's answers, which should be in the form of text in string format.
+                    - Keys are:
+                        - Age
+                        - Gender
+                        - Condition
+                        - Context 
+                        - Additional Information 
+                    The keys should be in bold text and values ​​are the user's answers, which should be in the form of text in string format.
                     - Return the answer as a dictionary and ask for mandatory approval of the summary.
 
                 6. If the user does not approve the summary, ask follow-up questions about what to change and show the modified version of the summary.
@@ -907,6 +932,10 @@ else:
                 # Get chatbot response
                 messages_with_prompt = [{"role": "system", "content": main_prompt}] + st.session_state.messages
                 bot_response = chatbot_response(messages_with_prompt)
+
+                if st.session_state.get("profile_string"):
+                    profile_message = f"The following child profile has been provided and does not need to be asked again:\n\n{st.session_state['profile_string']}"
+                    messages_with_prompt.append({"role": "system", "content": profile_message})
                 
                 # Append bot response
                 st.session_state.messages.append({"role": "assistant", "content": bot_response})
@@ -919,9 +948,10 @@ else:
                 # Store the summary separately if it exists
                 if "__SUMMARY_READY__" in bot_response:
                     st.session_state["summary"] = bot_response
-                    print(st.session_state.summary)
+                    # print(st.session_state.summary)
+
                     st.write("✅ Summary is ready. Please wait...")
-                    print("\n\n Summary \n")
+                    # print("\n\n Summary \n")
 
                     documents = query_knowledge_base(bot_response)
                     formated_chunks = format_chunks(documents)
